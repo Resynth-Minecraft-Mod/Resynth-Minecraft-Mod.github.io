@@ -50,3 +50,7 @@ footer {
   margin-top: 0;
   border: 0;
 }
+
+.b {
+  font-display: auto;
+}
