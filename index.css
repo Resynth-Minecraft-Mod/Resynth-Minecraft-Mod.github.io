@@ -20,6 +20,12 @@ footer {
   height: 20px;
 }
 
+.navbar {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
 .content {
   background-color: rgba(0, 0, 0, 0.5);
   margin-top: 25px;
@@ -32,5 +38,15 @@ footer {
 }
 
 .display {
+  margin: 5px;
+}
+
+.banner {
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
   padding: 0;
+  margin: 0;
+  padding-top: 75px;
+  margin-top: 0;
+  border: 0;
 }

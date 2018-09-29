@@ -14,7 +14,7 @@
 
 <body>
   <!--Nav bar-->
-  <nav class="navbar navbar-inverse">
+  <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -22,30 +22,32 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#"><img alt="logo" src="logo.png"></a>
+        <a class="navbar-brand" style="margin-top:8px;" href="#"><img alt="logo" src="logo.png"></a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Home</a></li>
+        <ul class="nav navbar-nav" style="margin-top:8px;">
           <li><a href="#">Wiki</a></li>
           <li><a href="https://minecraft.curseforge.com/projects/resynth">Curse Forge</a></li>
           <li><a href="https://www.minecraftforum.net/forums/mapping-and-modding-java-edition/minecraft-mods/2927861-resynth-growable-ores-mob-drops-and-resources">Minecraft Forums</a></li>
           <li><a href="https://github.com/Resynth-Minecraft-Mod">Github</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-        <li><a href="https://minecraft.curseforge.com/projects/resynth/files/latest"><span class="glyphicon glyphicon-download"></span> Download Latest</a></li>
+        <li><a title="Download Latest Release" href="https://minecraft.curseforge.com/projects/resynth/files/latest"><span class="btn btn-primary glyphicon glyphicon-download"></span></a></li>
         </ul>
       </div>
     </div>
   </nav>
 
+<div class="banner text-center">
+  <img alt="title" src="title.png"/>
+</div>
+
 <!--Intro-->
 <div class="container content text-center">
   <div class="row">
     <div class="col-lg">
-      <img alt="title" src="title.png"/>
+      <h1>Introduction</h1>
     </div>
-    <p>
     <div class="col-lg">
       Resynth is a mod designed to provide you with a way to grow every Minecraft resource,
       from iron to glowstone and soon to be ender peals, while being completely configurable.
@@ -58,7 +60,7 @@
       drop chances to bonemeal to ore generation - even disabling plant growth
       can be changed in the config.
     </div>
-    <div class="col-lg" style="color: red;">
+    <div class="col-lg" style="color: rgb(255, 43, 43);">
       <b>Note: Resynth is still in its first stages of development (beta) - some things are bound to
         break, some features are not yet implemented (such as mob drops) and values (such
         as plant growth time and seed drop chance) still need tweaking, though you can
@@ -67,11 +69,89 @@
     </div>
     <div class="col-lg">
       <iframe src="https://www.cfwidget.com/minecraft/mc-mods/resynth?version=1.12.2"
-      width="100%" class="cf-widget"></iframe>
+      width="1130" class="cf-widget"></iframe>
     </div>
     <div class="col-lg">
-      <img width="1150"alt="display image" class="img-fluid img-thumbnail display" src="display.png"/>
+      <div class="col-sm-6">
+        <img width="580"alt="display image" class="img-fluid img-thumbnail display" src="display_1.png"/>
+      </div>
+      <div class="col-sm-6">
+        <img width="580"alt="display image" class="img-fluid img-thumbnail display" src="display_2.png"/>
+      </div>
     </div>
+    </div>
+  </div>
+
+  <!--FAQ-->
+  <div class="container content text-center">
+    <div class="row">
+      <div class="col-lg">
+        <h1>FAQ</h1>
+      </div>
+      <div class="col-lg text-left" style="margin-left: 50px;">
+        <h3>How Do I Get Seeds?</h3>
+         Seeds are obtained differently depending on the plant and ore.
+         <p><p>
+           Seeds for <i>diamond</i>, <i>coal</i>, <i>emerald</i>, <i>glowstone</i>,
+           <i>quartz</i>, <i>redstone</i> and <i>Lapis Lazuli</i> are obtained by
+           mining the respective ore block (e.g. diamond ore and glowstone) with an
+           iron pickaxe or better. If you're lucky, seeds will randomly drop
+           (<i class="glyphicon glyphicon-wrench">Configurable</i>).
+           <p><p>
+           Seeds for <i>iron</i> and <i>gold</i> are obtained by
+           blowing up the ore block. If you're feeling lucky,
+           the respective seeds will occasionally drop
+           (<i class="glyphicon glyphicon-wrench">Configurable</i>).
+      </div>
+      <div class="col-lg text-left" style="margin-left: 50px;">
+        <h3>My Plants Are Growing Very Slowly. Why?</h3>
+        Resynth plants grow quite slowly compared to vanilla
+        minecraft plants on average
+        (<i class="glyphicon glyphicon-wrench"></i>Configurable growth time).
+        <p><p>
+        The plants growth rate is also affected by the mineral soil
+        block it is placed on. Each mineral soil block has a mineral
+        content - this value affects how fast the plants grow. When
+        placed in the world, the mineral soil block has a mineral
+        content of 1%, which can go up to 50%. Plants below 25%
+        will grow very slowly and plants of around 1% will seamingly
+        never grow.
+        <p>
+        The mineral content can be increase by right clicking the
+        soil block with either Mineral Rocks (1% increase
+        <i class="glyphicon glyphicon-wrench">Configurable</i>) or
+        Dense Mineral Rocks (9% increase
+        <i class="glyphicon glyphicon-wrench">Configurable</i>)
+      </div>
+      <div class="col-lg text-left" style="margin-left: 50px;">
+        <h3>How Do I Get The Resources From The Plant?</h3>
+        <p><p>
+        The produce from the plant (organic ore and straw) can
+        be placed in a furnaced to get the Minecraft resource
+        (such as diamond).
+      </div>
+    </div>
+  </div>
+
+  <!--Legal-->
+  <div class="container content text-center">
+    <div class="row">
+      <div class="col-lg">
+        <h1>Legal</h1>
+      </div>
+      Copyright © Ki11er_wolf 2018.
+      <p>
+      This modification, its source code and the website
+      are released under The Apache License V2 (an open
+      source license).
+      While this mod should not cause ANY damage whatsoever -
+      I make no guarantees that this mod will NOT cause
+      any damage and I accept no responsibility for
+      any damage or loss.
+      With this in mind, if you encounter any issues
+      with this modification, please feel free to
+      submit a bug/issue over
+      <a href="https://github.com/Resynth-Minecraft-Mod/Resynth-Mod/issues">here</a>.
     </div>
   </div>
 
