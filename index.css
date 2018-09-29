@@ -1,0 +1,36 @@
+body {
+  background-image: url("background.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+iframe {
+  margin-top: 10px;
+  border: 0;
+  border-radius: 15px;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  font-size: 12px;
+  height: 20px;
+}
+
+.content {
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-top: 25px;
+  color: white;
+  border: 0;
+  border-radius: 15px;
+  padding-top: 7px;
+  padding-bottom: 14px;
+  margin-bottom: 25px;
+}
+
+.display {
+  padding: 0;
+}
