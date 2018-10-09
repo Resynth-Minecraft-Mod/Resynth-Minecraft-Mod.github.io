@@ -1,12 +1,15 @@
 <!doctype html>
+
 <!-- jquery and bootstrap-->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.1.1/css/mdb.min.css" rel="stylesheet">
+
 <!--css and js file-->
-<link rel="stylesheet" type="text/css" href="index.css">
-<script src="index.js" type="application/x-javascript"></script>
+<link rel="stylesheet" type="text/css" href="css/index.css">
 
 <!--Head-->
 <title>Resynth Minecraft Mod</title>
@@ -26,76 +29,87 @@
                 <a class="navbar-brand" style="margin-top:8px;" href="#"><img alt="logo" src="images/logo.png"></a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav" style="margin-top:8px;">
+                <ul class="nav navbar-nav" style="margin-top:13px;">
                     <!--Links-->
+                    <li >
+                        <a href="#">
+                            <b><i><u>Home</u></i></b>
+                        </a>
+                    </li>
                     <li>
                         <a href="https://github.com/Resynth-Minecraft-Mod/Resynth-Mod/wiki">
-                            Wiki (Github)
-                            <span class="glyphicon glyphicon-info-sign" style="padding-top: 5px;"></span>
+                            Wiki
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://minecraft.curseforge.com/projects/resynth/files">
+                            Downloads
                         </a>
                     </li>
                     <li>
                         <a href="https://minecraft.curseforge.com/projects/resynth">
                             CurseForge
-                            <span class="glyphicon glyphicon-comment" style="padding-top: 5px;"></span>
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.minecraftforum.net/forums/mapping-and-modding-java-edition/minecraft-mods/2927861-resynth-growable-ores-mob-drops-and-resources">
-                            Minecraft Forums
-                            <span class="glyphicon glyphicon-comment" style="padding-top: 5px;"></span>
+                        <a href="https://github.com/Resynth-Minecraft-Mod/Resynth-Mod">
+                            Source Code
                         </a>
                     </li>
                     <li>
-                        <a href="https://github.com/Resynth-Minecraft-Mod">
-                            Github (Source Code)
-                            <span class="glyphicon glyphicon-tasks" style="padding-top: 5px;"></span>
+                        <a href="">
+                            FAQ
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Credits
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Legal
                         </a>
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a title="Download Latest Release" href="https://minecraft.curseforge.com/projects/resynth/files/latest"><span class="btn btn-primary glyphicon glyphicon-download"></span></a></li>
+                    <li>
+                        <a title="Download Latest Release" href="https://minecraft.curseforge.com/projects/resynth/files/latest">
+                            <span class="btn btn-primary glyphicon glyphicon-download"></span>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
-
+    
     <!--Intro-->
-    <div class="container content text-center" style="margin-top:80px;">
-        <div class="row">
-            <div class="col-lg">
-                <div class="banner- text-center">
-                    <img alt="title" src="images/title.png"/>
-                </div>
-            </div>
-            <div class="col-lg text-center">
-                <h2>Welcome To The Resynth Homepage</h2>
-                Here you will find everything Resynth related, from
-                the download links and the wiki to the forum post links.
-                Everything important is listed here, on the front page!
+    <div class="container text-center">
+        
+        <div id="intro" class="row">
+            <img src="images/title.png" id="title">
+            
+            <h1 style="color: red; background-color: rgba(0,0,0,0.25)">Please note: Resynth (as well as some parts of the wiki and website) are still in beta.</h1>
+            
+            <div class="col-md it">
+                <h1><b>All The Resources!</b></h1>
+                
+                Resynth gives you a way to grow every resource in minecraft
+                from diamond to glowstone to enderpearls using 3 different
+                plant types. What's more, Resynth is completely configurable,
+                giving you the power to make it as brokenly overpowered or
+                underpowered as you like!
                 <p></p>
-                <h2>Overview</h2>
-                Resynth is a modification to Minecraft that focuses
-                on giving the player a way to obtain every in-game
-                resource through plants. It ties directly into the
-                game so you obtain the resources and seeds just by
-                mining - no need to do anything special... except
-                blow up some TNT here and there.
-                <p></p>
-                Resynth was also designed to be as configurable
-                as possible - so you can make the mod as stupidly
-                overpowered or underpowered as you like. Be it making
-                a million diamond seeds drop per ore block or making
-                coal seeds rarer than a mushroom biome.
+                <i>Crystalline Metallic Biochemical</i>
             </div>
-            <!--Link buttons-->
+            
             <div class="row" style="align-content: center; padding-top: 20px;">
-                <a class="btn btn-primary" style="font-size: 18px; margin-right: 10px; border-radius: 0;" href="#downloads">
+                <a class="btn btn-primary" style="font-size: 18px; margin-right: 10px; border-radius: 0;" href="https://minecraft.curseforge.com/projects/resynth/files">
                     Downloads
                     <span class="glyphicon glyphicon-download" style="padding-top: 5px;"></span>
                 </a>
                 <a class="btn btn-primary" style="font-size: 18px; margin-right: 10px; border-radius: 0;" href="https://github.com/Resynth-Minecraft-Mod/Resynth-Mod/wiki">
-                    Wiki (Github)
+                    Wiki
                     <span class="glyphicon glyphicon-info-sign" style="padding-top: 5px;"></span>
                 </a>
                 <a class="btn btn-primary" style="font-size: 18px; margin-right: 10px; border-radius: 0;" href="https://minecraft.curseforge.com/projects/resynth/">
@@ -107,104 +121,114 @@
                     <span class="glyphicon glyphicon-tasks" style="margin-top: 5px;"></span>
                 </a>
             </div>
+            
         </div>
+        
+        <iframe src="https://www.cfwidget.com/minecraft/mc-mods/resynth?version=1.12.2" class="row"></iframe>
     </div>
     
-    
-    <!--Important beta notice-->
-    <div class="container content text-center">
-        <h2>Resynth Is Still In Beta</h2>
-        Currently, Resynth is still in its early
-        states of development and as such, a few
-        features are missing (such as mob plants)
-        and some things still need to be fine tuned.
-    </div>
-    
-    <a id="downloads"></a>
-    
-    <!--Download-->
-    <div class="container content text-center">
-        <h2>Download</h2>
-        <h3>for 1.12.2</h3>
+    <!--Description-->
+    <div class="container text-center block">
+        <h1><b>Growable Ores, Resources and Mob Drops</b></h1>
+        <h2>Completely Configurable</h2>
         
-        <iframe src="https://www.cfwidget.com/minecraft/mc-mods/resynth?version=1.12.2" width="100%" class="cf-widget"></iframe>
-        
-        <h3>Source Code</h3>
-        
-        The source code for Resynth as well as the website can
-        be found over <a href="https://github.com/Resynth-Minecraft-Mod">here</a>
-        at <a href="https://github.com/">Github.com</a>
-    </div>
-    
-    <!--FAQ-->
-    <div class="container content text-center">
         <div class="row">
-            <div class="col-lg">
-                <h1>Common Issues</h1>
-                A <i class="glyphicon glyphicon-wrench"></i> indicates
-                that the functionality can be changed in config.
-            </div>
-            <div class="col-lg" style="margin-left: 50px;">
-                <h2><b>Collecting Seeds</b></h2>
-                Seeds are obtained differently depending on the plant and ore.
-                <p><p>
-                Seeds for <i>diamond</i>, <i>coal</i>, <i>emerald</i>, <i>glowstone</i>,
-                <i>quartz</i>, <i>redstone</i> and <i>Lapis Lazuli</i> are obtained by
-                mining the respective ore block (e.g. diamond ore and glowstone) with an
-                iron pickaxe or better. If you're lucky, seeds will randomly drop
-                <i class="glyphicon glyphicon-wrench"></i>.
-                <p><p>
-                Seeds for <i>iron</i> and <i>gold</i> are obtained by
-                blowing up the ore block. If you're feeling lucky,
-                the respective seeds will occasionally drop
-                <i class="glyphicon glyphicon-wrench"></i>.
-            </div>
-            <div class="col-lg" style="margin-left: 50px;">
-                <h2><b>Slow Plant Growth</b></h2>
-                Resynth plants grow quite slowly compared to vanilla
-                minecraft plants on average
-                <i class="glyphicon glyphicon-wrench"></i>.
-                <p><p>
-                The plants growth rate is also affected by the mineral soil
-                block it is placed on. Each mineral soil block has a mineral
-                content - this value affects how fast the plants grow. When
-                placed in the world, the mineral soil block has a mineral
-                content of 1%, which can go up to 50%. Plants below 25%
-                will grow very slowly and plants of around 1% will seamingly
-                never grow.
+            <div class="col-md-7 text-left" style="font-size: 20px;">
+                <b>Resynth</b> focuses on three things:
                 <p></p>
-                The mineral content can be increase by right clicking the
-                soil block with either Mineral Rocks (1% increase
-                <i class="glyphicon glyphicon-wrench"></i>) or
-                Dense Mineral Rocks (9% increase
-                <i class="glyphicon glyphicon-wrench"></i>)
+                <ol>
+                    <li>Provide a way to grow every resource (ores, mob drops, modded resources and other miscellaneous resources) with some variety and mechanics.</li>
+                    <p></p>
+                    <li>Allow you to decide the difficulty.</li>
+                    <li>Integrate tightly into the game - no need to go out of your way to get seeds or resources.</li>
+                </ol>
+                <p></p>
+                <div style="height: 1px; width: 70px; border-bottom: 1px solid lightgrey; text-align: center;"></div>
+                <p></p>
+                Resynth adds <b>3 different plant types</b> to Minecraft which grow different types of resources
+                <p></p>
+                <ol>
+                    <li>Crystalline - For ores that don't need smelting (Minecraft Wheat Equivalent)</li>
+                    <li>Metallic - For ores that do need smelting (Minecraft Melon Equivalent)</li>
+                    <li>Biochemical - For mob drops</li>
+                </ol>
+                <p></p>
+                <div style="height: 1px; width: 70px; border-bottom: 1px solid lightgrey; text-align: center;"></div>
+                <p></p>
+                <b>Seeds</b> are obtained differently depending on the plant type - For the crystalline and biochemical
+                plants, seeds are obtained simply by mining and killing mobs. Metallic plant seeds are obtained by blowing
+                the ore block up.
+                <p></p>
+                <div style="height: 1px; width: 70px; border-bottom: 1px solid lightgrey; text-align: center;"></div>
+                <p></p>
+                <b>A new mechanic</b> - Resynth plants grow a bit differently when compared to vanilla Minecraft plants.
+                They require a special block to be planted, Mineral Soil, which has a distinct property - a mineral content
+                percentage. This value controls how fast the plant grows. Plants growing on mineral soil with a low mineral content
+                will grow extremely slowly, while plants growing on mineral soil with a high mineral content will grow quite quickly.
+                <p></p>
+                <div style="height: 1px; width: 70px; border-bottom: 1px solid lightgrey; text-align: center;"></div>
+                <p></p>
+                <div class="row text-center">
+                    <div class="col-sm-6">
+                        For more <b>detailed information</b> about the mod and how to use it
+                        <a href="https://github.com/Resynth-Minecraft-Mod/Resynth-Mod/wiki" class="btn btn-primary">
+                            View The Wiki
+                        </a>
+                    </div>
+                    <div class="col-sm-6">
+                        For some <b>common issues</b> and questions about the mod
+                        <a href="#" class="btn btn-primary">View The FAQ</a>
+                    </div>
+                </div>
             </div>
-            <div class="col-lg" style="margin-left: 50px;">
-                <h2><b>Getting the resource</b></h2>
-                <p><p>
-                The produce from the plant (organic ore and straw) can
-                be placed in a furnaced to get the Minecraft resource
-                (such as diamond).
+            <div class="col-md-5">
+                <div class="col-md-12" style="border-left: 1px solid lightgrey;">
+                    <b>Gold and Iron - Metallic Plant Types</b>
+                    <img src="images/display_2.png" style="width: 500px; height: 300px; box-shadow: 0 3px 10px rgba(0,0,0,.23), 0 3px 10px rgba(0,0,0,.16);">
+                </div>
+                <div class="col-md-12" style="border-left: 1px solid lightgrey; margin-top: 40px;">
+                    <b>Diamond (Front), Redstone (Back) and lapis lazuli (left) - Crystalline Plant Types</b>
+                    <img src="images/display_1.png" style="width: 500px; height: 300px; box-shadow: 0 3px 10px rgba(0,0,0,.23), 0 3px 10px rgba(0,0,0,.16);">
+                </div>
             </div>
         </div>
     </div>
     
-    <!--Legal-->
-    <div class="container content text-center">
-        <div class="row">
-            © 2018 Copyright: Ki11er_wolf
-            <p>
-                This modification, its source code and the website
-                are released under The Apache License V2 (an open
-                source license).
-                While this mod should not cause ANY damage whatsoever -
-                I make no guarantees that this mod will NOT cause
-                any damage and I accept no responsibility for
-                any damage or loss.
-                With this in mind, if you encounter any issues
-                with this modification, please feel free to
-                submit a bug/issue over
-                <a href="https://github.com/Resynth-Minecraft-Mod/Resynth-Mod/issues">here</a>.
+    <!-- Footer -->
+    <footer class="page-footer font-small grey pt-4">
+        <div class="container-fluid text-center text-md-left">
+            <div class="row">
+                <div class="col-md-6 mt-md-0 mt-3">
+                    <h5 class="text-uppercase">Resynth</h5>
+                    <p></p>
+                    The Resynth mod for Minecraft, the website and its content are license under the
+                    <a class="btn" href="https://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0.</a>.
+                    All Resynth content is open source and hosted on github.
+                </div>
+
+                <h5 class="text-uppercase">Miscellaneous Links</h5>
+            
+                <hr class="clearfix w-100 d-md-none pb-3">
+            
+                <div class="col-md-6 mb-md-0 mb-6">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="https://github.com/Resynth-Minecraft-Mod/Resynth-Mod/issues">Report a Bug/Issue</a>
+                        </li>
+                        <li>
+                            <a href="https://www.minecraftforum.net/forums/mapping-and-modding-java-edition/minecraft-mods/2927861-resynth-growable-ores-   mob-drops-and-resources">The Minecraft Forums Project Page</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/Resynth-Minecraft-Mod/Resynth-Minecraft-Mod.github.io">Website Github Project Page</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </div>
+        <div class="footer-copyright text-center py-3">
+            © 2018 Copyright: Ki11er_wolf
+        </div>
+    </footer>
+    
 </body>
+
