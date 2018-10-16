@@ -1,38 +1,3 @@
-#intro {
-    background-image: url("../images/cover.png");
-    background-position: center;
-    
-    height: 550px;
-    margin-top: 65px;
-}
-
-#title {
-    box-shadow: 0 3px 10px rgba(0,0,0,.23), 0 3px 10px rgba(0,0,0,.16);
-    margin-top: 20px;
-}
-
-.it {
-    font-size: 20px;
-    margin-top: 10px;
-    margin-left: 150px;
-    margin-right: 150px;
-    background-color: rgba(0,0,0,0.25);
-    color: white;
-    padding: 5px;
-}
-
-.block {
-    margin-top: 20px;
-    border-top: 1px solid lightgrey;
-}
-
-iframe {
-    width: inherit;
-    border: 0;
-    padding: 0;
-    margin: 0;
-}
-
 @media (max-width: 1100px) {
   .navbar-header {
       float: none;
