@@ -1,3 +1,5 @@
+//A bunch of window size detection for mobile...
+
 $(window).resize(function() {
     if($(window).width() < 1000){
         $("#forge-frame").hide();
