@@ -19,4 +19,11 @@ $(document).ready(function() {
         $("#forge-frame").hide();
     }
     
+    if($(window).width() < 800){
+        $("#introduction").removeClass("it");
+        $("#introduction").addClass("it-mobile");
+    } else {
+        $("#introduction").removeClass("it-mobile");
+        $("#introduction").addClass("it");
+    }
 });
