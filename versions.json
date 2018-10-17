@@ -1,36 +1,7 @@
 {
 	"homepage": "https://resynth-minecraft-mod.github.io",
 
-	"<1.12.2>": {
-		"<1.1.1>": "See the website or the Curse Forge project page for the changelog.",
-		"<1.1.0>": "See the website or the Curse Forge project page for the changelog.",
-		"<1.0.1>": "See the website or the Curse Forge project page for the changelog.",
-		"<1.0>": "See the website or the Curse Forge project page for the changelog.",
-
-		"<1.1.1 [1.12.2]>": "See the website or the Curse Forge project page for the changelog.",
-		"<1.1.0 [1.12.2]>": "See the website or the Curse Forge project page for the changelog.",
-		"<1.0.1 [1.12.2]>": "See the website or the Curse Forge project page for the changelog.",
-
-		"1.1.1": "See the website or the Curse Forge project page for the changelog.",
-		"1.1.0": "See the website or the Curse Forge project page for the changelog.",
-		"1.0.1": "See the website or the Curse Forge project page for the changelog.",
-		"1.0": "See the website or the Curse Forge project page for the changelog.",
-
-		"1.1.1 [1.12.2]": "See the website or the Curse Forge project page for the changelog.",
-		"1.1.0 [1.12.2]": "See the website or the Curse Forge project page for the changelog.",
-		"1.0.1 [1.12.2]": "See the website or the Curse Forge project page for the changelog.",
-		"1.0 [1.12.2]": "See the website or the Curse Forge project page for the changelog."
-	},
 	"1.12.2": {
-		"<1.1.1>": "See the website or the Curse Forge project page for the changelog.",
-		"<1.1.0>": "See the website or the Curse Forge project page for the changelog.",
-		"<1.0.1>": "See the website or the Curse Forge project page for the changelog.",
-		"<1.0>": "See the website or the Curse Forge project page for the changelog.",
-
-		"<1.1.1 [1.12.2]>": "See the website or the Curse Forge project page for the changelog.",
-		"<1.1.0 [1.12.2]>": "See the website or the Curse Forge project page for the changelog.",
-		"<1.0.1 [1.12.2]>": "See the website or the Curse Forge project page for the changelog.",
-
 		"1.1.1": "See the website or the Curse Forge project page for the changelog.",
 		"1.1.0": "See the website or the Curse Forge project page for the changelog.",
 		"1.0.1": "See the website or the Curse Forge project page for the changelog.",
@@ -43,10 +14,10 @@
 	},
 
 	"promos": {
-		"<1.12.2>-latest": "<1.1.1>",
-		"<1.12.2>-recommended": "<1.1.1>",
-
 		"1.12.2-latest": "1.1.1",
-		"1.12.2-recommended": "1.1.1"
+		"1.12.2-recommended": "1.1.1",
+        
+        "latest": "1.1.1",
+        "recommended": "1.1.1"
 	}
 }
