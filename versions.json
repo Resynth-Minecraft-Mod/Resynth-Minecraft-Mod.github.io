@@ -5,15 +5,15 @@
     "<1.1.0>": "See the website or Curse Forge project page for a changelog.",
     "<1.0.2>": "See the website or Curse Forge project page for a changelog.",
     "<1.0.1>": "See the website or Curse Forge project page for a changelog.",
-    "<1.0>": "See the website or Curse Forge project page for a changelog.",
+    "<1.0>": "See the website or Curse Forge project page for a changelog."
       
     "<1.1.0>": "See the website or Curse Forge project page for a changelog.",
     "<1.0.2 [1.12.2]>": "See the website or Curse Forge project page for a changelog.",
     "<1.0.1 [1.12.2]>": "See the website or Curse Forge project page for a changelog.",
-    "<1.0> [1.12.2]": "See the website or Curse Forge project page for a changelog.",
+    "<1.0> [1.12.2]": "See the website or Curse Forge project page for a changelog."
   },
   "promos": {
     "<1.12.2>-latest": "<1.1.1>",
-    "<1.12.2>-recommended": "<1.1.1>",
+    "<1.12.2>-recommended": "<1.1.1>"
   }
 }
