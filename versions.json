@@ -1,19 +1,9 @@
 {
-  "homepage": "https://www.resynth-minecraft-mod.github.io/",
-  "<1.12.2>": {
-    "<1.1.1>": "See the website or Curse Forge project page for a changelog.",
-    "<1.1.0>": "See the website or Curse Forge project page for a changelog.",
-    "<1.0.2>": "See the website or Curse Forge project page for a changelog.",
-    "<1.0.1>": "See the website or Curse Forge project page for a changelog.",
-    "<1.0>": "See the website or Curse Forge project page for a changelog."
-      
-    "<1.1.0>": "See the website or Curse Forge project page for a changelog.",
-    "<1.0.2 [1.12.2]>": "See the website or Curse Forge project page for a changelog.",
-    "<1.0.1 [1.12.2]>": "See the website or Curse Forge project page for a changelog.",
-    "<1.0> [1.12.2]": "See the website or Curse Forge project page for a changelog."
-  },
+  "homepage": "https://resynth-minecraft-mod.github.io/",
   "promos": {
-    "<1.12.2>-latest": "<1.1.1>",
-    "<1.12.2>-recommended": "<1.1.1>"
+    "1.12.2-latest": "1.1.1",
+    "1.12.2-recommended": "1.1.1",
+    "latest": "1.1.1",
+    "recommended": "1.1.1"
   }
 }
