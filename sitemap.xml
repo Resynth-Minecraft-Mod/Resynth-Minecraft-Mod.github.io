@@ -2,10 +2,26 @@
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
    <sitemap>
       <loc>https://resynth-minecraft-mod.github.io</loc>
-      <lastmod>2018-10-17T21:02:00+02:00</lastmod>
+      <lastmod>2018-10-17T22:07:00+02:00</lastmod>
    </sitemap>
-    <sitemap>
+   <sitemap>
       <loc>https://resynth-minecraft-mod.github.io/versions.json</loc>
-      <lastmod>2018-10-17T21:02:00+02:00</lastmod>
+      <lastmod>2018-10-17T22:07:00+02:00</lastmod>
+   </sitemap>
+   <sitemap>
+      <loc>https://resynth-minecraft-mod.github.io/faq.html</loc>
+      <lastmod>2018-10-17T22:07:00+02:00</lastmod>
+   </sitemap>
+   <sitemap>
+      <loc>https://resynth-minecraft-mod.github.io/credits.html</loc>
+      <lastmod>2018-10-17T22:07:00+02:00</lastmod>
+   </sitemap>
+   <sitemap>
+      <loc>https://resynth-minecraft-mod.github.io/changelog.html</loc>
+      <lastmod>2018-10-17T22:07:00+02:00</lastmod>
+   </sitemap>
+   <sitemap>
+      <loc>https://resynth-minecraft-mod.github.io/index.html</loc>
+      <lastmod>2018-10-17T22:07:00+02:00</lastmod>
    </sitemap>
 </sitemapindex>
