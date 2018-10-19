@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: 
+Disallow: /mod/versions.json
+Disallow: /mod/call-home.html
+Sitemap: https://resynth-minecraft-mod.github.io/sitemap.xml
