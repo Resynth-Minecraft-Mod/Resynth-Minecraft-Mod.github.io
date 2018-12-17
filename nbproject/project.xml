@@ -5,5 +5,20 @@
         <data xmlns="http://www.netbeans.org/ns/clientside-project/1">
             <name>Resynth-Website</name>
         </data>
+        <spellchecker-wordlist xmlns="http://www.netbeans.org/ns/spellchecker-wordlist/1">
+            <word>css</word>
+            <word>er</word>
+            <word>Google</word>
+            <word>gtag</word>
+            <word>http</word>
+            <word>JQuery</word>
+            <word>js</word>
+            <word>Ki</word>
+            <word>Minecraft</word>
+            <word>org</word>
+            <word>Resynth</word>
+            <word>TODO</word>
+            <word>www</word>
+        </spellchecker-wordlist>
     </configuration>
 </project>
