@@ -63,6 +63,16 @@ iframe {
     margin: 0;
 }
 
+.pad-top5 {
+    padding-top: 5px;
+}
+
+.header--btn {
+    font-size: 18px;
+    margin-right: 10px;
+    border-radius: 0;
+}
+
 @media (max-width: 1100px) {
   .navbar-header {
       float: none;
