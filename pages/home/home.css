@@ -14,6 +14,24 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
+.side-img {
+    height: 300px;
+    box-shadow: 0 3px 10px rgba(0,0,0,.23),
+        0 3px 10px rgba(0,0,0,.16);
+}
+
+.img-div {
+    border-left: 1px solid lightgrey;
+    margin-top: 40px;
+}
+
+.divider{
+    height: 1px;
+    width: 70px;
+    border-bottom: 1px solid lightgrey;
+    text-align: center;
+}
+
 .intro {
     background-image: url("../../images/cover.png");
     background-position: center;
