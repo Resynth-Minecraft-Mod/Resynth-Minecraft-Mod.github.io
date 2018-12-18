@@ -6,18 +6,25 @@
             <name>Resynth-Website</name>
         </data>
         <spellchecker-wordlist xmlns="http://www.netbeans.org/ns/spellchecker-wordlist/1">
+            <word>Changelog</word>
             <word>css</word>
+            <word>CurseForge</word>
             <word>er</word>
             <word>Google</word>
+            <word>Growable</word>
             <word>gtag</word>
             <word>http</word>
             <word>JQuery</word>
             <word>js</word>
             <word>Ki</word>
             <word>Minecraft</word>
+            <word>modded</word>
             <word>org</word>
+            <word>PlanetMinecraft</word>
             <word>Resynth</word>
+            <word>smelting</word>
             <word>TODO</word>
+            <word>Wiki</word>
             <word>www</word>
         </spellchecker-wordlist>
     </configuration>
