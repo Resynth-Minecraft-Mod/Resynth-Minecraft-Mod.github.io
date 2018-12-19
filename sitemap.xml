@@ -1,35 +1,37 @@
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
     <url>
         <loc>
             https://resynth-minecraft-mod.github.io/
         </loc>
-        <lastmod>2018-10-21T10:00:00+02:00</lastmod>
+        <lastmod>2018-12-19T10:50:00+02:00</lastmod>
         <priority>1.00</priority>
     </url>
     <url>
         <loc>https://resynth-minecraft-mod.github.io/index.html</loc>
-        <lastmod>2018-10-21T10:00:00+02:00</lastmod>
+        <lastmod>2018-12-19T15:00:00+02:00</lastmod>
         <priority>1.00</priority>
     </url>
     <url>
         <loc>
-            https://resynth-minecraft-mod.github.io/changelog.html
+            https://resynth-minecraft-mod.github.io/pages/changelog/changelog.html
         </loc>
-        <lastmod>2018-10-21T10:00:00+02:00</lastmod>
+        <lastmod>2018-12-19T15:00:00+02:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>
-            https://resynth-minecraft-mod.github.io/faq.html
+            https://resynth-minecraft-mod.github.io/pages/faq/faq.html
         </loc>
-        <lastmod>2018-10-19T06:39:07+00:00</lastmod>
+        <lastmod>2018-12-19T15:00:00+02:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>
-            https://resynth-minecraft-mod.github.io/credits.html
+            https://resynth-minecraft-mod.github.io/pages/credits/credits.html
         </loc>
-        <lastmod>2018-10-21T10:00:00+02:00</lastmod>
+        <lastmod>2018-12-19T15:00:00+02:00</lastmod>
         <priority>0.80</priority>
     </url>
 </urlset>
