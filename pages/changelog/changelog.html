@@ -15,52 +15,57 @@ See the License for the specific language governing permissions and
 limitations under the License.
 -->
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-127648959-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-127648959-1');
-  gtag('set', {'user_id': 'USER_ID'}); // Set the user ID using signed-in user_id.
-</script>
-
-<!-- jquery and bootstrap-->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-<!--Google material design-->
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
-<!-- Material Design Bootstrap -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.1.1/css/mdb.min.css" rel="stylesheet">
-
-<!--css and js file-->
-<link rel="stylesheet" type="text/css" href="changelog.css">
-
-<!--Head-->
-<title>Resynth - Changelog</title>
-<link rel="icon" href="../../images/icon.png" type="image/png">
-<meta charset="utf-8">
-
-<meta name="keywords" content="Minecraft, Resynth, Growable Ores, Forge, Forge Mod, Growable Resources, Growable Mob Drops, Resynth Minecraft, Minecraft Growable Ores, Minecraft Growable Resources, Minecraft Growable Mob Drops, 1.12.2, Minecraft 1.12.2">
-<meta name="description" content="Growable Ores, Mob Drops and Resources. Completely Configurable!">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <!--                                Begin                               -->
+    <title>Resynth - Changelog</title>
+    <link rel="icon" href="../../images/icon.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="changelog.css">
+    
+    <!-- JQuery and bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <!--Meta Tags-->
+    <meta charset="utf-8">
+    <meta name="keywords" content="Minecraft, Resynth, Growable Ores, Forge,
+          Forge Mod, Growable Resources, Growable Mob Drops, Resynth Minecraft,
+          Minecraft Growable Ores, Minecraft Growable Resources, Minecraft
+          Growable Mob Drops, 1.12.2, Minecraft 1.12.2">
+    <meta name="description" content="Growable Ores, Mob Drops and Resources. Completely Configurable!">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google Material Design -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.1.1/css/mdb.min.css" rel="stylesheet">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127648959-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-127648959-1');
+        // Set the user ID using signed-in user_id.
+        gtag('set', {'user_id': 'USER_ID'}); 
+    </script>
+</head>
 
 <body>
-    <!--Nav bar-->
-    <nav class="navbar navbar-inverse navbar-fixed-top" style="font-size: 18px;">
+    <!--                            Navigation Bar                          -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" style="font-size: 14px;">
         <div class="container-fluid">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target="#myNavbar">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" style="margin-top:8px;" href="#"><img alt="logo" src="../../images/logo.png"></a>
+                <a class="navbar-brand" style="margin-top:8px;" href="#">
+                    <img alt="logo" src="../../images/logo.png">
+                </a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav" style="margin-top:13px;">
@@ -113,7 +118,8 @@ limitations under the License.
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a title="Download Latest Release" href="https://minecraft.curseforge.com/projects/resynth/files/latest">
+                        <a title="Download Latest Release"
+                           href="https://minecraft.curseforge.com/projects/resynth/files/latest">
                             <span class="btn btn-primary glyphicon glyphicon-download"></span>
                         </a>
                     </li>
@@ -122,14 +128,16 @@ limitations under the License.
         </div>
     </nav>
     
-    <!--Content-->
+    <!--                                Content                             -->
     <div class="container text-left" style="margin-top: 65px; font-size: 20px;">
-        <h1 class="text-center"><b>Changelog <span class="glyphicon glyphicon-list"></span></b></h1>
+        <h1 class="text-center">
+            <b>Changelog<span class="glyphicon glyphicon-list"></span></b>
+        </h1>
         <h2 class="text-center">The list of changes to Resynth throughout the ages.</h2>
         
         <div style="padding-top: 30px;">
+            <!--                        Versions                            -->
             <h1><b>Version 1.2.1</b></h1>
-            
             <div class="text-left">
                 <span><i class="pull-left material-icons ">label</i>
                     <b>Added: </b>Independent Mod Plants.<br/>
@@ -226,15 +234,18 @@ limitations under the License.
             
             <div class="text-left">
                 <span><i class="pull-left material-icons ">label</i>
-                    <b>Changed: </b>Configuration values relating to chances now use float percentages.
+                    <b>Changed: </b>Configuration values relating to chances
+                    now use float percentages.
                 </span>
                 <br/>
                 <span><i class="pull-left material-icons ">label</i>
-                    <b>Changed: </b>Increased average number of Mineral Rock dropped from Mineral Stone.
+                    <b>Changed: </b>Increased average number of Mineral Rock
+                    dropped from Mineral Stone.
                 </span>
                 <br/>
                 <span><i class="pull-left material-icons ">label</i>
-                    <b>Fixed: </b>A bug where ore blocks mined with a modded pickaxe would not drop seeds.
+                    <b>Fixed: </b>A bug where ore blocks mined with a modded
+                    pickaxe would not drop seeds.
                 </span>
             </div>
         </div>
@@ -244,7 +255,8 @@ limitations under the License.
             
             <div class="text-left">
                 <span><i class="pull-left material-icons ">label</i>
-                    <b>Fixed: </b>A bug where Organic Ore blocks would not drop when pushed by a piston.
+                    <b>Fixed: </b>A bug where Organic Ore blocks would not drop
+                    when pushed by a piston.
                 </span>
             </div>
         </div>
@@ -254,41 +266,59 @@ limitations under the License.
             <h2>Initial Release</h2>
             
         </div>
+        
+        <!--                             End                                -->
     </div>
     
-    <!-- Footer -->
+    <!--                                Footer                              -->
     <footer class="page-footer font-small grey pt-4">
         <div class="container-fluid text-center text-md-left">
             <div class="row">
                 <div class="col-md-6 mt-md-0 mt-3">
                     <h5 class="text-uppercase">Resynth</h5>
                     <p></p>
-                    The Resynth mod for Minecraft, the website and its content are license under the
-                    <a class="btn" href="https://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0.</a>.
+                    The Resynth mod for Minecraft, the website and its content
+                    are license under the
+                    <a class="btn" href="https://www.apache.org/licenses/LICENSE-2.0">
+                        Apache License, Version 2.0.
+                    </a>.
                     All Resynth content is open source and hosted on github.
+                    <!--                Disclaimer                          -->
                     <p></p>
                     <b>
-                        THE RESYNTH MOD, WEBSITE AND ITS RESOURCE ARE PRODIVDED AS IS WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND.
+                        THE RESYNTH MOD, WEBSITE AND ITS RESOURCE ARE PRODIVDED
+                        AS IS WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND.
                     </b>
                     <br/>
-                    For more information, view <a class="btn" href="https://www.apache.org/licenses/LICENSE-2.0#no-warranty">Clause 7</a> of the Apache License,
-                    Version 2.0 for more information.
+                    For more information, view
+                    <a class="btn" href="https://www.apache.org/licenses/LICENSE-2.0#no-warranty">
+                        Clause 7
+                    </a> of the Apache License, Version 2.0 for more information.
                 </div>
-
+                <!--                        Links                           -->
                 <h5 class="text-uppercase">Miscellaneous Links</h5>
-            
                 <hr class="clearfix w-100 d-md-none pb-3">
-            
                 <div class="col-md-6 mb-md-0 mb-6">
                     <ul class="list-unstyled">
                         <li>
-                            <a href="https://github.com/Resynth-Minecraft-Mod/Resynth-Mod/issues">Report a Bug/Issue</a>
+                            <a href="https://github.com/Resynth-Minecraft-Mod/Resynth-Mod/issues">
+                                Report a Bug/Issue
+                            </a>
                         </li>
                         <li>
-                            <a href="https://www.minecraftforum.net/forums/mapping-and-modding-java-edition/minecraft-mods/2927861-resynth-growable-ores-mob-drops-and-resources">The Minecraft Forums Project Page</a>
+                            <a href="https://www.minecraftforum.net/forums/mapping-and-modding-java-edition/minecraft-mods/2927861-resynth-growable-ores-mob-drops-and-resources">
+                                The Minecraft Forums Project Page
+                            </a>
                         </li>
                         <li>
-                            <a href="https://github.com/Resynth-Minecraft-Mod/Resynth-Minecraft-Mod.github.io">Website Github Project Page</a>
+                            <a href="https://github.com/Resynth-Minecraft-Mod/Resynth-Minecraft-Mod.github.io">
+                                Website Github Project Page
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.planetminecraft.com/mod/resynth/">
+                                PlanetMinecraft Project Page
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -297,6 +327,6 @@ limitations under the License.
         <div class="footer-copyright text-center py-3">
             © 2018 Copyright: Ki11er_wolf
         </div>
-    </footer>
+    </footer> 
+    
 </body>
-
