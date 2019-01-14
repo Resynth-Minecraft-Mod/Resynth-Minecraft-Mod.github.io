@@ -15,6 +15,8 @@
             <word>Growable</word>
             <word>gtag</word>
             <word>http</word>
+            <word>Hwyla</word>
+            <word>Ingots</word>
             <word>JavaScript</word>
             <word>JQuery</word>
             <word>js</word>
@@ -25,13 +27,16 @@
             <word>modpack</word>
             <word>org</word>
             <word>PlanetMinecraft</word>
+            <word>refactored</word>
             <word>Resynth</word>
             <word>SEO</word>
             <word>smelting</word>
             <word>TODO</word>
+            <word>Tooltips</word>
             <word>website</word>
             <word>Wiki</word>
             <word>www</word>
+            <word>Yellorite</word>
         </spellchecker-wordlist>
     </configuration>
 </project>
