@@ -1,4 +1,4 @@
-# Resynth Mod - Growable Ores, Mob Drops and Resources.
+# Resynth Mod Website - Growable Ores, Mob Drops and Resources.
 ![](https://resynth-minecraft-mod.github.io/images/title.png)
 
 The source code for the official Resynth Mod website
