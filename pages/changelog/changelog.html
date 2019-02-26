@@ -20,46 +20,48 @@ limitations under the License.
     <title>Changelog - Resynth Mod | Growable Ores</title>
     <link rel="icon" href="../../images/icon.png" type="image/png">
     <link rel="stylesheet" type="text/css" href="changelog.css">
-    
+
     <!-- JQuery and bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    
+
     <!-- SEO -->
     <meta name="description" content="Resynth Changelog. A complete list
           of changes to Resynth across the versions. Resynth Minecraft Mod - 
           Growable Ores.">
-    
+
     <meta name="keywords" content="Changelog, Change Log, Changes, Resynth,
           Resynth Minecraft Mod, Growable Ores, Growable Mob Drops, Growable
           Resources">
-    
+
     <!--Meta Tags-->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- Google Material Design -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <!-- Material Design Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.1.1/css/mdb.min.css" rel="stylesheet">
-    
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127648959-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
         gtag('config', 'UA-127648959-1');
         // Set the user ID using signed-in user_id.
-        gtag('set', {'user_id': 'USER_ID'}); 
+        gtag('set', {'user_id': 'USER_ID'});
     </script>
 </head>
 
 <body lang="en">
     <noscript>
-        Your browser does not support JavaScript! The Resynth website
-        might not work correctly!
+    Your browser does not support JavaScript! The Resynth website
+    might not work correctly!
     </noscript>
     <!--                            Navigation Bar                          -->
     <nav class="navbar navbar-inverse navbar-fixed-top" style="font-size: 14px;">
@@ -135,7 +137,7 @@ limitations under the License.
             </div>
         </div>
     </nav>
-    
+
     <!--                                Content                             -->
     <div class="container text-left" style="margin-top: 65px; font-size: 20px;">
         <h1 class="text-center">
@@ -143,135 +145,192 @@ limitations under the License.
         </h1>
         <h2 class="text-center">The list of changes to Resynth throughout the ages.</h2>
         <!--                        Versions                            -->
-        
+
         <div style="padding-top: 30px;">
             <div style="padding-top: 30px;">
-                <h1><b>Version 1.3.2</b></h1>
+                <h1><b>Version 1.3.3</b></h1>
+                <h2>The final update/version for Minecraft 1.12.2</h2>
                 <div class="text-left">
                     <span><i class="pull-left material-icons ">label</i>
-                        <b>Fixed: </b>Resynth crashing when Hwyla/Waila is not
-                        installed (Thanks to <b>Dragnier</b> for reporting this issue).
+                        <b>Added: </b> Additional information to seed and produce
+                        tooltips that display information specific to the plant
+                        type (e.g. seed drop chances and plant growth chances).
                         <br/>
-                        <a href="https://github.com/Resynth-Minecraft-Mod/Resynth-Mod/issues/6">
-                            Issue:#6
-                        </a>
+                    </span>
+                    <span><i class="pull-left material-icons ">label</i>
+                        <b>Added: </b> Support for The One Probe.
+                        <br/>
+                    </span>
+                    <span><i class="pull-left material-icons ">label</i>
+                        <b>Added: </b> Particle effects to plants.
+                        <br/>
+                    </span>
+                    <br/>
+                    <span><i class="pull-left material-icons ">label</i>
+                        <b>Added: </b> Clay plant.
+                        <br/>
+                    </span>
+                    <span><i class="pull-left material-icons ">label</i>
+                        <b>Added: </b> End Stone plant.
+                        <br/>
+                    </span>
+                    <span><i class="pull-left material-icons ">label</i>
+                        <b>Added: </b> Sand plant.
+                        <br/>
+                    </span>
+                    <br/>
+                    <span><i class="pull-left material-icons ">label</i>
+                        <b>Updated: </b> Mineral Soil texture (animated).
+                        <br/>
+                    </span>
+                    <span><i class="pull-left material-icons ">label</i>
+                        <b>Updated: </b> Mineral Stone texture (animated).
+                        <br/>
+                    </span>
+                    <br/>
+                    <span><i class="pull-left material-icons ">label</i>
+                        <b>Fixed: </b> Resynth crashing when run on a server
+                        (Thanks to <b>Mozza7</b> for reporting this issue).
+                        <br/>
+                    </span>
+                    <span><i class="pull-left material-icons ">label</i>
+                        <b>Fixed: </b> Various other bugs and issues that cause
+                        crashes on servers.
+                        <br/>
+                    </span>
+                    <span><i class="pull-left material-icons ">label</i>
+                        <b>Fixed: </b> Dialog popup opening when blowing up
+                        Organic Ores.
                         <br/>
                     </span>
                 </div>
             </div>
-            
+
+            <h1><b>Version 1.3.2</b></h1>
+            <div class="text-left">
+                <span><i class="pull-left material-icons ">label</i>
+                    <b>Fixed: </b>Resynth crashing when Hwyla/Waila is not
+                    installed (Thanks to <b>Dragnier</b> for reporting this issue).
+                    <br/>
+                    <a href="https://github.com/Resynth-Minecraft-Mod/Resynth-Mod/issues/6">
+                        Issue:#6
+                    </a>
+                    <br/>
+                </span>
+            </div>
+
             <!--                        V1.3.1                          -->
             <h1><b>Version 1.3.1</b></h1>
             <h2>A lot of changes, fixes and improvements.</h2>
             <br>
-            
+
             <div class="text-left">
-                
+
                 <span><i class="pull-left material-icons ">label</i>
                     <b>Added: </b>Mineral Hoe (to replace the old way
                     of turning dirt into Mineral Soil).<br/>
                 </span>
-                
+
                 <span><i class="pull-left material-icons ">label</i>
                     <b>Added: </b>Yellorite Plant for Big
                     Reactors/Extreme Reactors.<br/>
                 </span>
-                
+
                 <span><i class="pull-left material-icons ">label</i>
                     <b>Added: </b>Sound effects when seeds are dropped by a
                     mob or an ore.<br/>
                 </span>
-                
+
                 <span><i class="pull-left material-icons ">label</i>
                     <b>Added: </b>Hwyla interaction.<br/>
                 </span>
-                
+
                 <br>
-                
+
                 <span><i class="pull-left material-icons ">label</i>
                     <b>Changed: </b>The size of the Mineral Crystal texture.<br/>
                 </span>
-                
+
                 <span><i class="pull-left material-icons ">label</i>
                     <b>Changed: </b>All Straw items are now called shards.<br/>
                 </span>
-                
+
                 <span><i class="pull-left material-icons ">label</i>
                     <b>Changed: </b>The textures of Straw/Shard items.<br/>
                 </span>
-                
+
                 <span><i class="pull-left material-icons ">label</i>
                     <b>Changed: </b>Mineral Soil now drops Dirt and a Mineral Crystal
                     when broken instead of the Mineral Soil block.<br/>
                 </span>
-                
+
                 <span><i class="pull-left material-icons ">label</i>
                     <b>Changed: </b>Mineral Rocks texture.<br/>
                 </span>
-                
+
                 <span><i class="pull-left material-icons ">label</i>
                     <b>Changed: </b>Mineral Rocks name to Mineral Rock.<br/>
                 </span>
-                
+
                 <span><i class="pull-left material-icons ">label</i>
                     <b>Changed: </b>Tooltips so they now provide more accurate
                     information with less spelling/grammar errors.<br/>
                 </span>
-                
+
                 <span><i class="pull-left material-icons ">label</i>
                     <b>Changed: </b>All Organic Ore blocks now smelt into the
                     original ore instead of the resource. For example,
                     Organic Iron Ore now smelts into Iron Ore instead of
                     Iron Ingots.<br/>
                 </span>
-                
+
                 <br>
-                
+
                 <span><i class="pull-left material-icons ">label</i>
                     <b>Fixed: </b>Broken name for rabbit foot seeds.<br/>
                 </span>
-                
+
                 <span><i class="pull-left material-icons ">label</i>
                     <b>Fixed: </b>Broken name for rabbit foot bulb.<br/>
                 </span>
-                
+
                 <span><i class="pull-left material-icons ">label</i>
                     <b>Fixed: </b>Small bugs and spelling errors.<br/>
                 </span>
-                
+
                 <span><i class="pull-left material-icons ">label</i>
                     <b>Fixed: </b>The logs being flooded with block and
                     item names.<br/>
                 </span>
-                
+
                 <br>
-                
+
                 <span><i class="pull-left material-icons ">label</i>
                     <b>Removed: </b>The ability to turn dirt/grass into
                     Mineral Soil with a Mineral Crystal.<br/>
                 </span>
-                
+
                 <span><i class="pull-left material-icons ">label</i>
                     <b>Removed: </b>The Mineral Soil crafting recipe.<br/>
                 </span>
-                
+
                 <br>
-                
+
                 <span><i class="pull-left material-icons ">label</i>
                     <b>Updated: </b>Forge build version from
                     <code>1.12.2-14.23.4.2705</code> to
                     <code>1.12.2-14.23.5.2768</code>.<br/>
                 </span>
-                
+
                 <br>
-                
+
                 <span><i class="pull-left material-icons ">label</i>
                     <b>Updated, fixed, refactored and cleaned: </b>The code base.
                 </span>
             </div>
         </div>
         <!--                      V1.3.1 - END                              -->
-        
+
         <div style="padding-top: 30px;">
             <h1><b>Version 1.2.3</b></h1>
             <div class="text-left">
@@ -280,98 +339,98 @@ limitations under the License.
                 </span>
             </div>
         </div>
-        
+
         <div style="padding-top: 30px;">
             <h1><b>Version 1.2.2</b></h1>
             <div class="text-left">
                 <span><i class="pull-left material-icons ">label</i>
                     <b>Added: </b>Thermal Foundation Plants.<br/>
                 </span>
-                
+
                 <span><i class="pull-left material-icons ">label</i>
                     <b>Added: </b>Thermal Foundation: Copper Plant.<br/>
                 </span>
-                
+
                 <span><i class="pull-left material-icons ">label</i>
                     <b>Added: </b>Thermal Foundation: Tin Plant.<br/>
                 </span>
-                
+
                 <span><i class="pull-left material-icons ">label</i>
                     <b>Added: </b>Thermal Foundation: Silver Plant.<br/>
                 </span>
-                
+
                 <span><i class="pull-left material-icons ">label</i>
                     <b>Added: </b>Thermal Foundation: Lead Plant.<br/>
                 </span>
-                
+
                 <span><i class="pull-left material-icons ">label</i>
                     <b>Added: </b>Thermal Foundation: Aluminium Plant.<br/>
                 </span>
-                
+
                 <span><i class="pull-left material-icons ">label</i>
                     <b>Added: </b>Thermal Foundation: Platinum Plant.<br/>
                 </span>
-                
+
                 <span><i class="pull-left material-icons ">label</i>
                     <b>Added: </b>Thermal Foundation: Mana Infused Plant.<br/>
                 </span>
-                
+
                 <span><i class="pull-left material-icons ">label</i>
                     <b>Added: </b>Thermal Foundation: Iridium Plant.<br/>
                 </span>
-                
+
                 <span><i class="pull-left material-icons ">label</i>
                     <b>Added: </b>Thermal Foundation: Nickel Plant.<br/>
                 </span>
-                
+
                 <span><i class="pull-left material-icons ">label</i>
                     <b>Rewrote: </b>Analytics.
                 </span>
             </div>
         </div>
-        
+
         <div style="padding-top: 30px;">
             <h1><b>Version 1.2.1</b></h1>
             <div class="text-left">
                 <span><i class="pull-left material-icons ">label</i>
                     <b>Added: </b>Independent Mod Plants.<br/>
                 </span>
-                
+
                 <span><i class="pull-left material-icons ">label</i>
                     <b>Added: </b>Applied Energistics 2: Certus Quarts Ore Plant.<br/>
                 </span>
-                
+
                 <span><i class="pull-left material-icons ">label</i>
                     <b>Added: </b>Forestry: Apatite Ore Plant.<br/>
                 </span>
-                
+
                 <span><i class="pull-left material-icons ">label</i>
                     <b>Added: </b>Tinkers' Construct: Cobalt Ore Plant.<br/>
                 </span>
-                
+
                 <span><i class="pull-left material-icons ">label</i>
                     <b>Added: </b>Tinkers' Construct: Ardite Ore Plant.<br/>
                 </span>
-                
+
                 <span><i class="pull-left material-icons ">label</i>
                     <b>Disabled: </b>Analytics.
                 </span>
             </div>
         </div>
-        
+
         <div style="padding-top: 30px;">
             <h1><b>Version 1.1.2</b></h1>
-            
+
             <div class="text-left">
                 <span><i class="pull-left material-icons ">label</i>
                     <b>Improved: </b>Analytics
                 </span>
             </div>
         </div>
-        
+
         <div style="padding-top: 30px;">
             <h1><b>Version 1.1.1</b></h1>
-            
+
             <div class="text-left">
                 <span><i class="pull-left material-icons ">label</i>
                     <b>Added: </b>Mystical Seed Pod.
@@ -386,12 +445,12 @@ limitations under the License.
                 </span>
             </div>
         </div>
-        
+
         <div style="padding-top: 30px;">
             <h1><b>Version 1.1.0</b></h1>
             <h2>First official release (non-beta).</h2>
             <br/>
-            
+
             <div class="text-left">
                 <span><i class="pull-left material-icons">label</i>
                     <b>Added: </b>Biochemical Plants (Mob drops).
@@ -422,10 +481,10 @@ limitations under the License.
                 <br/>
             </div>
         </div>
-        
+
         <div style="padding-top: 30px;">
             <h1><b>Version 1.0.2</b></h1>
-            
+
             <div class="text-left">
                 <span><i class="pull-left material-icons ">label</i>
                     <b>Changed: </b>Configuration values relating to chances
@@ -443,10 +502,10 @@ limitations under the License.
                 </span>
             </div>
         </div>
-        
+
         <div style="padding-top: 30px;">
             <h1><b>Version 1.0.1</b></h1>
-            
+
             <div class="text-left">
                 <span><i class="pull-left material-icons ">label</i>
                     <b>Fixed: </b>A bug where Organic Ore blocks would not drop
@@ -454,16 +513,16 @@ limitations under the License.
                 </span>
             </div>
         </div>
-        
+
         <div style="padding-top: 30px;">
             <h1><b>Version 1.0</b></h1>
             <h2>Initial Release</h2>
-            
+
         </div>
-        
+
         <!--                             End                                -->
     </div>
-    
+
     <!--                                Footer                              -->
     <footer class="page-footer font-small grey pt-4">
         <div class="container-fluid text-center text-md-left">
@@ -522,5 +581,5 @@ limitations under the License.
             © 2018-2019 Copyright: Ki11er_wolf
         </div>
     </footer> 
-    
+
 </body>
