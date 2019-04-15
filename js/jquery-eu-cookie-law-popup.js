@@ -204,8 +204,8 @@ $.fn.euCookieLawPopup = (function() {
 
 			// No need to display this if user already accepted the policy
 			if (userAlreadyAcceptedCookies()) {
-        //$(document).trigger("user_cookie_already_accepted", {'consent': true});
-				//return;
+        $(document).trigger("user_cookie_already_accepted", {'consent': true});
+				return;
 			}
 
 			// We should initialise only once
