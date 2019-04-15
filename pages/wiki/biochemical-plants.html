@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<!--
+Copyright 2019 Ki11er_wolf.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+<head lang="en">
+    <!--                       Tab Title & Logo                             -->
+    <title>Biochemical Plants - Resynth Mod Wiki</title>
+    <link rel="icon" href="../../images/icon.png" type="image/png">
+
+    <!--Internal css and js.-->
+    <link rel="stylesheet" type="text/css" href="wiki.css">
+
+    <!--                            SEO                                     -->
+    <meta name="keywords" content="Resynth, Resynth Wiki, Wiki, Resynth Help,
+          Help, Resynth Mod, Growable Ores, Growable Mob Drops, Biochemical Plants,
+          1.12.2, 1.13.2, Mob Drop Plants, List of biochemical plants">
+
+    <meta name="description" content="Biochemical plants are one of three
+          different Resynth plant types. They're used to grow all the different
+          items dropped by mobs.">
+
+    <!--                         Meta Tags                                  -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--                           STYLE                                    -->
+    <!-- JQuery and Bootstrap-->
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script
+        src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+
+    <script
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+    </script>
+
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.1.1/css/mdb.min.css" rel="stylesheet">
+
+    <!--                       Google Analytics                             -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics Site Tag-->
+    <script
+        async src="https://www.googletagmanager.com/gtag/js?id=UA-127648959-1">
+    </script>
+
+    <!-- Google Analytics Script -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-127648959-1');
+        // Set the user ID using signed-in user_id.
+        gtag('set', {'user_id': 'USER_ID'});
+    </script>
+</head>
+
+<body>
+    <!--                           Navigation Bar                           -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" style="font-size: 14px;
+         min-height: 70px;">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!--                    Logo                                -->
+                <a class="navbar-brand" style="margin-top:8px;" href="#">
+                    <img alt="Resynth Wiki Logo" src="../../images/wiki/logo.png">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav" style="margin-top:13px;">
+                    <!--                Links                               -->
+                    <li >
+                        <a href="https://resynth-minecraft-mod.github.io/">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <b><u>Wiki</u></b>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://minecraft.curseforge.com/projects/resynth/files">
+                            Downloads
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://resynth-minecraft-mod.github.io/pages/changelog/changelog.html">
+                            Changelog
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://minecraft.curseforge.com/projects/resynth">
+                            CurseForge
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Resynth-Minecraft-Mod/Resynth-Mod">
+                            Source Code
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://resynth-minecraft-mod.github.io/pages/faq/faq.html">
+                            FAQ
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://resynth-minecraft-mod.github.io/pages/credits/credits.html">
+                            Credits
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.apache.org/licenses/LICENSE-2.0">
+                            License
+                        </a>
+                    </li>
+                </ul>
+                <!--                   Download Button                      -->
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a title="Download Latest Release"
+                           href="https://minecraft.curseforge.com/projects/resynth/files/latest">
+                            <span class="btn btn-primary glyphicon glyphicon-download"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--                                  Page                              -->
+    <div id="page" class="container-fluid full-width has-inner text-center">
+        <div class="row">
+            <!--            Page Navigator / Table of content               -->
+            <div id="table-of-content" class="col-lg-1">
+                <b style="font-size: 20px;">Table of content</b>
+                <br/>
+                <button id="toc-toggle" class="btn btn-primary">Hide table of content</button>
+                <div id="toc-pages">
+                    <br/>
+                    <br/>
+                    <b style="font-size: 18px;">Basics</b>
+                    <br/>
+                    <br/>
+                    <!-- Pages -->
+                    <a href="home.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Home
+                        </div>
+                    </a>
+                    <a href="getting-started.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Getting Started
+                        </div>
+                    </a>
+                    <a href="concepts.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Concepts
+                        </div>
+                    </a>
+                    <a href="getting-seeds.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Getting Seeds and Resources
+                        </div>
+                    </a>
+                    <a href="crafting-recipes.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Crafting Recipes
+                        </div>
+                    </a>
+                    <a href="configuring.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Configuring the Mod
+                        </div>
+                    </a>
+                    <a href="integration.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Integration with Other Mods
+                        </div>
+                    </a>
+                    <!-- Items -->
+                    <br/>
+                    <br/>
+                    <b style="font-size: 18px;">Items</b>
+                    <a href="mineral-rock.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Mineral Rock
+                        </div>
+                    </a>
+                    <a href="dense-mineral-rock.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Dense Mineral Rock
+                        </div>
+                    </a>
+                    <a href="mineral-crystal.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Mineral Crystal
+                        </div>
+                    </a>
+                    <a href="mineral-hoe.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Mineral Hoe
+                        </div>
+                    </a>
+                    <a href="seeds.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Seeds
+                        </div>
+                    </a>
+                    <a href="shards.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Shards
+                        </div>
+                    </a>
+                    <a href="bulbs.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Bulbs
+                        </div>
+                    </a>
+                    <!-- Blocks -->
+                    <br/>
+                    <br/>
+                    <b style="font-size: 18px;">Blocks</b>
+                    <a href="mineral-soil.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Mineral Soil
+                        </div>
+                    </a>
+                    <a href="mineral-stone.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Mineral Stone
+                        </div>
+                    </a>
+                    <a href="organic-ore.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Organic Ore
+                        </div>
+                    </a>
+                    <br/>
+                    <br/>
+                    <!-- Plants -->
+                    <b style="font-size: 20px;">Plant Types</b>
+                    <a href="crystalline-plants.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Crystalline Plants
+                        </div>
+                    </a>
+                    <a href="metallic-plants.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Metallic Plants
+                        </div>
+                    </a>
+                    <a href="#" class="page-link">
+                        <div class="page-nav-btn active-page">
+                            Biochemical Plants
+                        </div>
+                    </a>
+                    <br/>
+                    <b style="font-size: 18px;">Other Plants</b>
+                    <br/>
+                    <a href="mystical-seed-pod.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Mystical Seed Pod
+                        </div>
+                    </a>
+                    <!-- Back to top button -->
+                    <br/>
+                    <a href="#" class="btn btn-primary" title="Back to top">↑</a>
+                    <br/>
+                </div>
+            </div>
+            <!--                        WIKI PAGE                           -->
+            <div id="wiki-page" class="col-lg-8">
+                <div class="col-md-8 text-left">
+                    <div class="title">
+                        <b>Biochemical Plants</b>
+                    </div>
+                    <!-- Opening Text -->
+                    <div class="wiki-paragraph">
+                        Metallic plants are one of three Resynth plant types.
+                        They grow all the different items that are dropped
+                        by mobs in the world.
+                        <br/><br/>
+                        They resemble a bulb growing on a
+                        short stem and can be harvested when fully grown by
+                        right-clicking the plant. When harvested, the plant will
+                        return to a growth stage of 4 out of 8 instead of
+                        regrowing completely and a Bulb will be popped off the
+                        plant. This bulb can then be smelted to get the final
+                        resource or thrown (by right-clicking with the item in
+                        hand) for a chance at getting seeds from the bulb.
+                        <br/><br/>
+                        As with any Resynth plant, when broken, the plant will
+                        only drop 1 Seeds item - no more, no less.
+                    </div>
+                </div>
+
+                <!--                        INFO BOX                        -->
+                <div id="info-box" class="col-md-4">
+                    <b id="info-box-title">Biochemical Plants</b>
+                    <div>
+                        <img id="info-box-image" alt="info-box-image" 
+                             src="../../images/wiki/textures/biochemical-plant.gif">
+                    </div>
+                    <i>Texture for the Biochemical Spiders Eye Plant.</i>
+                    <div class="row">
+                        <div class="info-box-row">
+                            <div class="col-sm-6">
+                                Grows:
+                            </div>
+                            <div class="col-sm-6">
+                                Bulbs
+                            </div>
+                        </div>
+                        <br/>
+                        <div class="info-box-row">
+                            <div class="col-sm-6">
+                                Added In:
+                            </div>
+                            <div class="col-sm-6">
+                                <code>1.1.0</code>
+                            </div>
+                        </div>
+                        <br/>
+                        <div class="info-box-row" style="border-bottom: 0px;">
+                            <div class="col-sm-6">
+                                Seeds Obtained By:
+                            </div>
+                            <div class="col-sm-6">
+                                Killing the mob.
+                            </div>
+                        </div>
+                        <br/>
+                        <div class="info-box-row" style="border-top: 0px;">
+                            <div class="col-sm-6">
+                                or
+                            </div>
+                            <div class="col-sm-6">
+                                Throwing the bulb.
+                            </div>
+                        </div>
+                        <div class="dsktop">
+                            <br/><br/>
+                            <br/><br/>
+                        </div>
+                    </div>
+                </div>
+
+                <!--                      WIKI CONTENT                      -->
+                <div class="row text-left">
+                    <div class="title">
+                        <b>List of Biochemical Plants</b>
+                    </div>
+
+                    <div class="wiki-paragraph">
+                        <img src="../../images/wiki/pictures/biochemical-plants.png"
+                             alt="A field of biochemical plants."
+                             class="wiki-image">
+                        <br/>
+                        <i style="font-size:14px;"> A field of biochemical plants.</i>
+                        <br/><br/>
+                        The following table provides the complete list
+                        of Biochemical plants along with some additional
+                        information.
+                        <br/><br/>
+                        <table>
+                            <tr>
+                                <th>Plant Name</th>
+                                <th>Final Resource</th>
+                                <th>Version Added</th>
+                                <th>Enabled by Mod</th>
+                            </tr>
+                            <tr>
+                                <td>Blaze Plant</td>
+                                <td>Blaze Rod</td>
+                                <td>1.1.0</td>
+                                <td>Vanilla Minecraft</td>
+                            </tr>
+                            <tr>
+                                <td>Bone Plant</td>
+                                <td>Bone</td>
+                                <td>1.1.0</td>
+                                <td>Vanilla Minecraft</td>
+                            </tr>
+                            <tr>
+                                <td>Ender Plant</td>
+                                <td>Ender Pearl</td>
+                                <td>1.1.0</td>
+                                <td>Vanilla Minecraft</td>
+                            </tr>
+                            <tr>
+                                <td>Feather Plant</td>
+                                <td>Feather</td>
+                                <td>1.1.0</td>
+                                <td>Vanilla Minecraft</td>
+                            </tr>
+                            <tr>
+                                <td>Flesh Plant</td>
+                                <td>Rotten Flesh</td>
+                                <td>1.1.0</td>
+                                <td>Vanilla Minecraft</td>
+                            </tr>
+                            <tr>
+                                <td>Ghast Plant</td>
+                                <td>Ghast Tear</td>
+                                <td>1.1.0</td>
+                                <td>Vanilla Minecraft</td>
+                            </tr>
+                            <tr>
+                                <td>Gunpowder Plant</td>
+                                <td>Gunpowder</td>
+                                <td>1.1.0</td>
+                                <td>Vanilla Minecraft</td>
+                            </tr>
+                            <tr>
+                                <td>Ink Plant</td>
+                                <td>Ink Sac</td>
+                                <td>1.1.0</td>
+                                <td>Vanilla Minecraft</td>
+                            </tr>
+                            <tr>
+                                <td>Leather Plant</td>
+                                <td>Leather</td>
+                                <td>1.1.0</td>
+                                <td>Vanilla Minecraft</td>
+                            </tr>
+                            <tr>
+                                <td>Netherstar Plant</td>
+                                <td>Netherstar</td>
+                                <td>1.1.0</td>
+                                <td>Vanilla Minecraft</td>
+                            </tr>
+                            <tr>
+                                <td>Prismarine Shard Plant</td>
+                                <td>Prismarine Shard</td>
+                                <td>1.1.0</td>
+                                <td>Vanilla Minecraft</td>
+                            </tr>
+                            <tr>
+                                <td>Prismarine Crystal Plant</td>
+                                <td>Prismarine Crystal</td>
+                                <td>1.1.0</td>
+                                <td>Vanilla Minecraft</td>
+                            </tr>
+                            <tr>
+                                <td>Rabbit Foot Plant</td>
+                                <td>Rabbits Foot</td>
+                                <td>1.1.0</td>
+                                <td>Vanilla Minecraft</td>
+                            </tr>
+                            <tr>
+                                <td>Shulker Plant</td>
+                                <td>Shulker Shell</td>
+                                <td>1.1.0</td>
+                                <td>Vanilla Minecraft</td>
+                            </tr>
+                            <tr>
+                                <td>Slime Plant</td>
+                                <td>Slime Ball</td>
+                                <td>1.1.0</td>
+                                <td>Vanilla Minecraft</td>
+                            </tr>
+                            <tr>
+                                <td>Spiders Eye Plant</td>
+                                <td>Spiders Eye</td>
+                                <td>1.1.0</td>
+                                <td>Vanilla Minecraft</td>
+                            </tr>
+                            <tr>
+                                <td>String Plant</td>
+                                <td>String</td>
+                                <td>1.1.0</td>
+                                <td>Vanilla Minecraft</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <!--                    Content disclaimer                  -->
+                <div class="legal-footer">
+                    This wiki is licensed under the 
+                    <a href="https://www.apache.org/licenses/LICENSE-2.0">
+                        Apache License, Version 2.0
+                    </a>. Although its <b>content</b> may be used, copied, modified,
+                    and/or distributed without restriction.
+                    <br/>
+                    Game content and materials are trademarks 
+                    and copyrights of their respective publisher
+                    and its licensors. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--                                Footer                              -->
+    <footer class="page-footer font-small grey pt-4">
+        <div class="container-fluid text-center text-md-left">
+            <div class="row">
+                <div class="col-md-6 mt-md-0 mt-3">
+                    <h5 class="text-uppercase">Resynth</h5>
+                    <p></p>
+                    The Resynth mod for Minecraft, the website and its content
+                    are license under the
+                    <a class="btn" href="https://www.apache.org/licenses/LICENSE-2.0">
+                        Apache License, Version 2.0.
+                    </a>.
+                    All Resynth content is open source and hosted on github.
+                    <!--                Disclaimer                          -->
+                    <p></p>
+                    <b>
+                        THE RESYNTH MOD, WEBSITE AND ITS RESOURCES ARE PROVIDED
+                        AS IS WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND.
+                    </b>
+                    <br/>
+                    For more information, view
+                    <a class="btn" href="https://www.apache.org/licenses/LICENSE-2.0#no-warranty">
+                        Clause 7
+                    </a> of the Apache License, Version 2.0.
+                </div>
+                <!--                        Links                           -->
+                <h5 class="text-uppercase">Miscellaneous Links</h5>
+                <hr class="clearfix w-100 d-md-none pb-3">
+                <div class="col-md-6 mb-md-0 mb-6">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="https://github.com/Resynth-Minecraft-Mod/Resynth-Mod/issues">
+                                Report a Bug/Issue
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.minecraftforum.net/forums/mapping-and-modding-java-edition/minecraft-mods/2927861-resynth-growable-ores-mob-drops-and-resources">
+                                The Minecraft Forums Project Page
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/Resynth-Minecraft-Mod/Resynth-Minecraft-Mod.github.io">
+                                Website Github Project Page
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.planetminecraft.com/mod/resynth/">
+                                PlanetMinecraft Project Page
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright text-center py-3">
+            © 2019 Copyright: Ki11er_wolf
+        </div>
+    </footer>
+
+    <!--                          Table of content script                   -->
+    <script src="wiki.js"></script>
+</body>

@@ -1,0 +1,162 @@
+/*
+Copyright 2019 Ki11er_wolf.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+*/
+
+/*
+    The css for each wiki page.
+*/
+
+#table-of-content {
+    min-width: 330px;
+    margin-left: 15px;
+    border-right: 1px solid lightgrey;
+}
+
+#page {
+    padding-top: 90px;
+}
+
+#wiki-page {
+    border-top: 1px solid lightgrey;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-top: 20px;
+}
+
+#info-box {
+    background-color: #f8f8f8;
+    margin-top: 20px;
+    border: 1px solid lightgrey;
+    margin-bottom: 40px;
+}
+
+#info-box-image {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid lightgrey;
+    width: 130px;
+    height: 130px;
+}
+
+#info-box-title {
+    font-size: 17px;
+    color: cornflowerblue;
+}
+
+.page-nav-btn:hover {
+    background-color: lightgrey;
+}
+
+.page-nav-btn {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 0;
+}
+
+.page-link {
+    color: black;
+}
+
+.title {
+    color: darkblue;
+    font-size: 32px;
+    border-bottom: 1px solid lightgrey;
+}
+
+.info-box-row {
+    border-top: 1px solid lightgrey;
+    border-bottom: 0 solid lightgrey;
+}
+
+.wiki-paragraph {
+    padding-top: 10px;
+    font-size: 18px;
+}
+
+.legal-footer {
+    margin-top: 50px;
+    border-bottom: 1px solid lightgrey;
+}
+
+.active-page {
+    background-color: #f2f2f2;
+}
+
+.wiki-section {
+    padding-bottom: 20px;
+}
+
+.sub-header {
+    font-size: 22px;
+    color: darkgreen;
+    border-bottom: 1px solid lightgrey;
+}
+
+.wiki-image {
+    height: auto;
+    box-shadow: 0 3px 10px rgba(0,0,0,.23),
+        0 3px 10px rgba(0,0,0,.16);
+}
+
+.recipe-img-box {
+    padding-bottom: 20px;
+    color: green;
+}
+
+.img-shadow {
+    box-shadow: 0 3px 10px rgba(0,0,0,.23),
+        0 3px 10px rgba(0,0,0,.16);
+}
+
+/*All Tables*/
+table {
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid lightgrey;
+    border-collapse: collapse;
+}
+
+table tr:nth-child(even) {
+    background-color: white;
+}
+
+table tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+table th {
+    background-color: #e1e1e1;
+    color: black;
+}
+
+/* Configuration page table css */
+.table-header {
+    padding: 10px;
+}
+
+.table-cell {
+    padding: 10px;
+}
+
+/* css for displaying ranges in tables */
+.range-min {
+    color: red;
+}
+
+.range-max {
+    color: blue;
+}

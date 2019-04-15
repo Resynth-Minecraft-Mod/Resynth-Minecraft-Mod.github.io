@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<!--
+Copyright 2019 Ki11er_wolf.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+<head lang="en">
+    <!--                       Tab Title & Logo                             -->
+    <title>Concepts - Resynth Mod Wiki</title>
+    <link rel="icon" href="../../images/icon.png" type="image/png">
+
+    <!--Internal css and js.-->
+    <link rel="stylesheet" type="text/css" href="wiki.css">
+
+    <!--                            SEO                                     -->
+    <meta name="keywords" content="Resynth, Resynth Wiki, Wiki, Resynth Help,
+          Help, Resynth Mod, Growable Ores, Growable Mob Drops, Concepts,
+          Definitions, Explanations, 1.12.2">
+
+    <meta name="description" content="A list of definitions and descriptions
+          for resynth topics, blocks, items, mechanics and plants.">
+
+    <!--                         Meta Tags                                  -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--                           STYLE                                    -->
+    <!-- JQuery and Bootstrap-->
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script
+        src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+
+    <script
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+    </script>
+
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.1.1/css/mdb.min.css" rel="stylesheet">
+
+    <!--                       Google Analytics                             -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics Site Tag-->
+    <script
+        async src="https://www.googletagmanager.com/gtag/js?id=UA-127648959-1">
+    </script>
+
+    <!-- Google Analytics Script -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-127648959-1');
+        // Set the user ID using signed-in user_id.
+        gtag('set', {'user_id': 'USER_ID'});
+    </script>
+</head>
+
+<body>
+    <!--                           Navigation Bar                           -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" style="font-size: 14px;
+         min-height: 70px;">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!--                    Logo                                -->
+                <a class="navbar-brand" style="margin-top:8px;" href="#">
+                    <img alt="Resynth Wiki Logo" src="../../images/wiki/logo.png">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav" style="margin-top:13px;">
+                    <!--                Links                               -->
+                    <li >
+                        <a href="https://resynth-minecraft-mod.github.io/">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <b><u>Wiki</u></b>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://minecraft.curseforge.com/projects/resynth/files">
+                            Downloads
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://resynth-minecraft-mod.github.io/pages/changelog/changelog.html">
+                            Changelog
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://minecraft.curseforge.com/projects/resynth">
+                            CurseForge
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Resynth-Minecraft-Mod/Resynth-Mod">
+                            Source Code
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://resynth-minecraft-mod.github.io/pages/faq/faq.html">
+                            FAQ
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://resynth-minecraft-mod.github.io/pages/credits/credits.html">
+                            Credits
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.apache.org/licenses/LICENSE-2.0">
+                            License
+                        </a>
+                    </li>
+                </ul>
+                <!--                   Download Button                      -->
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a title="Download Latest Release"
+                           href="https://minecraft.curseforge.com/projects/resynth/files/latest">
+                            <span class="btn btn-primary glyphicon glyphicon-download"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--                                  Page                              -->
+    <div id="page" class="container-fluid full-width has-inner text-center">
+        <div class="row">
+            <!--            Page Navigator / Table of content               -->
+            <div id="table-of-content" class="col-lg-1">
+                <b style="font-size: 20px;">Table of content</b>
+                <br/>
+                <button id="toc-toggle" class="btn btn-primary">Hide table of content</button>
+                <div id="toc-pages">
+                    <br/>
+                    <br/>
+                    <b style="font-size: 18px;">Basics</b>
+                    <br/>
+                    <br/>
+                    <!-- Pages -->
+                    <a href="home.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Home
+                        </div>
+                    </a>
+                    <a href="getting-started.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Getting Started
+                        </div>
+                    </a>
+                    <a href="#" class="page-link">
+                        <div class="page-nav-btn active-page">
+                            Concepts
+                        </div>
+                    </a>
+                    <a href="getting-seeds.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Getting Seeds and Resources
+                        </div>
+                    </a>
+                    <a href="crafting-recipes.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Crafting Recipes
+                        </div>
+                    </a>
+                    <a href="configuring.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Configuring the Mod
+                        </div>
+                    </a>
+                    <a href="integration.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Integration with Other Mods
+                        </div>
+                    </a>
+                    <!-- Items -->
+                    <br/>
+                    <br/>
+                    <b style="font-size: 18px;">Items</b>
+                    <a href="mineral-rock.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Mineral Rock
+                        </div>
+                    </a>
+                    <a href="dense-mineral-rock.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Dense Mineral Rock
+                        </div>
+                    </a>
+                    <a href="mineral-crystal.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Mineral Crystal
+                        </div>
+                    </a>
+                    <a href="mineral-hoe.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Mineral Hoe
+                        </div>
+                    </a>
+                    <a href="seeds.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Seeds
+                        </div>
+                    </a>
+                    <a href="shards.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Shards
+                        </div>
+                    </a>
+                    <a href="bulbs.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Bulbs
+                        </div>
+                    </a>
+                    <!-- Blocks -->
+                    <br/>
+                    <br/>
+                    <b style="font-size: 18px;">Blocks</b>
+                    <a href="mineral-soil.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Mineral Soil
+                        </div>
+                    </a>
+                    <a href="mineral-stone.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Mineral Stone
+                        </div>
+                    </a>
+                    <a href="organic-ore.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Organic Ore
+                        </div>
+                    </a>
+                    <br/>
+                    <br/>
+                    <!-- Plants -->
+                    <b style="font-size: 20px;">Plant Types</b>
+                    <a href="crystalline-plants.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Crystalline Plants
+                        </div>
+                    </a>
+                    <a href="metallic-plants.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Metallic Plants
+                        </div>
+                    </a>
+                    <a href="biochemical-plants.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Biochemical Plants
+                        </div>
+                    </a>
+                    <br/>
+                    <b style="font-size: 18px;">Other Plants</b>
+                    <br/>
+                    <a href="mystical-seed-pod.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Mystical Seed Pod
+                        </div>
+                    </a>
+                    <!-- Back to top button -->
+                    <br/>
+                    <a href="#" class="btn btn-primary" title="Back to top">↑</a>
+                    <br/>
+                </div>
+            </div>
+            <!--                        WIKI PAGE                           -->
+            <div id="wiki-page" class="col-lg-8">
+                <div class="col-md-8 text-left">
+                    <div class="title">
+                        <b>Concepts</b>
+                    </div>
+                    <!-- Opening Text -->
+                    <div class="wiki-paragraph">
+                        Some concepts, mechanics and words may not be overly
+                        clear in Resynth. This Wiki page servers to define
+                        unclear concepts and give a clear description on various
+                        Resynth topics used throughout the mod and the Wiki.
+                        <br/><br/>
+                        If any term or topic in the Wiki is unclear and a page
+                        for the topic cannot be found, this is a good place to
+                        look.
+                    </div>
+                </div>
+
+                <!--                        INFO BOX                        -->
+                <div id="info-box" class="col-md-4">
+                    <b id="info-box-title">Resynth - Concepts</b>
+                    <div>
+                        <img id="info-box-image" alt="info-box-image" 
+                             src="../../images/wiki/textures/mineral-crystal.png">
+                    </div>
+                    <i>Mineral Crystal texture.</i>
+                    <div class="row">
+                        <br/>
+                    </div>
+                </div>
+
+                <!--                      WIKI CONTENT                      -->
+                <div id="plant-types" class="row text-left">
+                    <div class="title">
+                        <b>Plant Types</b>
+                    </div>
+
+                    <div class="wiki-paragraph">
+                        Resynth has 3 separate plants (or plant types) for
+                        growing the different resource types in Minecraft. Each
+                        plant type has its own seeds, produce and ways of
+                        obtaining seeds.
+                        <br/><br/>
+                        <a href="crystalline-plants.html"><b>Crystalline</b></a>
+                        plant types grow resources that are
+                        normally dropped by ore (e.g. diamond and coal). This
+                        does <b>NOT</b> include Iron and Gold as the ore block
+                        is dropped rather than the resource. The plants look
+                        and act similar to Minecraft Wheat plants. The seeds
+                        are dropped randomly by mining the ores.
+                        <br/><br/>
+                        <a href="metallic-plants.html"><b>Metallic</b></a>
+                        plant types grow ore blocks that spawn
+                        in the world (e.g. gold and iron). The plants produce
+                        can be smelted back into the ore. The seeds are obtained
+                        randomly by blowing the ore blocks up with TNT. These
+                        plants act similar to Minecraft Melon plants.
+                        <br/><br/>
+                        <a href="biochemical-plants.html"><b>Biochemical</b></a>
+                        plant types grow mob drops. The seeds
+                        are obtained by the killing the mob that would normally
+                        drop the resource. These plants have no <i>similar</i>
+                        Minecraft plant. When fully grown, they can be harvested
+                        by right clicking. When harvested, they return to a growth
+                        stage of 4 instead of 1 like Crystalline plant types.
+                        The produce can be thrown for a chance at getting more
+                        seeds.
+                        
+                        <br/><br/>
+                        <img src="../../images/wiki/pictures/plant-types.png"
+                             alt="The three different types of plants."
+                             class="wiki-image">
+                        <br/>
+                        <i style="font-size:14px;">
+                            Biochemical, Crystalline and Metallic plant types.</i>
+                    </div>
+                </div>
+                <br/>
+                <div class="row text-left">
+                    <div class="title">
+                        <b>Produce</b>
+                    </div>
+
+                    <div class="wiki-paragraph">
+                        Produce is the name given to the resources obtained
+                        from Resynth plants. Organic Ore is the produce type
+                        for Metallic plants, Shards are the produce type
+                        for Crystalline plants and Bulbs are the produce type
+                        of Biochemical plants. The produce of any plant can be
+                        smelted to get the resource (or final resource). For
+                        example: Diamond Shards can be smelted into Diamonds,
+                        Organic Iron Ore can be smelted into iron ore and
+                        Ink Bulbs can be smelted into ink sacs. Seeds are obtained
+                        from the produce differently depending on the produce
+                        type.
+                    </div>
+                </div>
+                <br/>
+                <div class="row text-left">
+                    <div class="title">
+                        <b>Source</b>
+                    </div>
+
+                    <div class="wiki-paragraph">
+                        The term source is given the mob or ore that drops
+                        seeds for a plant. The <i>source ore</i> is the ore
+                        that will drop the seeds needed to grow more of the ores.
+                        The <i>source mob</i> is the mob that drops seeds for
+                        a particular mob drop.
+                    </div>
+                </div>
+                <br/>
+                <div class="row text-left">
+                    <div class="title">
+                        <b>Resource</b>
+                    </div>
+
+                    <div class="wiki-paragraph">
+                        The word <b>resource</b> is usually used to refer
+                        to gems (diamonds and emeralds), although not all gems
+                        are resources. Anything dropped by an ore (that does not
+                        need smelting) is considered a resource. So following
+                        that logic, diamonds, coal, emeralds, glowstone and
+                        nether quartz are all resources but iron and gold is not.
+                    </div>
+                </div>
+                
+                <!--                    Content disclaimer                  -->
+                <div class="legal-footer">
+                    This wiki is licensed under the 
+                    <a href="https://www.apache.org/licenses/LICENSE-2.0">
+                        Apache License, Version 2.0
+                    </a>. Although its <b>content</b> may be used, copied, modified,
+                    and/or distributed without restriction.
+                    <br/>
+                    Game content and materials are trademarks 
+                    and copyrights of their respective publisher
+                    and its licensors. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--                                Footer                              -->
+    <footer class="page-footer font-small grey pt-4">
+        <div class="container-fluid text-center text-md-left">
+            <div class="row">
+                <div class="col-md-6 mt-md-0 mt-3">
+                    <h5 class="text-uppercase">Resynth</h5>
+                    <p></p>
+                    The Resynth mod for Minecraft, the website and its content
+                    are license under the
+                    <a class="btn" href="https://www.apache.org/licenses/LICENSE-2.0">
+                        Apache License, Version 2.0.
+                    </a>.
+                    All Resynth content is open source and hosted on github.
+                    <!--                Disclaimer                          -->
+                    <p></p>
+                    <b>
+                        THE RESYNTH MOD, WEBSITE AND ITS RESOURCES ARE PROVIDED
+                        AS IS WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND.
+                    </b>
+                    <br/>
+                    For more information, view
+                    <a class="btn" href="https://www.apache.org/licenses/LICENSE-2.0#no-warranty">
+                        Clause 7
+                    </a> of the Apache License, Version 2.0.
+                </div>
+                <!--                        Links                           -->
+                <h5 class="text-uppercase">Miscellaneous Links</h5>
+                <hr class="clearfix w-100 d-md-none pb-3">
+                <div class="col-md-6 mb-md-0 mb-6">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="https://github.com/Resynth-Minecraft-Mod/Resynth-Mod/issues">
+                                Report a Bug/Issue
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.minecraftforum.net/forums/mapping-and-modding-java-edition/minecraft-mods/2927861-resynth-growable-ores-mob-drops-and-resources">
+                                The Minecraft Forums Project Page
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/Resynth-Minecraft-Mod/Resynth-Minecraft-Mod.github.io">
+                                Website Github Project Page
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.planetminecraft.com/mod/resynth/">
+                                PlanetMinecraft Project Page
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright text-center py-3">
+            © 2019 Copyright: Ki11er_wolf
+        </div>
+    </footer>
+
+    <!--                          Table of content script                   -->
+    <script src="wiki.js"></script>
+</body>

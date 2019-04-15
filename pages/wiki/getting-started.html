@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<!--
+Copyright 2019 Ki11er_wolf.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+<head lang="en">
+    <!--                       Tab Title & Logo                             -->
+    <title>Getting Started - Resynth Mod Wiki</title>
+    <link rel="icon" href="../../images/icon.png" type="image/png">
+
+    <!--Internal css and js.-->
+    <link rel="stylesheet" type="text/css" href="wiki.css">
+
+    <!--                            SEO                                     -->
+    <meta name="keywords" content="Resynth, Resynth Wiki, Wiki, Resynth Help,
+          Help, Resynth Mod, Growable Ores, Growable Mob Drops, Getting Started,
+          1.12.2">
+
+    <meta name="description" content="All you need to know to get started with
+          Resynth and get some plants growing.">
+
+    <!--                         Meta Tags                                  -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--                           STYLE                                    -->
+    <!-- JQuery and Bootstrap-->
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script
+        src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+
+    <script
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+    </script>
+
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.1.1/css/mdb.min.css" rel="stylesheet">
+
+    <!--                       Google Analytics                             -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics Site Tag-->
+    <script
+        async src="https://www.googletagmanager.com/gtag/js?id=UA-127648959-1">
+    </script>
+
+    <!-- Google Analytics Script -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-127648959-1');
+        // Set the user ID using signed-in user_id.
+        gtag('set', {'user_id': 'USER_ID'});
+    </script>
+</head>
+
+<body>
+    <!--                           Navigation Bar                           -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" style="font-size: 14px;
+         min-height: 70px;">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!--                    Logo                                -->
+                <a class="navbar-brand" style="margin-top:8px;" href="#">
+                    <img alt="Resynth Wiki Logo" src="../../images/wiki/logo.png">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav" style="margin-top:13px;">
+                    <!--                Links                               -->
+                    <li >
+                        <a href="https://resynth-minecraft-mod.github.io/">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <b><u>Wiki</u></b>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://minecraft.curseforge.com/projects/resynth/files">
+                            Downloads
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://resynth-minecraft-mod.github.io/pages/changelog/changelog.html">
+                            Changelog
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://minecraft.curseforge.com/projects/resynth">
+                            CurseForge
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Resynth-Minecraft-Mod/Resynth-Mod">
+                            Source Code
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://resynth-minecraft-mod.github.io/pages/faq/faq.html">
+                            FAQ
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://resynth-minecraft-mod.github.io/pages/credits/credits.html">
+                            Credits
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.apache.org/licenses/LICENSE-2.0">
+                            License
+                        </a>
+                    </li>
+                </ul>
+                <!--                   Download Button                      -->
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a title="Download Latest Release"
+                           href="https://minecraft.curseforge.com/projects/resynth/files/latest">
+                            <span class="btn btn-primary glyphicon glyphicon-download"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--                                  Page                              -->
+    <div id="page" class="container-fluid full-width has-inner text-center">
+        <div class="row">
+            <!--            Page Navigator / Table of content               -->
+            <div id="table-of-content" class="col-lg-1">
+                <b style="font-size: 20px;">Table of content</b>
+                <br/>
+                <button id="toc-toggle" class="btn btn-primary">Hide table of content</button>
+                <div id="toc-pages">
+                    <br/>
+                    <br/>
+                    <b style="font-size: 18px;">Basics</b>
+                    <br/>
+                    <br/>
+                    <!-- Pages -->
+                    <a href="home.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Home
+                        </div>
+                    </a>
+                    <a href="#" class="page-link">
+                        <div class="page-nav-btn active-page">
+                            Getting Started
+                        </div>
+                    </a>
+                    <a href="concepts.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Concepts
+                        </div>
+                    </a>
+                    <a href="getting-seeds.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Getting Seeds and Resources
+                        </div>
+                    </a>
+                    <a href="crafting-recipes.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Crafting Recipes
+                        </div>
+                    </a>
+                    <a href="configuring.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Configuring the Mod
+                        </div>
+                    </a>
+                    <a href="integration.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Integration with Other Mods
+                        </div>
+                    </a>
+                    <!-- Items -->
+                    <br/>
+                    <br/>
+                    <b style="font-size: 18px;">Items</b>
+                    <a href="mineral-rock.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Mineral Rock
+                        </div>
+                    </a>
+                    <a href="dense-mineral-rock.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Dense Mineral Rock
+                        </div>
+                    </a>
+                    <a href="mineral-crystal.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Mineral Crystal
+                        </div>
+                    </a>
+                    <a href="mineral-hoe.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Mineral Hoe
+                        </div>
+                    </a>
+                    <a href="seeds.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Seeds
+                        </div>
+                    </a>
+                    <a href="shards.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Shards
+                        </div>
+                    </a>
+                    <a href="bulbs.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Bulbs
+                        </div>
+                    </a>
+                    <!-- Blocks -->
+                    <br/>
+                    <br/>
+                    <b style="font-size: 18px;">Blocks</b>
+                    <a href="mineral-soil.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Mineral Soil
+                        </div>
+                    </a>
+                    <a href="mineral-stone.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Mineral Stone
+                        </div>
+                    </a>
+                    <a href="organic-ore.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Organic Ore
+                        </div>
+                    </a>
+                    <br/>
+                    <br/>
+                    <!-- Plants -->
+                    <b style="font-size: 20px;">Plant Types</b>
+                    <a href="crystalline-plants.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Crystalline Plants
+                        </div>
+                    </a>
+                    <a href="metallic-plants.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Metallic Plants
+                        </div>
+                    </a>
+                    <a href="biochemical-plants.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Biochemical Plants
+                        </div>
+                    </a>
+                    <br/>
+                    <b style="font-size: 18px;">Other Plants</b>
+                    <br/>
+                    <a href="mystical-seed-pod.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Mystical Seed Pod
+                        </div>
+                    </a>
+                    <!-- Back to top button -->
+                    <br/>
+                    <a href="#" class="btn btn-primary" title="Back to top">↑</a>
+                    <br/>
+                </div>
+            </div>
+            <!--                        WIKI PAGE                           -->
+            <div id="wiki-page" class="col-lg-8">
+                <div class="col-md-8 text-left">
+                    <div class="title">
+                        <b>Getting Started</b>
+                    </div>
+                    <!-- Opening Text -->
+                    <div class="wiki-paragraph">
+                        Resynth is a lot like any other ore growing mod,
+                        though it has its own mechanics which are not
+                        as straight forward and can make it difficult
+                        to know what to do and where to start.
+                        <br/><br/>
+                        This page is intended to get you started with the
+                        basics of Resynth and get you up and running
+                        so you can start growing your ores and resources.
+                    </div>
+                </div>
+
+                <!--                        INFO BOX                        -->
+                <div id="info-box" class="col-md-4">
+                    <b id="info-box-title">Resynth - Getting Started</b>
+                    <div>
+                        <img id="info-box-image" alt="info-box-image" 
+                             src="../../images/wiki/textures/mineral-hoe.png">
+                    </div>
+                    <i>Mineral Hoe - Resynths primary tool.</i>
+                    <div class="row">
+                        <br/>
+                    </div>
+                </div>
+
+                <!--                      WIKI CONTENT                      -->
+                <div class="row text-left wiki-section">
+                    <div class="title">
+                        <b>First Things First</b>
+                    </div>
+
+                    <div class="wiki-paragraph">
+                        The first thing you will what to do is go mining.
+                        This is the only way to
+                        <a href="getting-seeds.html">get ore seeds</a> (apart
+                        from plants) as well the resources needed to make Resynths
+                        tools which are needed to grow plants.
+                        <br/><br/>
+                        You'll start getting seeds just by mining ores and
+                        killing mobs. Although you cannot just plant the seeds
+                        on dirt or tilled soil - you need a special block, called
+                        <a href="mineral-soil.html">Mineral Soil</a>, that can
+                        only be obtained by tilling dirt/grass (right clicking)
+                        with a <a href="mineral-hoe.html">Mineral Hoe</a>.
+                        <br/><br/>
+                        In order to make the Mineral Hoe and get started growing
+                        the plants, you'll need <a href="mineral-rock.html">Mineral Rocks</a>.
+                        Mineral Rocks drop from <a href="mineral-stone.html">Mineral Stone</a>
+                        which only spawns in rare quantities
+                        at the very bottom of the world between Y-Levels 3 and 5
+                        <a href="configuring.html">
+                            <span class="glyphicon glyphicon-wrench"></span>
+                        </a>.
+                        The Mineral Hoe requires 18 Mineral Rocks to be crafted.
+                        Although you'll want more than this (about 40) as
+                        Mineral Rocks also act as a kind of "fertilizer" that 
+                        increases the growth rate of plants. Mineral Rocks
+                        are also used as a crafting component to
+                        <a href="mineral-crystal.html">Mineral Crystals</a>
+                        which are needed to get more Mineral Soil blocks.
+                        <br/><br/>
+                        When mining Mineral Stone, Mineral Seeds will sometimes
+                        drop 
+                        <a href="configuring.html">
+                            <span class="glyphicon glyphicon-wrench"></span>
+                        </a>
+                        which will allow you to grow more Mineral Rocks
+                        so you don't need to keep going mining to grow/fertilize
+                        more plants. Mineral Seeds are very common so you should
+                        have a few by the time you're done mining.
+                        
+                        <br/><br/>
+                        <img src="../../images/wiki/pictures/getting-started.png"
+                             alt="Mineral Stone next to some bed rock"
+                             class="wiki-image">
+                        <br/>
+                        <i style="font-size:14px;">Mineral Stone next to some
+                            bedrock</i>
+                    </div>
+                </div>
+
+                <div class="row text-left wiki-section">
+                    <div class="title">
+                        <b>Making Your Farm</b>
+                    </div>
+
+                    <div class="wiki-paragraph">
+                        Once you have your resources, you'll want to craft
+                        two Dense Mineral Rocks by placing nine Mineral Rocks
+                        in a crafting table, and then smelt them to get Mineral
+                        Crystals. The Mineral Crystals can then be used to
+                        craft a Mineral Hoe. When crafted, the Mineral Hoe
+                        has two
+                        <a href="configuring.html">
+                            <span class="glyphicon glyphicon-wrench"></span>
+                        </a>
+                        charges which allow you to till two blocks.
+                        You'll need to add more Mineral Crystals to the hoe to
+                        till more blocks.
+                        <br/><br/>
+                        Once you have tilled some dirt into Mineral Soil,
+                        you will want to add the rest of your Mineral Rocks to
+                        the soil by right clicking the soil block with Mineral
+                        Rocks in hand. This increases the mineral content
+                        of the soil which speeds up plant growth. Plants
+                        growing on soil with a low mineral content take a
+                        <b>very</b> long time to grow.
+                        <br/><br/>
+                        <b>Some things to note: </b> unlike normal vanilla
+                        Minecraft soil, Mineral Soil does not need a water source
+                        block nearby. Plants placed on Mineral Soil will always
+                        grow regardless of any (or no) water source blocks
+                        nearby. Another difference between Mineral Soil
+                        and normal Minecraft soil is that jumping or sprinting
+                        on Mineral Soil will not cause it to turn back into
+                        dirt. 
+                        <br/><br/>
+                        <b>It is recommended</b> that you plant Mineral Seeds
+                        first to ensure a steady supply of Mineral Rocks so
+                        you don't have to go mining to grow or fertilize
+                        new plants.
+                        
+                        <br/><br/>
+                        <img src="../../images/wiki/pictures/first-farm.png"
+                             alt="A basic Resynth farm."
+                             class="wiki-image">
+                        <br/>
+                        <i style="font-size:14px;">
+                            A basic "getting started" farm</i>
+                    </div>
+                </div>
+
+                <div class="row text-left wiki-section">
+                    <div class="title">
+                        <b>Getting The Final Resource</b>
+                    </div>
+
+                    <div class="wiki-paragraph">
+                        By now you know how to grow the seeds you've
+                        obtained, although that doesn't help much when you
+                        don't know how to get the actual resource from the plant
+                        (e.g. diamonds). Once you've gotten the produce from
+                        the plant, simply smelting it in a furnace will yield
+                        the final resource. This works for all types of plants
+                        and produce.
+                        <br/><br/>
+                        The amount of produce obtained by smelting can
+                        be changed in the configs
+                        <a href="configuring.html">
+                            <span class="glyphicon glyphicon-wrench"></span>
+                        </a>.
+                    </div>
+                </div>
+
+                <div class="row text-left wiki-section">
+                    <div class="title">
+                        <b>Getting More Seeds</b>
+                    </div>
+
+                    <div class="wiki-paragraph">
+                        Unlike vanilla Minecraft, a Resynth plant will only ever
+                        drop <b>one</b> seed when broken/harvested and so far
+                        you only know how to obtain seeds from mining/killing
+                        mobs. Although don't worry, there are ways to get seeds
+                        from the produce of the plant. This depends on the plant
+                        and produce type. See
+                        <a href="getting-seeds.html">Getting Seeds and Resource</a>
+                        for the complete guide on getting seeds from plants.
+                    </div>
+                </div>
+
+                <div class="row text-left">
+                    <div class="title">
+                        <b>Crafting Recipes</b>
+                    </div>
+
+                    <div class="wiki-paragraph">
+                        All the crafting recipes you need to know.
+                        <br/><br/>
+                        
+                        <div class="row">
+                            <div class="col-sm-4 text-center recipe-img-box">
+                                <p>Dense Mineral Rock</p>
+                                <img class="img-shadow" 
+                                     alt=""
+                                     src="../../images/wiki/recipes/dense-mineral-rock.png"/>
+                            </div>
+                            <div class="col-sm-4 text-center recipe-img-box">
+                                <p>Mineral Hoe</p>
+                                <img class="img-shadow" 
+                                     alt=""
+                                     src="../../images/wiki/recipes/mineral-hoe.png"/>
+                            </div>
+                            <div class="col-sm-4 text-center recipe-img-box">
+                                <p>Mineral Rocks</p>
+                                <img class="img-shadow" 
+                                     alt=""
+                                     src="../../images/wiki/recipes/mineral-rock.png"/>
+                            </div>
+                        </div>
+                        <br/>
+                        <b class="sub-header">Furnace Recipes</b>
+                        <br/><br/>
+                        <div class="row">
+                            <div class="col-sm-4 text-center recipe-img-box">
+                                <p>Mineral Crystal</p>
+                                <img class="img-shadow" 
+                                     alt=""
+                                     src="../../images/wiki/recipes/mineral-crystal.png"/>
+                            </div>
+                            <div class="col-sm-4 text-center recipe-img-box">
+                                <p>Smelting a Shard to get the resource</p>
+                                <img class="img-shadow" 
+                                     alt=""
+                                     src="../../images/wiki/recipes/shard-smelting.png"/>
+                            </div>
+                            <div class="col-sm-4 text-center recipe-img-box">
+                                <p>Smelting a Bulb to get the resource</p>
+                                <img class="img-shadow" 
+                                     alt=""
+                                     src="../../images/wiki/recipes/bulb-smelting.png"/>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4 text-center recipe-img-box">
+                                <p>Smelting Organic Ore to get the resource</p>
+                                <img class="img-shadow" 
+                                     alt=""
+                                     src="../../images/wiki/recipes/organic-ore-smelting.png"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--                    Content disclaimer                  -->
+                <div class="legal-footer">
+                    This wiki is licensed under the 
+                    <a href="https://www.apache.org/licenses/LICENSE-2.0">
+                        Apache License, Version 2.0
+                    </a>. Although its <b>content</b> may be used, copied, modified,
+                    and/or distributed without restriction.
+                    <br/>
+                    Game content and materials are trademarks 
+                    and copyrights of their respective publisher
+                    and its licensors. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--                                Footer                              -->
+    <footer class="page-footer font-small grey pt-4">
+        <div class="container-fluid text-center text-md-left">
+            <div class="row">
+                <div class="col-md-6 mt-md-0 mt-3">
+                    <h5 class="text-uppercase">Resynth</h5>
+                    <p></p>
+                    The Resynth mod for Minecraft, the website and its content
+                    are license under the
+                    <a class="btn" href="https://www.apache.org/licenses/LICENSE-2.0">
+                        Apache License, Version 2.0.
+                    </a>.
+                    All Resynth content is open source and hosted on github.
+                    <!--                Disclaimer                          -->
+                    <p></p>
+                    <b>
+                        THE RESYNTH MOD, WEBSITE AND ITS RESOURCES ARE PROVIDED
+                        AS IS WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND.
+                    </b>
+                    <br/>
+                    For more information, view
+                    <a class="btn" href="https://www.apache.org/licenses/LICENSE-2.0#no-warranty">
+                        Clause 7
+                    </a> of the Apache License, Version 2.0.
+                </div>
+                <!--                        Links                           -->
+                <h5 class="text-uppercase">Miscellaneous Links</h5>
+                <hr class="clearfix w-100 d-md-none pb-3">
+                <div class="col-md-6 mb-md-0 mb-6">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="https://github.com/Resynth-Minecraft-Mod/Resynth-Mod/issues">
+                                Report a Bug/Issue
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.minecraftforum.net/forums/mapping-and-modding-java-edition/minecraft-mods/2927861-resynth-growable-ores-mob-drops-and-resources">
+                                The Minecraft Forums Project Page
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/Resynth-Minecraft-Mod/Resynth-Minecraft-Mod.github.io">
+                                Website Github Project Page
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.planetminecraft.com/mod/resynth/">
+                                PlanetMinecraft Project Page
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright text-center py-3">
+            © 2019 Copyright: Ki11er_wolf
+        </div>
+    </footer>
+
+    <!--                          Table of content script                   -->
+    <script src="wiki.js"></script>
+</body>
