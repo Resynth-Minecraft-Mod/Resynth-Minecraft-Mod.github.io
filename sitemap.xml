@@ -1,6 +1,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    <!-- Home -->
     <url>
         <loc>
             https://resynth-minecraft-mod.github.io/
@@ -13,6 +14,7 @@
         <lastmod>2018-04-05T20:00:00+02:00</lastmod>
         <priority>1.00</priority>
     </url>
+    <!-- Misc Pages -->
     <url>
         <loc>
             https://resynth-minecraft-mod.github.io/pages/changelog/changelog.html
@@ -30,6 +32,155 @@
     <url>
         <loc>
             https://resynth-minecraft-mod.github.io/pages/credits/credits.html
+        </loc>
+        <lastmod>2018-04-05T20:00:00+02:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <!-- Wiki Home -->
+    <url>
+        <loc>
+            https://resynth-minecraft-mod.github.io/pages/wiki/home.html
+        </loc>
+        <lastmod>2018-04-05T20:00:00+02:00</lastmod>
+        <priority>1.00</priority>
+    </url>
+    <!-- Wiki -->
+    <url>
+        <loc>
+            https://resynth-minecraft-mod.github.io/pages/wiki/biochemical-plants.html
+        </loc>
+        <lastmod>2018-04-05T20:00:00+02:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>
+            https://resynth-minecraft-mod.github.io/pages/wiki/bulbs.html
+        </loc>
+        <lastmod>2018-04-05T20:00:00+02:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>
+            https://resynth-minecraft-mod.github.io/pages/wiki/concepts.html
+        </loc>
+        <lastmod>2018-04-05T20:00:00+02:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>
+            https://resynth-minecraft-mod.github.io/pages/wiki/configuring.html
+        </loc>
+        <lastmod>2018-04-05T20:00:00+02:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>
+            https://resynth-minecraft-mod.github.io/pages/wiki/crafting-recipes.html
+        </loc>
+        <lastmod>2018-04-05T20:00:00+02:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>
+            https://resynth-minecraft-mod.github.io/pages/wiki/crystalline-plants.html
+        </loc>
+        <lastmod>2018-04-05T20:00:00+02:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>
+            https://resynth-minecraft-mod.github.io/pages/wiki/dense-mineral-rock.html
+        </loc>
+        <lastmod>2018-04-05T20:00:00+02:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>
+            https://resynth-minecraft-mod.github.io/pages/wiki/getting-seeds.html
+        </loc>
+        <lastmod>2018-04-05T20:00:00+02:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>
+            https://resynth-minecraft-mod.github.io/pages/wiki/getting-started.html
+        </loc>
+        <lastmod>2018-04-05T20:00:00+02:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>
+            https://resynth-minecraft-mod.github.io/pages/wiki/integration.html
+        </loc>
+        <lastmod>2018-04-05T20:00:00+02:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>
+            https://resynth-minecraft-mod.github.io/pages/wiki/metallic-plants.html
+        </loc>
+        <lastmod>2018-04-05T20:00:00+02:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>
+            https://resynth-minecraft-mod.github.io/pages/wiki/mineral-crystal.html
+        </loc>
+        <lastmod>2018-04-05T20:00:00+02:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>
+            https://resynth-minecraft-mod.github.io/pages/wiki/mineral-hoe.html
+        </loc>
+        <lastmod>2018-04-05T20:00:00+02:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>
+            https://resynth-minecraft-mod.github.io/pages/wiki/mineral-rock.html
+        </loc>
+        <lastmod>2018-04-05T20:00:00+02:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>
+            https://resynth-minecraft-mod.github.io/pages/wiki/mineral-soil.html
+        </loc>
+        <lastmod>2018-04-05T20:00:00+02:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>
+            https://resynth-minecraft-mod.github.io/pages/wiki/mineral-stone.html
+        </loc>
+        <lastmod>2018-04-05T20:00:00+02:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>
+            https://resynth-minecraft-mod.github.io/pages/wiki/mystical-seed-pod.html
+        </loc>
+        <lastmod>2018-04-05T20:00:00+02:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>
+            https://resynth-minecraft-mod.github.io/pages/wiki/organic-ore.html
+        </loc>
+        <lastmod>2018-04-05T20:00:00+02:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>
+            https://resynth-minecraft-mod.github.io/pages/wiki/seeds.html
+        </loc>
+        <lastmod>2018-04-05T20:00:00+02:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>
+            https://resynth-minecraft-mod.github.io/pages/wiki/shards.html
         </loc>
         <lastmod>2018-04-05T20:00:00+02:00</lastmod>
         <priority>0.80</priority>
