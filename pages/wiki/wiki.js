@@ -101,7 +101,7 @@ function resizeImages(){
  * table of content and .dsktop elements.
  */
 $(window).resize(function(){
-    responsiveTOC();
+    //responsiveTOC();
     checkDesktopElements();
     resizeImages();
 });
