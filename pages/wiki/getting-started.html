@@ -305,14 +305,15 @@ limitations under the License.
                 
                 <br/>
                 <div>
-                    <style scoped>
-                        .wiki-side-auto-1 { width: 320px; height: 90px; }
-                        @media(min-width: 500px) { .wiki-side-auto-1 { width: 468px; height: 60px; } }
-                        @media(min-width: 800px) { .wiki-side-auto-1 { width: 728px; height: 90px; } }
+                    <style type="text/css">
+                    .wiki-side-auto { display:inline-block; width: 320px; height: 50px; }
+                    @media (max-width: 400px) { .wiki-side-auto { display: none; } }
+                    @media (min-width:500px) { .wiki-side-auto { width: 468px; height: 60px; } }
+                    @media (min-width:800px) { .wiki-side-auto { width: 728px; height: 90px; } }
                     </style>
                     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
                     <!-- Wiki-Side-Auto -->
-                    <ins class="adsbygoogle wiki-side-auto-1"
+                    <ins class="adsbygoogle wiki-side-auto"
                          style="display:block"
                          data-ad-client="ca-pub-9043314121835546"
                          data-ad-slot="7544808444"
