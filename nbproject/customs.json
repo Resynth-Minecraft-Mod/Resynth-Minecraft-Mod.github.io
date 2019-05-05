@@ -1,6 +1,10 @@
 {
     "elements": {
-        "br": {}
+        "br": {
+            "attributes": {
+                "class": {}
+            }
+        }
     },
     "attributes": {}
 }
