@@ -21,11 +21,6 @@ limitations under the License.
     <link rel="icon" href="../../images/icon.png" type="image/png">
     <link rel="stylesheet" type="text/css" href="changelog.css">
 
-    <!-- JQuery and bootstrap-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
     <!-- SEO -->
     <meta name="description" content="Resynth Changelog. A complete list
           of changes to Resynth across the versions. Resynth Minecraft Mod - 
@@ -33,17 +28,25 @@ limitations under the License.
 
     <meta name="keywords" content="Changelog, Change Log, Changes, Resynth,
           Resynth Minecraft Mod, Growable Ores, Growable Mob Drops, Growable
-          Resources">
+          Resources, 1.12.2, 1.13.2">
 
     <!--Meta Tags-->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Google Material Design -->
+    <!--                           STYLE                                    -->
+    <!-- JQuery, Bootstrap and Icons-->
+    <link rel="stylesheet"
+              href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+              crossorigin="anonymous">
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <!-- Material Design Bootstrap -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.1.1/css/mdb.min.css" rel="stylesheet">
-
+    
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127648959-1"></script>
     <script>
@@ -57,15 +60,6 @@ limitations under the License.
         gtag('set', {'user_id': 'USER_ID'});
     </script>
     
-    <!-- AdSense -->
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <script>
-      (adsbygoogle = window.adsbygoogle || []).push({
-        google_ad_client: "ca-pub-9043314121835546",
-        enable_page_level_ads: true
-      });
-    </script>
-    
     <!-- Cookie Pop up -->
     <link rel="stylesheet" type="text/css" href="../../css/jquery-eu-cookie-law-popup.css"/>
     <script src="../../js/jquery-eu-cookie-law-popup.js"></script>
@@ -76,104 +70,153 @@ limitations under the License.
     Your browser does not support JavaScript! The Resynth website
     might not work correctly!
     </noscript>
-    <!--                            Navigation Bar                          -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" style="font-size: 14px;">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse"
-                        data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" style="margin-top:8px;" href="../../index.html">
-                    <img alt="Resynth Logo" src="../../images/logo.png">
-                </a>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav" style="margin-top:13px;">
-                    <!--Links-->
-                    <li >
-                        <a href="../../index.html">
-                            Home
-                        </a>
-                    </li>
-                    <li>
-                        <a href="../wiki/home.html">
-                            Wiki
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://minecraft.curseforge.com/projects/resynth/files">
-                            Downloads
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <b><i><u>Changelog</u></i></b>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://minecraft.curseforge.com/projects/resynth">
-                            CurseForge
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/Resynth-Minecraft-Mod/Resynth-Mod">
-                            Source Code
-                        </a>
-                    </li>
-                    <li>
-                        <a href="../faq/faq.html">
-                            FAQ
-                        </a>
-                    </li>
-                    <li>
-                        <a href="../credits/credits.html">
-                            Credits
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.apache.org/licenses/LICENSE-2.0">
-                            License
-                        </a>
-                    </li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a title="Download Latest Release"
-                           href="https://minecraft.curseforge.com/projects/resynth/files/latest">
-                            <span class="btn btn-primary glyphicon glyphicon-download"></span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+    
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand">
+            <img src="../../images/logo.png" height="39" style="margin-top: 10px;" alt="">
+            <button class="btn btn-primary" style="margin-left: 10px"
+                    title="Go to downloads"
+                    onclick="window.open('https://www.curseforge.com/minecraft/mc-mods/resynth/files')">
+                <i class="material-icons vertical-align-middle padding-bottom-3">cloud_download</i>
+                <i id="downloads">Downloads</i>
+            </button>
+        </a>
+        
+        <!--Handles displaying total downloads in the downloads button-->
+        <script>
+            $.get("https://api.cfwidget.com/minecraft/mc-mods/resynth", function(data) {
+                $("#downloads").html(
+                    data.downloads.total.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "+ Downloads"
+                );
+            });
+        </script>
+        
+        <span class="navbar-text">
+            <button onclick="window.open('../../')" class="navbar-link">Home</button>
+            <button onclick="window.open('../wiki/home.html')" class="navbar-link">Wiki</button>
+            <button onclick="window.open('https://www.curseforge.com/minecraft/mc-mods/resynth/')" class="navbar-link">Project Page</button>
+            <button class="navbar-link-active">Changelog</button>
+            <button onclick="window.open('../faq/faq.html')" class="navbar-link">FAQ</button>
+            <button onclick="window.open('../credits/credits.html')" class="navbar-link">Credits</button>
+            <button onclick="window.open('https://github.com/Resynth-Minecraft-Mod')" class="navbar-link">Source Code</button>
+            <button onclick="window.open('https://www.apache.org/licenses/LICENSE-2.0')" class="navbar-link">License</button>
+        </span>
     </nav>
 
     <!--                                Content                             -->
     <div class="container text-left" style="margin-top: 65px; font-size: 20px;">
         <h1 class="text-center">
-            <b>Changelog<span class="glyphicon glyphicon-list"></span></b>
+            <b>Changelog </b> <i class="material-icons" style="font-size: 48px">track_changes</i>
         </h1>
         <h2 class="text-center">The list of changes to Resynth throughout the ages.</h2>
         <!--                        Versions                            -->
         
-        <!--                        Ad Sense                                 -->
-        <div class="text-center">
-            <div>
-                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                <!-- Changelog-Top-970x90 -->
-                <ins class="adsbygoogle"
-                     style="display:inline-block;width:970px;height:90px"
-                     data-ad-client="ca-pub-9043314121835546"
-                     data-ad-slot="5612069238"></ins>
-                <script>
-                    (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
-            </div>
+        <div class="text-center" style="margin-top: 30px;">
+            <h1><u>Minecraft 1.13.2</u></h1>
         </div>
-            
+        
+        <div>
+                <h1><b>Version 2.0.0</b></h1>
+                <h2>The Big One</h2>
+                <div class="text-left">
+                    <span><i class="material-icons">warning</i>
+                        <b>A Massive Rewrite</b> - Due to the large changes to
+                        forge in the 1.13 update, a large portion of Resynth
+                        had to be rewritten. This gave the opportunity to
+                        rewrite other large portions of Resynth which could have
+                        been written better, which has resulted in many changes,
+                        some of which may be omitted. Hopefully these changes
+                        will result in a better experience.
+                    </span>
+                    <br/>
+                    <span><i class="material-icons">warning</i>
+                        <b>Large changes to the Mineral Hoe</b> - The Mineral
+                        Hoe has been rewritten from the ground up and as such
+                        as changed drastically. It now operates slightly differently
+                        and a few new features have been added to it.
+                    </span>
+                </div>
+                <h3>Changes</h3>
+                <div class="text-left">
+                    <span><i class="material-icons">error</i>
+                        <b>Changed how seeds are obtained from Bulbs</b> - 
+                        Obtaining seeds from Bulbs (Biochemical plant produce) 
+                        has changed slightly. Instead of being thrown, they're
+                        now smashed (by holding right-click) for a chance at
+                        getting more seeds.
+                    </span>
+                    <br/>
+                    <span><i class="material-icons">error</i>
+                        <b>Changed Crystalline Plant Textures</b> - The plant
+                        textures for Crystalline plants was changed to a new design
+                        that doesn't mimic Vanilla Wheat.
+                    </span>
+                    <br/>
+                    <span><i class="material-icons">error</i>
+                        <b>Changed World Generation</b> - Mineral Stone and
+                        Mystical Seed Pods world generation has changed. Mineral
+                        Stone now spawns a bit higher up and more frequently,
+                        while Mystical Seed Pods generate in larger numbers.
+                    </span>
+                    <br/>
+                    <span><i class="material-icons">error</i>
+                        <b>Changed Configuration</b> - The whole configuration
+                        system for Resynth was rewritten. This has unfortunately
+                        resulted in the loss of the in-game configuration GUI.
+                        However, configuration settings are now more consistent
+                        and descriptive. Plant config settings now have their
+                        own config file.
+                    </span>
+                    <br/>
+                    <span><i class="material-icons">error</i>
+                        <b>Changed Tooltips</b> - Tooltips have been
+                        completely rewritten to be more descriptive, provide
+                        more information, be more consistent and contain less
+                        errors.
+                    </span>
+                </div>
+                <h3>Additions</h3>
+                <div class="text-left">
+                    <span><i class="material-icons">add_circle</i>
+                        <b>Animated Textures</b> - Animated textures for the
+                        Mineral Hoe and Mineral Crystal were added.
+                    </span>
+                    <br/>
+                    <span><i class="material-icons">add_circle</i>
+                        <b>Growth Feature to the Mineral Hoe</b> - The Mineral Hoe
+                        can now grow any plant (Resynth or Vanilla) when used 
+                        in creative mode.
+                    </span>
+                    <br/>
+                    <span><i class="material-icons">add_circle</i>
+                        <b>Information Feature to the Mineral Hoe</b> - The Mineral Hoe
+                        can now be used to check the growth stage of any Resynth
+                        plant as well as the Mineral Content of Mineral Soil.
+                    </span>
+                    <br/>
+                    <span><i class="material-icons">add_circle</i>
+                        <b>Plant Yield</b> - Crystalline and Biochemical plant types
+                        can now drop multiple produce items when harvested.
+                    </span>
+                </div>
+                <h3>Removals</h3>
+                <div class="text-left">
+                    <span><i class="material-icons">remove_circle</i>
+                        <b>Modded Plant Sets</b> - With the lack of mods for
+                        Minecraft 1.13 as well as the release of Minecraft
+                        1.14, plants for other mods have unfortunately been
+                        removed until they can be added back.
+                    </span>
+                    <br/>
+                </div>
+        </div>
+        <br/>
+                
+        <div class="text-center">
+            <h1><u>Minecraft 1.12.2</u></h1>
+        </div>
+        
         <div style="padding-top: 30px;">
             <h1><b>Version 1.3.7</b></h1>
                 <div class="text-left">
@@ -196,6 +239,7 @@ limitations under the License.
                         </a> - Resynth crashing the game when run as a dedicated
                         server (Thanks to <b>TheMysticle</b> for reporting this issue).
                     </span>
+                    
                 </div>
                 <br/>
             
@@ -596,61 +640,30 @@ limitations under the License.
     </div>
 
     <!--                                Footer                              -->
-    <footer class="page-footer font-small grey pt-4">
-        <div class="container-fluid text-center text-md-left">
-            <div class="row">
-                <div class="col-md-12 mt-md-0 mt-3">
-                    <h5 class="text-uppercase">Resynth</h5>
-                    <p></p>
-                    The Resynth mod for Minecraft, the website and its content
-                    are license under the
-                    <a class="btn" href="https://www.apache.org/licenses/LICENSE-2.0">
-                        Apache License, Version 2.0.
-                    </a>.
-                    All Resynth content is open source and hosted on github.
-                    <!--                Disclaimer                          -->
-                    <p></p>
-                    <b>
-                        THE RESYNTH MOD, WEBSITE AND ITS RESOURCES ARE PROVIDED
-                        AS IS WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND.
-                    </b>
-                    <br/>
-                    For more information, view
-                    <a class="btn" href="https://www.apache.org/licenses/LICENSE-2.0#no-warranty">
-                        Clause 7
-                    </a> of the Apache License, Version 2.0.
-                </div>
-                <!--                        Links                           -->
-                <h5 class="text-uppercase">Miscellaneous Links</h5>
-                <hr class="clearfix w-100 d-md-none pb-3">
-                <div class="col-md-12 mb-md-0 mb-6">
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="https://github.com/Resynth-Minecraft-Mod/Resynth-Mod/issues">
-                                Report a Bug/Issue
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.minecraftforum.net/forums/mapping-and-modding-java-edition/minecraft-mods/2927861-resynth-growable-ores-mob-drops-and-resources">
-                                The Minecraft Forums Project Page
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/Resynth-Minecraft-Mod/Resynth-Minecraft-Mod.github.io">
-                                Website Github Project Page
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.planetminecraft.com/mod/resynth/">
-                                PlanetMinecraft Project Page
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+    <footer id="sticky-footer" class="py-4 bg-dark text-white-50" style="margin-top: 20px;">
+        <div style="width: 50%; margin-left: 25%;">
+            The Resynth Minecraft Mod, The Resynth Website, and all related content
+            is licensed under the
+            <a class="btn btn-dark" href="https://www.apache.org/licenses/LICENSE-2.0">
+                Apache License, Version 2.0.
+            </a>
+            All Resynth content is open source and hosted on github.
         </div>
-        <div class="footer-copyright text-center py-3">
-            © 2018-2019 Copyright: Ki11er_wolf
+        
+        <div style="width: 50%; margin-left: 25%;">
+            THE RESYNTH MOD, WEBSITE AND ITS RESOURCES ARE PROVIDED
+            AS IS WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND.
+            <br/>
+            For more information, view
+            <a class="btn btn-dark" href="https://www.apache.org/licenses/LICENSE-2.0#no-warranty">
+                Clause 7
+            </a> of the Apache License, Version 2.0.
+        </div>
+       
+        <hr style="background-color: white">
+        
+        <div class="container text-center">
+          <small>Copyright &copy; 2018-2019: Ki11er_wolf</small>
         </div>
     </footer>
 
