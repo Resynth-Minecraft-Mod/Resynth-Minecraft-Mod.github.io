@@ -1,5 +1,5 @@
 # Resynth Mod Website - Growable Ores, Mob Drops and Resources.
-![](https://resynth-minecraft-mod.github.io/images/title.png)
+![](https://resynth-minecraft-mod.github.io/images/title.png) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/ef9dde2147974378bb44ac7376a53845)](https://www.codacy.com/app/LMelaia/Resynth-Minecraft-Mod.github.io?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Resynth-Minecraft-Mod/Resynth-Minecraft-Mod.github.io&amp;utm_campaign=Badge_Grade)
 
 The source code for the official Resynth Mod website
 and wiki.
