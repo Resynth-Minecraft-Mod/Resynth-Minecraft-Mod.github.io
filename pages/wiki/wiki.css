@@ -60,6 +60,10 @@ limitations under the License.
     border: 0px;
 }
 
+.page-nav-btn:focus {
+    border: 0px !important;
+}
+
 .page-nav-btn {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -70,6 +74,10 @@ limitations under the License.
 .page-link {
     border: 0px !important;  
     color: black;
+}
+
+.page-link:focus {
+    border: 0px !important;
 }
 
 .page-link:hover {
