@@ -25,7 +25,7 @@ limitations under the License.
     <!--                            SEO                                     -->
     <meta name="keywords" content="Resynth, Resynth Wiki, Wiki, Resynth Help,
           Help, Resynth Mod, Growable Ores, Growable Mob Drops, Configuration,
-          Config, Config Settings, cfg, .cfg, 1.12.2">
+          Config, Config Settings, cfg, .cfg, 1.12.2, 1.13.2">
 
     <meta name="description" content="A detailed guide on Resynths configuration
           settings and how to use them.">
@@ -35,20 +35,17 @@ limitations under the License.
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--                           STYLE                                    -->
-    <!-- JQuery and Bootstrap-->
+    <!-- JQuery, Bootstrap and Icons-->
     <link rel="stylesheet"
-          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-    <script
-        src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
-    </script>
-
-    <script
-        src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
-    </script>
-
-    <!-- Material Design Bootstrap -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.1.1/css/mdb.min.css" rel="stylesheet">
+              href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+              crossorigin="anonymous">
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
     <!--                       Google Analytics                             -->
 
@@ -69,97 +66,43 @@ limitations under the License.
         gtag('set', {'user_id': 'USER_ID'});
     </script>
     
-    <!-- AdSense -->
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <script>
-      (adsbygoogle = window.adsbygoogle || []).push({
-        google_ad_client: "ca-pub-9043314121835546",
-        enable_page_level_ads: true
-      });
-    </script>
-    
     <!-- Cookie Pop up -->
     <link rel="stylesheet" type="text/css" href="../../css/jquery-eu-cookie-law-popup.css"/>
     <script src="../../js/jquery-eu-cookie-law-popup.js"></script>
 </head>
 
 <body class="eupopup eupopup-top">
-    <!--                           Navigation Bar                           -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" style="font-size: 14px;
-         min-height: 70px;">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse"
-                        data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <!--                    Logo                                -->
-                <a class="navbar-brand" style="margin-top:8px;" href="#">
-                    <img alt="Resynth Wiki Logo" src="../../images/wiki/logo.png">
-                </a>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav" style="margin-top:13px;">
-                    <!--                Links                               -->
-                    <li >
-                        <a href="https://resynth-minecraft-mod.github.io/">
-                            Home
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <b><u>Wiki</u></b>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://minecraft.curseforge.com/projects/resynth/files">
-                            Downloads
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://resynth-minecraft-mod.github.io/pages/changelog/changelog.html">
-                            Changelog
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://minecraft.curseforge.com/projects/resynth">
-                            CurseForge
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/Resynth-Minecraft-Mod/Resynth-Mod">
-                            Source Code
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://resynth-minecraft-mod.github.io/pages/faq/faq.html">
-                            FAQ
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://resynth-minecraft-mod.github.io/pages/credits/credits.html">
-                            Credits
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.apache.org/licenses/LICENSE-2.0">
-                            License
-                        </a>
-                    </li>
-                </ul>
-                <!--                   Download Button                      -->
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a title="Download Latest Release"
-                           href="https://minecraft.curseforge.com/projects/resynth/files/latest">
-                            <span class="btn btn-primary glyphicon glyphicon-download"></span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand">
+            <img src="../../images/wiki/logo.png" height="50" style="margin-top: 10px;" alt="">
+            <i class="btn btn-primary" style="margin-left: 10px"
+                    title="Go to downloads"
+                    onclick="window.open('https://www.curseforge.com/minecraft/mc-mods/resynth/files')">
+                <i class="material-icons vertical-align-middle padding-bottom-3">cloud_download</i>
+                <i id="downloads">Downloads</i>
+            </i>
+        </a>
+        
+        <!--Handles displaying total downloads in the downloads button-->
+        <script>
+            $.get("https://api.cfwidget.com/minecraft/mc-mods/resynth", function(data) {
+                $("#downloads").html(
+                    data.downloads.total.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "+ Downloads"
+                );
+            });
+        </script>
+        
+        <span class="navbar-text">
+            <button onclick="window.open('../../')" class="navbar-link">Home</button>
+            <button class="navbar-link-active">Wiki</button>
+            <button onclick="window.open('https://www.curseforge.com/minecraft/mc-mods/resynth/')" class="navbar-link">Project Page</button>
+            <button onclick="window.open('../changelog/changelog.html')" class="navbar-link">Changelog</button>
+            <button onclick="window.open('../faq/faq.html')" class="navbar-link">FAQ</button>
+            <button onclick="window.open('../credits/credits.html')" class="navbar-link">Credits</button>
+            <button onclick="window.open('https://github.com/Resynth-Minecraft-Mod')" class="navbar-link">Source Code</button>
+            <button onclick="window.open('https://www.apache.org/licenses/LICENSE-2.0')" class="navbar-link">License</button>
+        </span>
     </nav>
 
     <!--                                  Page                              -->
@@ -302,69 +245,38 @@ limitations under the License.
                     <a href="#" class="btn btn-primary" title="Back to top">↑</a>
                     <br/>
                 </div>
-                
-                <!--                            Ad Sense                    -->
-                <br/>
-                <div>
-                    <!-- Wiki-Side-Auto -->
-                    <ins class="adsbygoogle"
-                         style="display:block"
-                         data-ad-client="ca-pub-9043314121835546"
-                         data-ad-slot="7544808444"
-                         data-ad-format="auto"
-                         data-full-width-responsive="true"></ins>
-                    <script>
-                        (adsbygoogle = window.adsbygoogle || []).push({});
-                    </script>
-                </div>
             </div>
             <!--                        WIKI PAGE                           -->
             <div id="wiki-page" class="col-lg-8">
-                <!--                      Ad Sense                          -->
-                <div class="row">
-                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                    <!-- Wiki-Top-970x90 -->
-                    <ins class="adsbygoogle"
-                         style="display:inline-block;width:970px;height:90px"
-                         data-ad-client="ca-pub-9043314121835546"
-                         data-ad-slot="5003772569"></ins>
-                    <script>
-                        (adsbygoogle = window.adsbygoogle || []).push({});
-                    </script>
-                </div>
                 
-                <div class="col-md-8 text-left">
-                    <div class="title">
-                        <b>Configuring Resynth</b>
+                <div class="row">
+                    <div class="col-md-8 text-left">
+                        <div class="title">
+                            <b>Configuring Resynth</b>
+                        </div>
+                        <!-- Opening Text -->
+                        <div class="wiki-paragraph">
+                            A big goal of Resynth is to be as configurable
+                            as possible. This means that most values used in
+                            the mod (such as drop chances, growth times, drop rates
+                            as well other various settings) can be changed 
+                            through Resynth config files.
+                        </div>
                     </div>
-                    <!-- Opening Text -->
-                    <div class="wiki-paragraph">
-                        A big goal of Resynth is to be as configurable
-                        as possible. This means that most "values" used in
-                        the mod (such as drop chances, growth times, drop rates
-                        as well other various settings) can be changed though
-                        either the mods In-Game configuration menu
-                        (Accessed by going to the pause menu -> Mods -> Resynth)
-                        or by editing the mods configuration file (<code>
-                        Resynth.cfg</code>). Most values can be changed though
-                        the configuration menu without requiring a
-                        world/Minecraft restart so you can change values
-                        without having to quit the game.
-                    </div>
-                </div>
 
-                <!--                        INFO BOX                        -->
-                <div id="info-box" class="col-md-4">
-                    <b id="info-box-title">Configuring Resynth</b>
-                    <div>
-                        <img id="info-box-image" alt="info-box-image" 
-                             src="../../images/wiki/textures/dense-mineral-rock.png">
-                    </div>
-                    <i>Dense Mineral Rock</i>
-                    <div class="row">
-                        <br/>
-                        <div class="dsktop">
-                            <br/><br/><br/>
+                    <!--                        INFO BOX                        -->
+                    <div id="info-box" class="col-md-4">
+                        <b id="info-box-title">Configuring Resynth</b>
+                        <div>
+                            <img id="info-box-image" alt="info-box-image" 
+                                 src="../../images/wiki/textures/dense-mineral-rock.png">
+                        </div>
+                        <i>Dense Mineral Rock</i>
+                        <div class="row">
+                            <br/>
+                            <div class="dsktop">
+                                <br/><br/><br/>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -373,661 +285,20 @@ limitations under the License.
                 <div class="row text-left">
                     <div class="title">
                         <b>
-                            Configurable Icon
-                            <span class="glyphicon glyphicon-wrench"></span>
+                            Changes in 1.13.2
                         </b>
                     </div>
 
                     <div class="wiki-paragraph">
-                        Where ever you see this icon
-                        (<span class="glyphicon glyphicon-wrench"></span>) in
-                        the wiki next to a topic - it is suggested that the
-                        values used or certain mechanics about the topic can be
-                        changed in the configuration settings for the mod.
+                        Configuration was one of the biggest systems changed
+                        in the 1.13.2 rewrite. Unfortunately, the in-game
+                        configuration gui was removed as a result of this, and
+                        config can only be changed through the config files.
+                        Plant settings have also moved to a separate config file
+                        as well, and config settings have been cleaned up a lot.
                     </div>
                 </div>
-                <br/>
-                <div class="row text-left">
-                    <div class="title">
-                        <b>Basic Settings</b>
-                    </div>
-
-                    <div class="wiki-paragraph">
-                        This section covers the most basic
-                        and important configuration settings.
-                        
-                        <br/><br/>
-                        <b class="sub-header">General Plant Settings</b>
-                        <br/>
-                        Settings that affect every plant added by Resynth.
-                        <br/><br/>
-                        <table >
-                            <tr>
-                                <th class="table-header">Config Name</th>
-                                <th class="table-header">Description</th>
-                                <th class="table-header">Value Type</th>
-                                <th class="table-header">Range</th>
-                                <th class="table-header">Submenu Title</th>
-                                <th class="table-header">Default Value</th>
-                            </tr>
-                            <tr>
-                                <td class="table-cell">
-                                    <i>
-                                        Enable Bonemeal
-                                    </i>
-                                </td>
-                                <td class="table-cell">
-                                    Global toggle to disable growing all Resynth
-                                    plants with bonemeal.
-                                </td> 
-                                <td class="table-cell">
-                                    Boolean
-                                </td>
-                                <td class="table-cell">
-                                    N/A
-                                </td>
-                                <td class="table-cell">
-                                    General Plant Settings
-                                </td>
-                                <td class="table-cell">
-                                    <code>
-                                        false
-                                    </code>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="table-cell">
-                                    <i>
-                                        Enable Seed Drops From Ore
-                                    </i>
-                                </td>
-                                <td class="table-cell">
-                                    Global toggle to disable any ores dropping
-                                    seeds when blown up.
-                                </td> 
-                                <td class="table-cell">
-                                    Boolean
-                                </td>
-                                <td class="table-cell">
-                                    N/A
-                                </td>
-                                <td class="table-cell">
-                                    General Plant Settings
-                                </td>
-                                <td class="table-cell">
-                                    <code>
-                                        true
-                                    </code>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="table-cell">
-                                    <i>
-                                        Enable Seed Drops From Organic Ore
-                                    </i>
-                                </td>
-                                <td class="table-cell">
-                                    Global toggle to disable any Organic Ores
-                                    dropping seeds when blown up.
-                                </td> 
-                                <td class="table-cell">
-                                    Boolean
-                                </td>
-                                <td class="table-cell">
-                                    N/A
-                                </td>
-                                <td class="table-cell">
-                                    General Plant Settings
-                                </td>
-                                <td class="table-cell">
-                                    <code>
-                                        true
-                                    </code>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="table-cell">
-                                    <i>
-                                        Enable Seed Drops From Mobs
-                                    </i>
-                                </td>
-                                <td class="table-cell">
-                                    Global toggle to disable mobs
-                                    dropping seeds when killed.
-                                </td> 
-                                <td class="table-cell">
-                                    Boolean
-                                </td>
-                                <td class="table-cell">
-                                    N/A
-                                </td>
-                                <td class="table-cell">
-                                    General Plant Settings
-                                </td>
-                                <td class="table-cell">
-                                    <code>
-                                        true
-                                    </code>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="table-cell">
-                                    <i>
-                                        Enable Seed Drops From Produce
-                                    </i>
-                                </td>
-                                <td class="table-cell">
-                                    Global toggle to disable any produce items
-                                    (Shards & Bulbs) turning into seeds.
-                                </td> 
-                                <td class="table-cell">
-                                    Boolean
-                                </td>
-                                <td class="table-cell">
-                                    N/A
-                                </td>
-                                <td class="table-cell">
-                                    General Plant Settings
-                                </td>
-                                <td class="table-cell">
-                                    <code>
-                                        true
-                                    </code>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="table-cell">
-                                    <i>
-                                        Enable Growth
-                                    </i>
-                                </td>
-                                <td class="table-cell">
-                                    Global toggle to disable Resynth
-                                    plants from growing. <b>Effectively
-                                    disables the mod.</b>
-                                </td> 
-                                <td class="table-cell">
-                                    Boolean
-                                </td>
-                                <td class="table-cell">
-                                    N/A
-                                </td>
-                                <td class="table-cell">
-                                    General Plant Settings
-                                </td>
-                                <td class="table-cell">
-                                    <code>
-                                        true
-                                    </code>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="table-cell">
-                                    <i>
-                                        Enable Smokey Plants
-                                    </i>
-                                </td>
-                                <td class="table-cell">
-                                    Global toggle to disable plants spawning
-                                    smoke particles around them.
-                                </td> 
-                                <td class="table-cell">
-                                    Boolean
-                                </td>
-                                <td class="table-cell">
-                                    N/A
-                                </td>
-                                <td class="table-cell">
-                                    General Plant Settings
-                                </td>
-                                <td class="table-cell">
-                                    <code>
-                                        true
-                                    </code>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                        
-                    <div>
-                        <br/><br/>
-                        <img src="../../images/wiki/pictures/config-menu.png"
-                             alt="Resynths main configuration menu."
-                             class="wiki-image">
-                        <br/>
-                        <i style="font-size:14px;">Main Resynth configuration menu.</i>
-                    </div>
-                </div>
-                <br/>
-                <div class="row text-left">
-                    <div class="title">
-                        <b>Plant Settings</b>
-                    </div>
-
-                    <div class="wiki-paragraph">
-                        This section covers the configuration settings
-                        for the different plant types.
-                        
-                        <br/><br/>
-                        <b class="sub-header">Crystalline Plant Settings</b>
-                        <br/>
-                        Each Crystalline plant type will have a configuration
-                        page named after it with the following configuration
-                        settings.
-                        <br/><br/>
-                        <table >
-                            <tr>
-                                <th class="table-header">Config Name</th>
-                                <th class="table-header">Description</th>
-                                <th class="table-header">Value Type</th>
-                                <th class="table-header">Range</th>
-                                <th class="table-header">Submenu Title</th>
-                                <th class="table-header">Default Value</th>
-                            </tr>
-                            <tr>
-                                <td class="table-cell">
-                                    <i>
-                                        Chance to Grow
-                                    </i>
-                                </td>
-                                <td class="table-cell">
-                                    The percentage chance that the plant
-                                    will grow on a random tick.
-                                </td> 
-                                <td class="table-cell">
-                                    Float
-                                </td>
-                                <td class="table-cell">
-                                    <b class="range-min">0.0</b>
-                                    <br/>
-                                    to
-                                    <br/>
-                                    <b class="range-max">100.0</b>
-                                </td>
-                                <td class="table-cell">
-                                    The plants name.
-                                </td>
-                                <td class="table-cell">
-                                    Specific to each plant.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="table-cell">
-                                    <i>
-                                        Enable Bonemeal
-                                    </i>
-                                </td>
-                                <td class="table-cell">
-                                    Used to disable using bonemeal
-                                    on this specific plant. <b>Both the
-                                    global toggle in General Plant Settings
-                                    and this setting needs to be true for the
-                                    plant to accept bonemeal</b>
-                                </td> 
-                                <td class="table-cell">
-                                    Boolean
-                                </td>
-                                <td class="table-cell">
-                                    N/A
-                                </td>
-                                <td class="table-cell">
-                                    The plants name.
-                                </td>
-                                <td class="table-cell">
-                                    <code>
-                                        false
-                                    </code>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="table-cell">
-                                    <i>
-                                        Does Ore Drop Seeds
-                                    </i>
-                                </td>
-                                <td class="table-cell">
-                                    Used to prevent the plants seeds randomly
-                                    dropping when the ore is mined.
-                                </td> 
-                                <td class="table-cell">
-                                    Boolean
-                                </td>
-                                <td class="table-cell">
-                                    N/A
-                                </td>
-                                <td class="table-cell">
-                                    The plants name.
-                                </td>
-                                <td class="table-cell">
-                                    <code>
-                                        true
-                                    </code>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="table-cell">
-                                    <i>
-                                        Does Produce Drop Seeds
-                                    </i>
-                                </td>
-                                <td class="table-cell">
-                                    Used to prevent the plants produce randomly
-                                    turning into seeds when left in water.
-                                </td> 
-                                <td class="table-cell">
-                                    Boolean
-                                </td>
-                                <td class="table-cell">
-                                    N/A
-                                </td>
-                                <td class="table-cell">
-                                    The plants name.
-                                </td>
-                                <td class="table-cell">
-                                    <code>
-                                        true
-                                    </code>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="table-cell">
-                                    <i>
-                                        Seed Drop Chance From Ore
-                                    </i>
-                                </td>
-                                <td class="table-cell">
-                                    The percentage chance that the plants
-                                    seeds will drop when the ore is mined.
-                                </td> 
-                                <td class="table-cell">
-                                    Float
-                                </td>
-                                <td class="table-cell">
-                                    <b class="range-min">0.0</b>
-                                    <br/>
-                                    to
-                                    <br/>
-                                    <b class="range-max">100.0</b>
-                                </td>
-                                <td class="table-cell">
-                                    The plants name.
-                                </td>
-                                <td class="table-cell">
-                                    Specific to each plant.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="table-cell">
-                                    <i>
-                                        Seed Drop Chance From Produce
-                                    </i>
-                                </td>
-                                <td class="table-cell">
-                                    The percentage chance that the plants
-                                    produce will turn into seeds when left
-                                    in water.
-                                </td> 
-                                <td class="table-cell">
-                                    Float
-                                </td>
-                                <td class="table-cell">
-                                    <b class="range-min">0.0</b>
-                                    <br/>
-                                    to
-                                    <br/>
-                                    <b class="range-max">100.0</b>
-                                </td>
-                                <td class="table-cell">
-                                    The plants name.
-                                </td>
-                                <td class="table-cell">
-                                    Specific to each plant.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="table-cell">
-                                    <i>
-                                        Yield
-                                    </i>
-                                </td>
-                                <td class="table-cell">
-                                    The number of items the plants
-                                    produce will give when smelted.
-                                </td> 
-                                <td class="table-cell">
-                                    Integer
-                                </td>
-                                <td class="table-cell">
-                                    <b class="range-min">1</b>
-                                    <br/>
-                                    to
-                                    <br/>
-                                    <b class="range-max">64</b>
-                                </td>
-                                <td class="table-cell">
-                                    The plants name.
-                                </td>
-                                <td class="table-cell">
-                                    Specific to each plant.
-                                </td>
-                            </tr>
-                        </table>
-                        
-                        <br/><br/>
-                        <b class="sub-header">Metallic Plant Settings</b>
-                        <br/>
-                        Each Metallic plant type will have a configuration
-                        page named after it with the following configuration
-                        settings.
-                        <br/><br/>
-                        <table>
-                            <tr>
-                                <th class="table-header">Config Name</th>
-                                <th class="table-header">Description</th>
-                                <th class="table-header">Value Type</th>
-                                <th class="table-header">Range</th>
-                                <th class="table-header">Submenu Title</th>
-                                <th class="table-header">Default Value</th>
-                            </tr>
-                            <tr>
-                                <td class="table-cell">
-                                    <i>
-                                        Chance to Grow
-                                    </i>
-                                </td>
-                                <td class="table-cell">
-                                    The percentage chance that the plant
-                                    will grow on a random tick.
-                                </td> 
-                                <td class="table-cell">
-                                    Float
-                                </td>
-                                <td class="table-cell">
-                                    <b class="range-min">0.0</b>
-                                    <br/>
-                                    to
-                                    <br/>
-                                    <b class="range-max">100.0</b>
-                                </td>
-                                <td class="table-cell">
-                                    The plants name.
-                                </td>
-                                <td class="table-cell">
-                                    Specific to each plant.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="table-cell">
-                                    <i>
-                                        Enable Bonemeal
-                                    </i>
-                                </td>
-                                <td class="table-cell">
-                                    Used to disable using bonemeal
-                                    on this specific plant. <b>Both the
-                                    global toggle in General Plant Settings
-                                    and this setting needs to be true for the
-                                    plant to accept bonemeal</b>
-                                </td> 
-                                <td class="table-cell">
-                                    Boolean
-                                </td>
-                                <td class="table-cell">
-                                    N/A
-                                </td>
-                                <td class="table-cell">
-                                    The plants name.
-                                </td>
-                                <td class="table-cell">
-                                    <code>
-                                        true
-                                    </code>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="table-cell">
-                                    <i>
-                                        Does Ore Drop Seeds
-                                    </i>
-                                </td>
-                                <td class="table-cell">
-                                    Used to prevent the plants seeds randomly
-                                    dropping when the ore is blown up.
-                                </td> 
-                                <td class="table-cell">
-                                    Boolean
-                                </td>
-                                <td class="table-cell">
-                                    N/A
-                                </td>
-                                <td class="table-cell">
-                                    The plants name.
-                                </td>
-                                <td class="table-cell">
-                                    <code>
-                                        true
-                                    </code>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="table-cell">
-                                    <i>
-                                        Does Organic Ore Drop Seeds
-                                    </i>
-                                </td>
-                                <td class="table-cell">
-                                    Used to prevent the plants produce randomly
-                                    turning into seeds when blown up.
-                                </td> 
-                                <td class="table-cell">
-                                    Boolean
-                                </td>
-                                <td class="table-cell">
-                                    N/A
-                                </td>
-                                <td class="table-cell">
-                                    The plants name.
-                                </td>
-                                <td class="table-cell">
-                                    <code>
-                                        true
-                                    </code>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="table-cell">
-                                    <i>
-                                        Seed Drop Chance From Ore
-                                    </i>
-                                </td>
-                                <td class="table-cell">
-                                    The percentage chance that the plants
-                                    seeds will drop when the ore is blown up.
-                                </td> 
-                                <td class="table-cell">
-                                    Float
-                                </td>
-                                <td class="table-cell">
-                                    <b class="range-min">0.0</b>
-                                    <br/>
-                                    to
-                                    <br/>
-                                    <b class="range-max">100.0</b>
-                                </td>
-                                <td class="table-cell">
-                                    The plants name.
-                                </td>
-                                <td class="table-cell">
-                                    Specific to each plant.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="table-cell">
-                                    <i>
-                                        Seed Drop Chance From Organic Ore
-                                    </i>
-                                </td>
-                                <td class="table-cell">
-                                    The percentage chance that the plants
-                                    produce will turn into seeds when blown
-                                    up.
-                                </td> 
-                                <td class="table-cell">
-                                    Float
-                                </td>
-                                <td class="table-cell">
-                                    <b class="range-min">0.0</b>
-                                    <br/>
-                                    to
-                                    <br/>
-                                    <b class="range-max">100.0</b>
-                                </td>
-                                <td class="table-cell">
-                                    The plants name.
-                                </td>
-                                <td class="table-cell">
-                                    Specific to each plant.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="table-cell">
-                                    <i>
-                                        Yield
-                                    </i>
-                                </td>
-                                <td class="table-cell">
-                                    The number of items the plants
-                                    produce will give when smelted.
-                                </td> 
-                                <td class="table-cell">
-                                    Integer
-                                </td>
-                                <td class="table-cell">
-                                    <b class="range-min">1</b>
-                                    <br/>
-                                    to
-                                    <br/>
-                                    <b class="range-max">64</b>
-                                </td>
-                                <td class="table-cell">
-                                    The plants name.
-                                </td>
-                                <td class="table-cell">
-                                    Specific to each plant.
-                                </td>
-                            </tr>
-                        </table>
-                        <!--
-                        <br/><br/>
-                        <b class="sub-header">Biochemical Plant Settings</b>
-                        <br/>
-                        Each Biochemical plant type will have a configuration
-                        page named after it with the following configuration
-                        settings.
-                        -->
-                    </div>
-                </div>
-
+                
                 <!--                    Content disclaimer                  -->
                 <div class="legal-footer">
                     This wiki is licensed under the 
@@ -1040,81 +311,36 @@ limitations under the License.
                     and copyrights of their respective publisher
                     and its licensors. All rights reserved.
                 </div>
-                
-                <!--                      Ad Sense                          -->
-                <br/>
-                <div class="row">
-                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                    <!-- Wiki-Bot-970x90 -->
-                    <ins class="adsbygoogle"
-                         style="display:inline-block;width:970px;height:90px"
-                         data-ad-client="ca-pub-9043314121835546"
-                         data-ad-slot="3678727385"></ins>
-                    <script>
-                        (adsbygoogle = window.adsbygoogle || []).push({});
-                    </script>
-                </div>
             </div>
         </div>
     </div>
 
 
     <!--                                Footer                              -->
-    <footer class="page-footer font-small grey pt-4">
-        <div class="container-fluid text-center text-md-left">
-            <div class="row">
-                <div class="col-md-12 mt-md-0 mt-3">
-                    <h5 class="text-uppercase">Resynth</h5>
-                    <p></p>
-                    The Resynth mod for Minecraft, the website and its content
-                    are license under the
-                    <a class="btn" href="https://www.apache.org/licenses/LICENSE-2.0">
-                        Apache License, Version 2.0.
-                    </a>.
-                    All Resynth content is open source and hosted on github.
-                    <!--                Disclaimer                          -->
-                    <p></p>
-                    <b>
-                        THE RESYNTH MOD, WEBSITE AND ITS RESOURCES ARE PROVIDED
-                        AS IS WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND.
-                    </b>
-                    <br/>
-                    For more information, view
-                    <a class="btn" href="https://www.apache.org/licenses/LICENSE-2.0#no-warranty">
-                        Clause 7
-                    </a> of the Apache License, Version 2.0.
-                </div>
-                <!--                        Links                           -->
-                <h5 class="text-uppercase">Miscellaneous Links</h5>
-                <hr class="clearfix w-100 d-md-none pb-3">
-                <div class="col-md-12 mb-md-0 mb-6">
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="https://github.com/Resynth-Minecraft-Mod/Resynth-Mod/issues">
-                                Report a Bug/Issue
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.minecraftforum.net/forums/mapping-and-modding-java-edition/minecraft-mods/2927861-resynth-growable-ores-mob-drops-and-resources">
-                                The Minecraft Forums Project Page
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/Resynth-Minecraft-Mod/Resynth-Minecraft-Mod.github.io">
-                                Website Github Project Page
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.planetminecraft.com/mod/resynth/">
-                                PlanetMinecraft Project Page
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+    <footer id="sticky-footer" class="py-4 bg-dark text-white-50" style="margin-top: 20px;">
+        <div style="width: 50%; margin-left: 25%;">
+            The Resynth Minecraft Mod, The Resynth Website, and all related content
+            is licensed under the
+            <a class="btn btn-dark" href="https://www.apache.org/licenses/LICENSE-2.0">
+                Apache License, Version 2.0.
+            </a>
+            All Resynth content is open source and hosted on github.
         </div>
-        <div class="footer-copyright text-center py-3">
-            © 2018-2019 Copyright: Ki11er_wolf
+        
+        <div style="width: 50%; margin-left: 25%;">
+            THE RESYNTH MOD, WEBSITE AND ITS RESOURCES ARE PROVIDED
+            AS IS WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND.
+            <br/>
+            For more information, view
+            <a class="btn btn-dark" href="https://www.apache.org/licenses/LICENSE-2.0#no-warranty">
+                Clause 7
+            </a> of the Apache License, Version 2.0.
+        </div>
+       
+        <hr style="background-color: white">
+        
+        <div class="container text-center">
+          <small>Copyright &copy; 2018-2019: Ki11er_wolf</small>
         </div>
     </footer>
 

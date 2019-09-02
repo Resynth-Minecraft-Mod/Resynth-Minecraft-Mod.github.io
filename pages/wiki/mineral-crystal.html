@@ -35,20 +35,17 @@ limitations under the License.
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--                           STYLE                                    -->
-    <!-- JQuery and Bootstrap-->
+    <!-- JQuery, Bootstrap and Icons-->
     <link rel="stylesheet"
-          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-    <script
-        src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
-    </script>
-
-    <script
-        src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
-    </script>
-
-    <!-- Material Design Bootstrap -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.1.1/css/mdb.min.css" rel="stylesheet">
+              href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+              crossorigin="anonymous">
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
     <!--                       Google Analytics                             -->
 
@@ -69,97 +66,43 @@ limitations under the License.
         gtag('set', {'user_id': 'USER_ID'});
     </script>
     
-    <!-- AdSense -->
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <script>
-      (adsbygoogle = window.adsbygoogle || []).push({
-        google_ad_client: "ca-pub-9043314121835546",
-        enable_page_level_ads: true
-      });
-    </script>
-    
     <!-- Cookie Pop up -->
     <link rel="stylesheet" type="text/css" href="../../css/jquery-eu-cookie-law-popup.css"/>
     <script src="../../js/jquery-eu-cookie-law-popup.js"></script>
 </head>
 
 <body class="eupopup eupopup-top">
-    <!--                           Navigation Bar                           -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" style="font-size: 14px;
-         min-height: 70px;">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse"
-                        data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <!--                    Logo                                -->
-                <a class="navbar-brand" style="margin-top:8px;" href="#">
-                    <img alt="Resynth Wiki Logo" src="../../images/wiki/logo.png">
-                </a>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav" style="margin-top:13px;">
-                    <!--                Links                               -->
-                    <li >
-                        <a href="https://resynth-minecraft-mod.github.io/">
-                            Home
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <b><u>Wiki</u></b>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://minecraft.curseforge.com/projects/resynth/files">
-                            Downloads
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://resynth-minecraft-mod.github.io/pages/changelog/changelog.html">
-                            Changelog
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://minecraft.curseforge.com/projects/resynth">
-                            CurseForge
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/Resynth-Minecraft-Mod/Resynth-Mod">
-                            Source Code
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://resynth-minecraft-mod.github.io/pages/faq/faq.html">
-                            FAQ
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://resynth-minecraft-mod.github.io/pages/credits/credits.html">
-                            Credits
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.apache.org/licenses/LICENSE-2.0">
-                            License
-                        </a>
-                    </li>
-                </ul>
-                <!--                   Download Button                      -->
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a title="Download Latest Release"
-                           href="https://minecraft.curseforge.com/projects/resynth/files/latest">
-                            <span class="btn btn-primary glyphicon glyphicon-download"></span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand">
+            <img src="../../images/wiki/logo.png" height="50" style="margin-top: 10px;" alt="">
+            <i class="btn btn-primary" style="margin-left: 10px"
+                    title="Go to downloads"
+                    onclick="window.open('https://www.curseforge.com/minecraft/mc-mods/resynth/files')">
+                <i class="material-icons vertical-align-middle padding-bottom-3">cloud_download</i>
+                <i id="downloads">Downloads</i>
+            </i>
+        </a>
+        
+        <!--Handles displaying total downloads in the downloads button-->
+        <script>
+            $.get("https://api.cfwidget.com/minecraft/mc-mods/resynth", function(data) {
+                $("#downloads").html(
+                    data.downloads.total.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "+ Downloads"
+                );
+            });
+        </script>
+        
+        <span class="navbar-text">
+            <button onclick="window.open('../../')" class="navbar-link">Home</button>
+            <button class="navbar-link-active">Wiki</button>
+            <button onclick="window.open('https://www.curseforge.com/minecraft/mc-mods/resynth/')" class="navbar-link">Project Page</button>
+            <button onclick="window.open('../changelog/changelog.html')" class="navbar-link">Changelog</button>
+            <button onclick="window.open('../faq/faq.html')" class="navbar-link">FAQ</button>
+            <button onclick="window.open('../credits/credits.html')" class="navbar-link">Credits</button>
+            <button onclick="window.open('https://github.com/Resynth-Minecraft-Mod')" class="navbar-link">Source Code</button>
+            <button onclick="window.open('https://www.apache.org/licenses/LICENSE-2.0')" class="navbar-link">License</button>
+        </span>
     </nav>
 
     <!--                                  Page                              -->
@@ -305,104 +248,72 @@ limitations under the License.
             </div>
             <!--                        WIKI PAGE                           -->
             <div id="wiki-page" class="col-lg-8">
-                <!--                      Ad Sense                          -->
-                <div class="row">
-                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                    <!-- Wiki-Top-970x90 -->
-                    <ins class="adsbygoogle"
-                         style="display:inline-block;width:970px;height:90px"
-                         data-ad-client="ca-pub-9043314121835546"
-                         data-ad-slot="5003772569"></ins>
-                    <script>
-                        (adsbygoogle = window.adsbygoogle || []).push({});
-                    </script>
-                </div>
                 
-                <div class="col-md-8 text-left">
-                    <div class="title">
-                        <b>Mineral Crystal</b>
+                <div class="row">
+                    <div class="col-md-8 text-left">
+                        <div class="title">
+                            <b>Mineral Crystal</b>
+                        </div>
+                        <!-- Opening Text -->
+                        <div class="wiki-paragraph">
+                            Mineral Crystals are a consumable added to the
+                            Mineral Hoe by right-clicking with Mineral Hoe
+                            in hand and Mineral Crystals in your inventory.
+                            The Mineral Crystals are then used up when tilling
+                            dirt or grass.
+                            <br/><br/>
+                            Mineral Crystals are not needed in creative mode.
+                        </div>
                     </div>
-                    <!-- Opening Text -->
-                    <div class="wiki-paragraph">
-                        Mineral Crystals are a sort of fuel for the
-                        Mineral Hoe used up when tilling dirt into Mineral
-                        Soil with the Mineral Hoe. A Mineral Crystal is
-                        always dropped by Mineral Soil block when broken so
-                        the fuel can be reclaimed.
-                        <br/><br/>
-                        Mineral Crystals are added to the Mineral Hoe by
-                        shift-right-clicking any block with the Mineral Hoe in
-                        hand and Mineral Crystals in the inventory. 
-                        <br/><br/>
-                        Mineral Crystals are not needed in creative mode.
-                    </div>
-                </div>
 
-                <!--                        INFO BOX                        -->
-                <div id="info-box" class="col-md-4">
-                    <b id="info-box-title">Mineral Crystal</b>
-                    <div>
-                        <img id="info-box-image" alt="info-box-image" 
-                             src="../../images/wiki/textures/mineral-crystal.png">
-                    </div>
-                    <i>Mineral Crystal item texture.</i>
-                    <div class="row">
-                        <div class="info-box-row">
-                            <div class="col-sm-6">
-                                Display Name:
-                            </div>
-                            <div class="col-sm-6">
-                                Mineral Crystal
-                                
-                            </div>
-                            <br class="dsktop"/>
+                    <!--                        INFO BOX                        -->
+                    <div id="info-box" class="col-md-4">
+                        <b id="info-box-title">Mineral Crystal</b>
+                        <div>
+                            <img id="info-box-image" alt="info-box-image" 
+                                 src="../../images/wiki/textures/mineral-crystal.png">
                         </div>
-                        <br/>
-                        <div class="info-box-row">
-                            <div class="col-sm-6">
-                                Item Name:
+                        <i>Mineral Crystal item texture.</i>
+                        
+                        <div class="row info-box">
+                            
+                            <div class="row info-box-row">
+                                <div class="col-sm-6">
+                                    Display Name:
+                                </div>
+                                <div class="col-sm-6">
+                                    Mineral Crystal
+                                </div>
                             </div>
-                            <div class="col-sm-6">
-                                mineral_crystal
+                            
+                            <div class="row info-box-row">
+                                <div class="col-sm-6">
+                                    Stackable:
+                                </div>
+                                <div class="col-sm-6">
+                                    Yes(64)
+                                </div>
                             </div>
+                            
+                            <div class="row info-box-row">
+                                <div class="col-sm-6">
+                                    Growable:
+                                </div>
+                                <div class="col-sm-6">
+                                    Yes
+                                </div>
+                            </div>
+                            
+                            <div class="row info-box-row">
+                                <div class="col-sm-6">
+                                    Added in:
+                                </div>
+                                <div class="col-sm-6">
+                                    1.0 Beta
+                                </div>
+                            </div>
+                            
                         </div>
-                        <br/>
-                        <div class="info-box-row">
-                            <div class="col-sm-6">
-                                Stackable:
-                            </div>
-                            <div class="col-sm-6">
-                                yes(64)
-                            </div>
-                        </div>
-                        <br/>
-                        <div class="info-box-row">
-                            <div class="col-sm-6">
-                                Growable:
-                            </div>
-                            <div class="col-sm-6">
-                                no
-                            </div>
-                        </div>
-                        <br/>
-                        <div class="info-box-row">
-                            <div class="col-sm-6">
-                                Added in:
-                            </div>
-                            <div class="col-sm-6">
-                                <code>v1.0-Beta</code>
-                            </div>
-                        </div>
-                        <br/>
-                        <div class="info-box-row">
-                            <div class="col-sm-6">
-                                Mineral Percentage Increase:
-                            </div>
-                            <div class="col-sm-6">
-                                None
-                            </div>
-                        </div>
-                        <br/>
                     </div>
                 </div>
 
@@ -444,81 +355,36 @@ limitations under the License.
                     and copyrights of their respective publisher
                     and its licensors. All rights reserved.
                 </div>
-                
-                <!--                      Ad Sense                          -->
-                <br/>
-                <div class="row">
-                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                    <!-- Wiki-Bot-970x90 -->
-                    <ins class="adsbygoogle"
-                         style="display:inline-block;width:970px;height:90px"
-                         data-ad-client="ca-pub-9043314121835546"
-                         data-ad-slot="3678727385"></ins>
-                    <script>
-                        (adsbygoogle = window.adsbygoogle || []).push({});
-                    </script>
-                </div>
             </div>
         </div>
     </div>
 
 
     <!--                                Footer                              -->
-    <footer class="page-footer font-small grey pt-4">
-        <div class="container-fluid text-center text-md-left">
-            <div class="row">
-                <div class="col-md-12 mt-md-0 mt-3">
-                    <h5 class="text-uppercase">Resynth</h5>
-                    <p></p>
-                    The Resynth mod for Minecraft, the website and its content
-                    are license under the
-                    <a class="btn" href="https://www.apache.org/licenses/LICENSE-2.0">
-                        Apache License, Version 2.0.
-                    </a>.
-                    All Resynth content is open source and hosted on github.
-                    <!--                Disclaimer                          -->
-                    <p></p>
-                    <b>
-                        THE RESYNTH MOD, WEBSITE AND ITS RESOURCES ARE PROVIDED
-                        AS IS WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND.
-                    </b>
-                    <br/>
-                    For more information, view
-                    <a class="btn" href="https://www.apache.org/licenses/LICENSE-2.0#no-warranty">
-                        Clause 7
-                    </a> of the Apache License, Version 2.0.
-                </div>
-                <!--                        Links                           -->
-                <h5 class="text-uppercase">Miscellaneous Links</h5>
-                <hr class="clearfix w-100 d-md-none pb-3">
-                <div class="col-md-12 mb-md-0 mb-6">
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="https://github.com/Resynth-Minecraft-Mod/Resynth-Mod/issues">
-                                Report a Bug/Issue
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.minecraftforum.net/forums/mapping-and-modding-java-edition/minecraft-mods/2927861-resynth-growable-ores-mob-drops-and-resources">
-                                The Minecraft Forums Project Page
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/Resynth-Minecraft-Mod/Resynth-Minecraft-Mod.github.io">
-                                Website Github Project Page
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.planetminecraft.com/mod/resynth/">
-                                PlanetMinecraft Project Page
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+    <footer id="sticky-footer" class="py-4 bg-dark text-white-50" style="margin-top: 20px;">
+        <div style="width: 50%; margin-left: 25%;">
+            The Resynth Minecraft Mod, The Resynth Website, and all related content
+            is licensed under the
+            <a class="btn btn-dark" href="https://www.apache.org/licenses/LICENSE-2.0">
+                Apache License, Version 2.0.
+            </a>
+            All Resynth content is open source and hosted on github.
         </div>
-        <div class="footer-copyright text-center py-3">
-            © 2018-2019 Copyright: Ki11er_wolf
+        
+        <div style="width: 50%; margin-left: 25%;">
+            THE RESYNTH MOD, WEBSITE AND ITS RESOURCES ARE PROVIDED
+            AS IS WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND.
+            <br/>
+            For more information, view
+            <a class="btn btn-dark" href="https://www.apache.org/licenses/LICENSE-2.0#no-warranty">
+                Clause 7
+            </a> of the Apache License, Version 2.0.
+        </div>
+       
+        <hr style="background-color: white">
+        
+        <div class="container text-center">
+          <small>Copyright &copy; 2018-2019: Ki11er_wolf</small>
         </div>
     </footer>
 

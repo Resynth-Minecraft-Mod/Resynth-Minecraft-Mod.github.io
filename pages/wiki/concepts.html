@@ -25,7 +25,7 @@ limitations under the License.
     <!--                            SEO                                     -->
     <meta name="keywords" content="Resynth, Resynth Wiki, Wiki, Resynth Help,
           Help, Resynth Mod, Growable Ores, Growable Mob Drops, Concepts,
-          Definitions, Explanations, 1.12.2">
+          Definitions, Explanations, 1.12.2, 1.13.2">
 
     <meta name="description" content="A list of definitions and descriptions
           for resynth topics, blocks, items, mechanics and plants.">
@@ -35,20 +35,17 @@ limitations under the License.
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--                           STYLE                                    -->
-    <!-- JQuery and Bootstrap-->
+    <!-- JQuery, Bootstrap and Icons-->
     <link rel="stylesheet"
-          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-    <script
-        src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
-    </script>
-
-    <script
-        src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
-    </script>
-
-    <!-- Material Design Bootstrap -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.1.1/css/mdb.min.css" rel="stylesheet">
+              href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+              crossorigin="anonymous">
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
     <!--                       Google Analytics                             -->
 
@@ -69,97 +66,43 @@ limitations under the License.
         gtag('set', {'user_id': 'USER_ID'});
     </script>
     
-    <!-- AdSense -->
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <script>
-      (adsbygoogle = window.adsbygoogle || []).push({
-        google_ad_client: "ca-pub-9043314121835546",
-        enable_page_level_ads: true
-      });
-    </script>
-    
     <!-- Cookie Pop up -->
     <link rel="stylesheet" type="text/css" href="../../css/jquery-eu-cookie-law-popup.css"/>
     <script src="../../js/jquery-eu-cookie-law-popup.js"></script>
 </head>
 
 <body class="eupopup eupopup-top">
-    <!--                           Navigation Bar                           -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" style="font-size: 14px;
-         min-height: 70px;">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse"
-                        data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <!--                    Logo                                -->
-                <a class="navbar-brand" style="margin-top:8px;" href="#">
-                    <img alt="Resynth Wiki Logo" src="../../images/wiki/logo.png">
-                </a>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav" style="margin-top:13px;">
-                    <!--                Links                               -->
-                    <li >
-                        <a href="https://resynth-minecraft-mod.github.io/">
-                            Home
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <b><u>Wiki</u></b>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://minecraft.curseforge.com/projects/resynth/files">
-                            Downloads
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://resynth-minecraft-mod.github.io/pages/changelog/changelog.html">
-                            Changelog
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://minecraft.curseforge.com/projects/resynth">
-                            CurseForge
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/Resynth-Minecraft-Mod/Resynth-Mod">
-                            Source Code
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://resynth-minecraft-mod.github.io/pages/faq/faq.html">
-                            FAQ
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://resynth-minecraft-mod.github.io/pages/credits/credits.html">
-                            Credits
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.apache.org/licenses/LICENSE-2.0">
-                            License
-                        </a>
-                    </li>
-                </ul>
-                <!--                   Download Button                      -->
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a title="Download Latest Release"
-                           href="https://minecraft.curseforge.com/projects/resynth/files/latest">
-                            <span class="btn btn-primary glyphicon glyphicon-download"></span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand">
+            <img src="../../images/wiki/logo.png" height="50" style="margin-top: 10px;" alt="">
+            <i class="btn btn-primary" style="margin-left: 10px"
+                    title="Go to downloads"
+                    onclick="window.open('https://www.curseforge.com/minecraft/mc-mods/resynth/files')">
+                <i class="material-icons vertical-align-middle padding-bottom-3">cloud_download</i>
+                <i id="downloads">Downloads</i>
+            </i>
+        </a>
+        
+        <!--Handles displaying total downloads in the downloads button-->
+        <script>
+            $.get("https://api.cfwidget.com/minecraft/mc-mods/resynth", function(data) {
+                $("#downloads").html(
+                    data.downloads.total.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "+ Downloads"
+                );
+            });
+        </script>
+        
+        <span class="navbar-text">
+            <button onclick="window.open('../../')" class="navbar-link">Home</button>
+            <button class="navbar-link-active">Wiki</button>
+            <button onclick="window.open('https://www.curseforge.com/minecraft/mc-mods/resynth/')" class="navbar-link">Project Page</button>
+            <button onclick="window.open('../changelog/changelog.html')" class="navbar-link">Changelog</button>
+            <button onclick="window.open('../faq/faq.html')" class="navbar-link">FAQ</button>
+            <button onclick="window.open('../credits/credits.html')" class="navbar-link">Credits</button>
+            <button onclick="window.open('https://github.com/Resynth-Minecraft-Mod')" class="navbar-link">Source Code</button>
+            <button onclick="window.open('https://www.apache.org/licenses/LICENSE-2.0')" class="navbar-link">License</button>
+        </span>
     </nav>
 
     <!--                                  Page                              -->
@@ -305,49 +248,38 @@ limitations under the License.
             </div>
             <!--                        WIKI PAGE                           -->
             <div id="wiki-page" class="col-lg-8">
-                <!--                      Ad Sense                          -->
                 <div class="row">
-                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                    <!-- Wiki-Top-970x90 -->
-                    <ins class="adsbygoogle"
-                         style="display:inline-block;width:970px;height:90px"
-                         data-ad-client="ca-pub-9043314121835546"
-                         data-ad-slot="5003772569"></ins>
-                    <script>
-                        (adsbygoogle = window.adsbygoogle || []).push({});
-                    </script>
-                </div>
-                
-                <div class="col-md-8 text-left">
-                    <div class="title">
-                        <b>Concepts</b>
+                    <div class="col-md-8 text-left">
+                        <div class="title">
+                            <b>Concepts</b>
+                        </div>
+                        <!-- Opening Text -->
+                        <div class="wiki-paragraph">
+                            Some concepts, mechanics and words may not be overly
+                            clear in Resynth. This Wiki page servers to define
+                            unclear concepts and give a clear description on various
+                            Resynth topics used throughout the mod and the Wiki.
+                            <br/><br/>
+                            If any term or topic in the Wiki is unclear and a page
+                            for the topic cannot be found, this is a good place to
+                            look.
+                        </div>
                     </div>
-                    <!-- Opening Text -->
-                    <div class="wiki-paragraph">
-                        Some concepts, mechanics and words may not be overly
-                        clear in Resynth. This Wiki page servers to define
-                        unclear concepts and give a clear description on various
-                        Resynth topics used throughout the mod and the Wiki.
-                        <br/><br/>
-                        If any term or topic in the Wiki is unclear and a page
-                        for the topic cannot be found, this is a good place to
-                        look.
-                    </div>
-                </div>
 
-                <!--                        INFO BOX                        -->
-                <div id="info-box" class="col-md-4">
-                    <b id="info-box-title">Resynth - Concepts</b>
-                    <div>
-                        <img id="info-box-image" alt="info-box-image" 
-                             src="../../images/wiki/textures/mineral-crystal.png">
-                    </div>
-                    <i>Mineral Crystal texture.</i>
-                    <div class="row">
-                        <br/>
+                    <!--                        INFO BOX                        -->
+
+                    <div id="info-box" class="col-md-4">
+                        <b id="info-box-title">Resynth - Concepts</b>
+                        <div>
+                            <img id="info-box-image" alt="info-box-image" 
+                                 src="../../images/wiki/textures/mineral-crystal.png">
+                        </div>
+                        <i>Mineral Crystal texture.</i>
+                        <div class="row">
+                            <br/>
+                        </div>
                     </div>
                 </div>
-
                 <!--                      WIKI CONTENT                      -->
                 <div id="plant-types" class="row text-left">
                     <div class="title">
@@ -362,28 +294,31 @@ limitations under the License.
                         <br/><br/>
                         <a href="crystalline-plants.html"><b>Crystalline</b></a>
                         plant types grow resources that are
-                        normally dropped by ore (e.g. diamond and coal). This
+                        normally dropped by mining an ore (e.g. diamond and coal). This
                         does <b>NOT</b> include Iron and Gold as the ore block
                         is dropped rather than the resource. The plants look
                         and act similar to Minecraft Wheat plants. The seeds
-                        are dropped randomly by mining the ores.
+                        are dropped randomly by mining the ores or leaving its
+                        produce (Shards) to despawn in water.
                         <br/><br/>
                         <a href="metallic-plants.html"><b>Metallic</b></a>
                         plant types grow ore blocks that spawn
                         in the world (e.g. gold and iron). The plants produce
                         can be smelted back into the ore. The seeds are obtained
-                        randomly by blowing the ore blocks up with TNT. These
-                        plants act similar to Minecraft Melon plants.
+                        randomly by blowing the ore blocks or the plants produce
+                        (organic ore) up with TNT. These plants act similar to
+                        Minecraft Melon plants.
                         <br/><br/>
                         <a href="biochemical-plants.html"><b>Biochemical</b></a>
                         plant types grow mob drops. The seeds
                         are obtained by the killing the mob that would normally
-                        drop the resource. These plants have no <i>similar</i>
+                        drop the final resource. These plants have no <i>similar</i>
                         Minecraft plant. When fully grown, they can be harvested
                         by right clicking. When harvested, they return to a growth
-                        stage of 4 instead of 1 like Crystalline plant types.
-                        The produce can be thrown for a chance at getting more
-                        seeds.
+                        stage of 4 instead of 1.The produce can be thrown for a
+                        chance at getting more seeds in the 1.12.2 versions of
+                        Resynth. In version 1.13.2 and up, the produce must be
+                        smashed to get more seeds.
                         
                         <br/><br/>
                         <img src="../../images/wiki/pictures/plant-types.png"
@@ -456,81 +391,36 @@ limitations under the License.
                     and copyrights of their respective publisher
                     and its licensors. All rights reserved.
                 </div>
-                
-                <!--                      Ad Sense                          -->
-                <br/>
-                <div class="row">
-                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                    <!-- Wiki-Bot-970x90 -->
-                    <ins class="adsbygoogle"
-                         style="display:inline-block;width:970px;height:90px"
-                         data-ad-client="ca-pub-9043314121835546"
-                         data-ad-slot="3678727385"></ins>
-                    <script>
-                        (adsbygoogle = window.adsbygoogle || []).push({});
-                    </script>
-                </div>
             </div>
         </div>
     </div>
 
 
     <!--                                Footer                              -->
-    <footer class="page-footer font-small grey pt-4">
-        <div class="container-fluid text-center text-md-left">
-            <div class="row">
-                <div class="col-md-12 mt-md-0 mt-3">
-                    <h5 class="text-uppercase">Resynth</h5>
-                    <p></p>
-                    The Resynth mod for Minecraft, the website and its content
-                    are license under the
-                    <a class="btn" href="https://www.apache.org/licenses/LICENSE-2.0">
-                        Apache License, Version 2.0.
-                    </a>.
-                    All Resynth content is open source and hosted on github.
-                    <!--                Disclaimer                          -->
-                    <p></p>
-                    <b>
-                        THE RESYNTH MOD, WEBSITE AND ITS RESOURCES ARE PROVIDED
-                        AS IS WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND.
-                    </b>
-                    <br/>
-                    For more information, view
-                    <a class="btn" href="https://www.apache.org/licenses/LICENSE-2.0#no-warranty">
-                        Clause 7
-                    </a> of the Apache License, Version 2.0.
-                </div>
-                <!--                        Links                           -->
-                <h5 class="text-uppercase">Miscellaneous Links</h5>
-                <hr class="clearfix w-100 d-md-none pb-3">
-                <div class="col-md-12 mb-md-0 mb-6">
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="https://github.com/Resynth-Minecraft-Mod/Resynth-Mod/issues">
-                                Report a Bug/Issue
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.minecraftforum.net/forums/mapping-and-modding-java-edition/minecraft-mods/2927861-resynth-growable-ores-mob-drops-and-resources">
-                                The Minecraft Forums Project Page
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/Resynth-Minecraft-Mod/Resynth-Minecraft-Mod.github.io">
-                                Website Github Project Page
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.planetminecraft.com/mod/resynth/">
-                                PlanetMinecraft Project Page
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+    <footer id="sticky-footer" class="py-4 bg-dark text-white-50" style="margin-top: 20px;">
+        <div style="width: 50%; margin-left: 25%;">
+            The Resynth Minecraft Mod, The Resynth Website, and all related content
+            is licensed under the
+            <a class="btn btn-dark" href="https://www.apache.org/licenses/LICENSE-2.0">
+                Apache License, Version 2.0.
+            </a>
+            All Resynth content is open source and hosted on github.
         </div>
-        <div class="footer-copyright text-center py-3">
-            © 2018-2019 Copyright: Ki11er_wolf
+        
+        <div style="width: 50%; margin-left: 25%;">
+            THE RESYNTH MOD, WEBSITE AND ITS RESOURCES ARE PROVIDED
+            AS IS WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND.
+            <br/>
+            For more information, view
+            <a class="btn btn-dark" href="https://www.apache.org/licenses/LICENSE-2.0#no-warranty">
+                Clause 7
+            </a> of the Apache License, Version 2.0.
+        </div>
+       
+        <hr style="background-color: white">
+        
+        <div class="container text-center">
+          <small>Copyright &copy; 2018-2019: Ki11er_wolf</small>
         </div>
     </footer>
 

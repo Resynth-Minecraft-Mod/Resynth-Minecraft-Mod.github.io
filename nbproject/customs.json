@@ -6,5 +6,9 @@
             }
         }
     },
-    "attributes": {}
+    "attributes": {
+        "integrity": {
+            "context": "link"
+        }
+    }
 }
