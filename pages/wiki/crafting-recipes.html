@@ -76,34 +76,24 @@ limitations under the License.
     <!-- Navbar -->
     <nav class="navbar navbar-dark bg-dark">
         <a class="navbar-brand">
-            <img src="../../images/wiki/logo.png" height="50" style="margin-top: 10px;" alt="">
-            <i class="btn btn-primary" style="margin-left: 10px"
-                    title="Go to downloads"
-                    onclick="window.open('https://www.curseforge.com/minecraft/mc-mods/resynth/files')">
-                <i class="material-icons vertical-align-middle padding-bottom-3">cloud_download</i>
-                <i id="downloads">Downloads</i>
-            </i>
+            <img src="../../images/logo.png" height="39" style="margin-top: 10px;" alt=""/>
+            
+            <button title="Go to downloads" style="background: none; border:none;"
+                accesskey=""onclick="window.open('https://www.curseforge.com/minecraft/mc-mods/resynth/files');">
+                <img style="height: 25px;" src="http://cf.way2muchnoise.eu/full_303846_downloads.svg">
+            </button>
         </a>
         
-        <!--Handles displaying total downloads in the downloads button-->
-        <script>
-            $.get("https://api.cfwidget.com/minecraft/mc-mods/resynth", function(data) {
-                $("#downloads").html(
-                    data.downloads.total.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "+ Downloads"
-                );
-            });
-        </script>
-        
         <span class="navbar-text">
-            <button onclick="window.open('../../')" class="navbar-link">Home</button>
+            <button href="" class="navbar-link">Home</button>
             <button class="navbar-link-active">Wiki</button>
             <button onclick="window.open('https://www.curseforge.com/minecraft/mc-mods/resynth/')" class="navbar-link">Project Page</button>
-            <button onclick="window.open('../changelog/changelog.html')" class="navbar-link">Changelog</button>
-            <button onclick="window.open('../faq/faq.html')" class="navbar-link">FAQ</button>
-            <button onclick="window.open('../credits/credits.html')" class="navbar-link">Credits</button>
+            <button onclick="window.open('../../pages/changelog/changelog.html')" class="navbar-link">Changelog</button>
+            <button onclick="window.open('../../pages/faq/faq.html')" class="navbar-link">FAQ</button>
+            <button onclick="window.open('../../pages/credits/credits.html')" class="navbar-link">Credits</button>
             <button onclick="window.open('https://github.com/Resynth-Minecraft-Mod')" class="navbar-link">Source Code</button>
             <button onclick="window.open('https://www.apache.org/licenses/LICENSE-2.0')" class="navbar-link">License</button>
-        </span>
+        </span>s
     </nav>
 
     <!--                                  Page                              -->
