@@ -28,7 +28,7 @@ limitations under the License.
 
     <meta name="keywords" content="Changelog, Change Log, Changes, Resynth,
           Resynth Minecraft Mod, Growable Ores, Growable Mob Drops, Growable
-          Resources, 1.12.2, 1.13.2, 1.14.4">
+          Resources, 1.12.2, 1.13.2, 1.14.4, Updates, Versions">
 
     <!--Meta Tags-->
     <meta charset="utf-8">
@@ -76,10 +76,10 @@ limitations under the License.
         <a class="navbar-brand">
             <img src="../../images/logo.png" height="39" style="margin-top: 10px;" alt=""/>
             
-            <button title="Go to downloads" style="background: none; border:none;"
-                accesskey=""onclick="window.open('https://www.curseforge.com/minecraft/mc-mods/resynth/files');">
-                <img style="height: 25px;" src="http://cf.way2muchnoise.eu/full_303846_downloads.svg">
-            </button>
+            <i title="Go to downloads" style="background: none; border:none;"
+                onclick="window.open('https://www.curseforge.com/minecraft/mc-mods/resynth/files');">
+                <img style="height: 25px;" src="http://cf.way2muchnoise.eu/full_303846_downloads.svg" alt="downloads">
+            </i>
         </a>
         
         <span class="navbar-text">
@@ -94,54 +94,147 @@ limitations under the License.
         </span>
     </nav>
 
-    <!--                                Content                             -->
-    <div class="container text-left" style="margin-top: 65px; font-size: 20px;">
-        <h1 class="text-center">
-            <b>Changelog </b> <i class="material-icons" style="font-size: 48px">track_changes</i>
-        </h1>
-        <h2 class="text-center">The list of changes to Resynth throughout the ages.</h2>
-        <!--                        Versions                            -->
-        
-        <div class="text-center" style="margin-top: 30px;">
-            <h1><u>Minecraft 1.14.4</u></h1>
+    <!-- Content -->
+    <div class="container" style="font-size: 20px;">
+        <!-- Title -->
+        <div class="text-center">
+            <!-- Top -->
+            <h1>
+                <b>Changelog</b>
+                <i class="material-icons" style="font-size: 48px">history</i>
+            </h1>
+            <!-- Description -->
+            <h2>
+                The complete list of changes to Resynth throughout the ages.
+            </h2>
         </div>
         
+        <!-- Minecraft Versions -->
         <div>
-                <h1><b>Version 3.0.0</b></h1>
-                <h2>A direct port to 1.14.4 from 1.13.2 with some
-                additions.</h2>
-                <div class="text-left">
-                    <span><i class="material-icons">warning</i>
-                        <b>Integration with other mods as been added back</b> - 
-                        This includes Hwyla integration and plant sets for a few
-                        new mods. The One Probe integration has yet to be added.
-                        Biochemical plants can be made for modded resources
-                        as well, this means Resynth can grow mob drops from
-                        other mods now.
-                    </span>
+            <!-- 1.14.4 -->
+            <div class="mc-version text-center">
+                <h3><b><u>Minecraft 1.14.4</u></b></h3>
+                <h4>
+                    <b>
+                        The changelog for all Resynth 1.14.4 versions.
+                    </b>
+                </h4>
+                
+                <!-- v3.1.0 -->
+                <a name="3.1.0"></a>
+                <div class="text-left re-version">
+                    <div class="text-center">
+                        <h3><b><u>Resynth 3.1.0 (1.14.4)</u></b></h3>
+                        <b>
+                            A couple fixes from the 3.0.0/2.0.0 ports, quite a
+                            few new additions, a performance improvement or two,
+                            and a new language translation.
+                        </b>
+                        <br/><small style="color: darkblue">
+                            One Year Anniversary!
+                        </small>
+                        <br/><small style="color: purple">
+                            Date Published: NOT YET PUBLISHED
+                        </small>
+                        <br/><small>
+                        <a href="../../">Download</a>
+                        </small>
+                    </div>
+                    
+                    <!-- Additions -->
+                    <br/>
+                    <b>Additions</b>
+                    <div style="padding-left: 20px; padding-top: 10px;">
+                        <i class="material-icons">add_circle_outline</i>
+                        <b>Added Calvinite and Sylvanite</b> - Added two new resources:
+                        Calvinite and Sylvanite, mined from the Nether and The End,
+                        which can be used to increase the Mineral Content of Mineral Soil
+                        beyond 50%.
+                    </div>
+                    <div style="padding-left: 20px; padding-top: 10px;">
+                        <i class="material-icons">add_circle_outline</i>
+                        <b>Added Translations</b> - Added language translations for
+                        Simplified Chinese. Thanks to <b>aikinitt</b> for doing the translations. 
+                    </div>
+                    
+                    <!-- Fixes -->
+                    <br/>
+                    <b>Bug Fixes</b>
+                    <div style="padding-left: 20px; padding-top: 10px;">
+                        <i class="material-icons">check_circle_outline</i>
+                        <b>Fixed a bug that caused servers running Resynth to crash</b>
+                        - Fix a bug that would cause any server running Resynth
+                        version 3.0.0 to crash when a Mineral Hoe was used to
+                        till dirt or grass. Thanks to <b>johnneijzen</b> and
+                        <b>minelice</b> for submitting bug reports.
+                    </div>
+                    <div style="padding-left: 20px; padding-top: 10px;">
+                        <i class="material-icons">check_circle_outline</i>
+                        <b>Fixed some incorrect item names</b>
+                        - Fixed item names for More Ores in ONE plant seeds
+                        and produce.
+                    </div>
+                    <div style="padding-left: 20px; padding-top: 10px;">
+                        <i class="material-icons">check_circle_outline</i>
+                        <b>Fixed piston interaction with Organic Ore</b>
+                        - Organic Ore blocks will now drop as the item when
+                        pushed by a piston. This should now allow the blocks
+                        to be farmed automatically.
+                    </div>
+                    
+                    <!-- Changes -->
+                    <br/>
+                    <b>Changes</b>
+                    <div style="padding-left: 20px; padding-top: 10px;">
+                        <i class="material-icons">error_outline</i>
+                        <b>Mineral Stone world generation configuration</b>
+                        - The Mineral Stone world generation config setting names and
+                        values have changed slightly
+                    </div>
+                    <div style="padding-left: 20px; padding-top: 10px;">
+                        <i class="material-icons">error_outline</i>
+                        <b>Updated Forge build version</b>
+                        - Updated Resynth to build using Minecraft Forge
+                        version <code>1.14.4-28.1.10</code>.
+                    </div>
+                    
+                    <!-- END -->
+                    <br/>
+                    <div style="width: 100%; height: 1px; border: 1px solid black;"></div>
                 </div>
-                <h3><u>Changes</u></h3>
-                <div class="text-left">
-                    <span><i class="material-icons">error</i>
-                        <b>Changed Mineral Stone world generation again</b> - 
-                        The way Mineral Stone generates in the world has been
-                        changed slightly. It now generates more like vanilla ores
-                        and it's spawn frequency has been increased.
-                    </span>
-                </div>
-                <h3><u>Additions</u></h3>
-                <div class="text-left">
-                    <span><i class="material-icons">add_circle</i>
+                
+                <!-- v3.0.0 -->
+                <a name="3.0.0"></a>
+                <div class="text-left re-version">
+                    <div class="text-center">
+                        <h3><b><u>Resynth 3.0.0 (1.14.4)</u></b></h3>
+                        <b>
+                            A direct port to 1.14.4 from 1.13.2 with mod
+                            integration added back.
+                        </b>
+                        <br/><small style="color: purple">
+                            Date Published: Sep 6, 2019
+                        </small>
+                        <br/><small>
+                        <a href="https://www.curseforge.com/minecraft/mc-mods/resynth/files/2779220">download</a>
+                        </small>
+                    </div>
+                    
+                    <!-- Additions -->
+                    <br/>
+                    <b>Additions</b>
+                    <div style="padding-left: 20px; padding-top: 10px;">
+                        <i class="material-icons">add_circle_outline</i>
                         <b>Effects added when seeds spawn</b> - When seeds spawn,
                         they'll now display particle effects and play a sound
                         to let you know they've spawned (only works on singleplayer).
-                    </span>
-                    <br/>
-                    <span><i class="material-icons">add_circle</i>
+                    </div>
+                    <div style="padding-left: 20px; padding-top: 10px;">
+                        <i class="material-icons">add_circle_outline</i>
                         <b>Added plants for additional mods</b> - With support
                         for modded plants back, a few new plants have been added
                         for the following mods:
-                        <br/><br/>
+                        <br/>
                         <ul>
                             <li>
                                 <b>Simple Ores:</b>
@@ -181,374 +274,624 @@ limitations under the License.
                                 </ul>
                             </li>
                         </ul>
-                    </span>
-                </div>
-        </div>
-        <br/>
-        
-        <div class="text-center" style="margin-top: 30px;">
-            <h1><u>Minecraft 1.13.2</u></h1>
-        </div>
-        
-        <div>
-                <h1><b>Version 2.0.0 (Beta)</b></h1>
-                <h2>The Big One</h2>
-                <div class="text-left">
-                    <span><i class="material-icons">warning</i>
-                        <b>A Massive Rewrite</b> - Due to the large changes to
-                        forge in the 1.13 update, a large portion of Resynth
-                        had to be rewritten. This gave the opportunity to
-                        rewrite other large portions of Resynth which could have
-                        been written better, which has resulted in many changes,
-                        some of which may be omitted. Hopefully these changes
-                        will result in a better experience.
-                    </span>
+                    </div>
+                    
+                    <!-- Changes -->
                     <br/>
-                    <span><i class="material-icons">warning</i>
+                    <b>Changes</b>
+                    <div style="padding-left: 20px; padding-top: 10px;">
+                        <i class="material-icons">error_outline</i>
+                        <b>Integration with other mods as been added back</b> - 
+                        This includes Hwyla integration and plant sets for a few
+                        new mods. The One Probe integration has yet to be added.
+                        Biochemical plants can be made for modded resources
+                        as well now, this means Resynth can grow mob drops from
+                        other mods.
+                    </div>
+                    <div style="padding-left: 20px; padding-top: 10px;">
+                        <i class="material-icons">error_outline</i>
+                        <b>Changed Mineral Stone world generation again</b> - 
+                        The way Mineral Stone generates in the world has been
+                        changed slightly. It now generates more like vanilla ores
+                        and it's spawn frequency has been increased.
+                    </div>
+                   
+                    <!-- END -->
+                    <br/>
+                    <div style="width: 100%; height: 1px; border: 1px solid black;"></div>
+                </div>
+            </div>
+            
+            <!-- 1.13.2 -->
+            <div class="mc-version text-center">
+                <h3><b><u>Minecraft 1.13.2</u></b></h3>
+                <h4>
+                    <b>
+                        The changelog for all Resynth 1.13.2 versions.
+                    </b>
+                </h4>
+                
+                <!-- v2.0.0 -->
+                <a name="2.0.0"></a>
+                <div class="text-left re-version">
+                    <div class="text-center">
+                        <h3><b><u>Resynth 2.0.0 Beta (1.13.2)</u></b></h3>
+                        <b>
+                            Rewrote a significant portion of Resynth due to the
+                            changes to Forge in the 1.13.2 update. This has resulted
+                            a lot of changes, some of which may be omitted.
+                        </b>
+                        <br/><small style="color: purple">
+                            Date Published: Sep 2, 2019
+                        </small>
+                        <br/><small>
+                        <a href="https://www.curseforge.com/minecraft/mc-mods/resynth/files/2776624">download</a>
+                        </small>
+                    </div>
+                    
+                    <!-- Additions -->
+                    <br/>
+                    <b>Additions</b>
+                    <div style="padding-left: 20px; padding-top: 10px;">
+                        <i class="material-icons">add_circle_outline</i>
+                        <b>Animated Textures</b> - Animated textures for the
+                        Mineral Hoe and Mineral Crystal were added.
+                    </div>
+                    <div style="padding-left: 20px; padding-top: 10px;">
+                        <i class="material-icons">add_circle_outline</i>
+                        <b>Added a Growth Feature to the Mineral Hoe</b> - The Mineral Hoe
+                        can now grow any plant (Resynth or Vanilla) when used 
+                        in creative mode.
+                    </div>
+                    <div style="padding-left: 20px; padding-top: 10px;">
+                        <i class="material-icons">add_circle_outline</i>
+                        <b>Information Feature to the Mineral Hoe</b> - The Mineral Hoe
+                        can now be used to check the growth stage of any Resynth
+                        plant as well as the Mineral Content of Mineral Soil.
+                    </div>
+                    <div style="padding-left: 20px; padding-top: 10px;">
+                        <i class="material-icons">add_circle_outline</i>
+                        <b>Plant Yield</b> - Crystalline and Biochemical plant types
+                        can now drop multiple produce items when harvested.
+                    </div>
+                    <div style="padding-left: 20px; padding-top: 10px;">
+                        <i class="material-icons">add_circle_outline</i>
+                        <b>Two new plants</b> - Added two new Biochemical
+                        plant sets: Experience Bottle (For Bottle o' Enchanting)
+                        and Nautilus Shell.
+                    </div>
+                    
+                    <!-- Changes -->
+                    <br/>
+                    <b>Changes</b>
+                    <div style="padding-left: 20px; padding-top: 10px;">
+                        <i class="material-icons">error_outline</i>
                         <b>Large changes to the Mineral Hoe</b> - The Mineral
                         Hoe has been rewritten from the ground up and as such
-                        as changed drastically. It now operates slightly differently
+                        has changed drastically. It now operates slightly differently
                         and a few new features have been added to it.
-                    </span>
-                </div>
-                <h3><u>Changes</u></h3>
-                <div class="text-left">
-                    <span><i class="material-icons">error</i>
+                    </div>
+                    <div style="padding-left: 20px; padding-top: 10px;">
+                        <i class="material-icons">error_outline</i>
                         <b>Changed how seeds are obtained from Bulbs</b> - 
                         Obtaining seeds from Bulbs (Biochemical plant produce) 
                         has changed slightly. Instead of being thrown, they're
                         now smashed (by holding right-click) for a chance at
                         getting more seeds.
-                    </span>
-                    <br/>
-                    <span><i class="material-icons">error</i>
+                    </div>
+                    <div style="padding-left: 20px; padding-top: 10px;">
+                        <i class="material-icons">error_outline</i>
                         <b>Changed Crystalline Plant Textures</b> - The plant
                         textures for Crystalline plants was changed to a new design
                         that doesn't mimic Vanilla Wheat.
-                    </span>
-                    <br/>
-                    <span><i class="material-icons">error</i>
+                    </div>
+                    <div style="padding-left: 20px; padding-top: 10px;">
+                        <i class="material-icons">error_outline</i>
                         <b>Changed World Generation</b> - Mineral Stone and
                         Mystical Seed Pods world generation has changed. Mineral
                         Stone now spawns a bit higher up and more frequently,
                         while Mystical Seed Pods generate in larger numbers.
-                    </span>
-                    <br/>
-                    <span><i class="material-icons">error</i>
+                    </div>
+                    <div style="padding-left: 20px; padding-top: 10px;">
+                        <i class="material-icons">error_outline</i>
                         <b>Changed Configuration</b> - The whole configuration
                         system for Resynth was rewritten. This has unfortunately
                         resulted in the loss of the in-game configuration GUI.
                         However, configuration settings are now more consistent
                         and descriptive. Plant config settings now have their
                         own config file.
-                    </span>
-                    <br/>
-                    <span><i class="material-icons">error</i>
+                    </div>
+                    <div style="padding-left: 20px; padding-top: 10px;">
+                        <i class="material-icons">error_outline</i>
                         <b>Changed Tooltips</b> - Tooltips have been
                         completely rewritten to be more descriptive, provide
                         more information, be more consistent and contain less
                         errors.
-                    </span>
-                    <br/>
-                    <span><i class="material-icons">error</i>
+                    </div>
+                    <div style="padding-left: 20px; padding-top: 10px;">
+                        <i class="material-icons">error_outline</i>
                         <b>Biochemical seeds can be dropped from multiple mobs</b>
                         - Seeds for Biochemical plants can now be obtained
                         from multiple different mobs.
-                    </span>
-                </div>
-                <h3><u>Additions</u></h3>
-                <div class="text-left">
-                    <span><i class="material-icons">add_circle</i>
-                        <b>Animated Textures</b> - Animated textures for the
-                        Mineral Hoe and Mineral Crystal were added.
-                    </span>
+                    </div>
+                    
+                    <!-- Removals -->
                     <br/>
-                    <span><i class="material-icons">add_circle</i>
-                        <b>Growth Feature to the Mineral Hoe</b> - The Mineral Hoe
-                        can now grow any plant (Resynth or Vanilla) when used 
-                        in creative mode.
-                    </span>
-                    <br/>
-                    <span><i class="material-icons">add_circle</i>
-                        <b>Information Feature to the Mineral Hoe</b> - The Mineral Hoe
-                        can now be used to check the growth stage of any Resynth
-                        plant as well as the Mineral Content of Mineral Soil.
-                    </span>
-                    <br/>
-                    <span><i class="material-icons">add_circle</i>
-                        <b>Plant Yield</b> - Crystalline and Biochemical plant types
-                        can now drop multiple produce items when harvested.
-                    </span>
-                    <br/>
-                    <span><i class="material-icons">add_circle</i>
-                        <b>Two new plants</b> - Added two new Biochemical
-                        plant sets: Experience Bottle (For Bottle o' Enchanting)
-                        and Nautilus Shell.
-                    </span>
-                </div>
-                <h3><u>Removals</u></h3>
-                <div class="text-left">
-                    <span><i class="material-icons">remove_circle</i>
+                    <b>Removals</b>
+                    <div style="padding-left: 20px; padding-top: 10px;">
+                        <i class="material-icons">remove_circle_outline</i>
                         <b>Modded Plant Sets</b> - With the lack of mods for
                         Minecraft 1.13 as well as the release of Minecraft
                         1.14, plants for other mods have unfortunately been
                         removed until they can be added back.
-                    </span>
-                    <br/>
-                    <span><i class="material-icons">remove_circle</i>
+                    </div>
+                    <div style="padding-left: 20px; padding-top: 10px;">
+                        <i class="material-icons">remove_circle_outline</i>
                         <b>Hwyla and The One Probe Support</b> - Support for
                         Hwyla and The One Probe has been removed with plans
-                        to add it back in the 1.14 update.
-                    </span>
-                </div>
-        </div>
-        <br/>
-                
-        <div class="text-center">
-            <h1><u>Minecraft 1.12.2</u></h1>
-        </div>
-        
-        <div style="padding-top: 30px;">
-            <h1><b>Version 1.3.8</b></h1>
-                <div class="text-left">
-                    <span><i class="pull-left material-icons ">label</i>
-                        <b>Added: </b> New textures for Crystalline plants.
-                    </span>
+                        to add it back in the 1.14 update(s).
+                    </div>
                     
+                    <!-- END -->
+                    <br/>
+                    <div style="width: 100%; height: 1px; border: 1px solid black;"></div>
                 </div>
-                <br/>
+            </div>
             
-            <h1><b>Version 1.3.7</b></h1>
-                <div class="text-left">
-                    <span><i class="pull-left material-icons ">label</i>
-                        <b>Fixed: </b> 
+            <!-- 1.12.2 -->
+            <div class="mc-version text-center">
+                <h3><b><u>Minecraft 1.12.2</u></b></h3>
+                <h4>
+                    <b>
+                        The changelog for all Resynth 1.12.2 versions.
+                    </b>
+                </h4>
+                
+                <!-- v1.3.8 -->
+                <a name="1.3.8"></a>
+                <div class="text-left re-version">
+                    <div class="text-center">
+                        <h3><b><u>Resynth 1.3.8 (1.12.2)</u></b></h3>
+                        <b>
+                            A small update that adds new textures for all
+                            Crystalline plants. With any luck, this will be
+                            the last update for Minecraft 1.12.2.
+                        </b>
+                        <br/><small style="color: purple">
+                            Date Published: Sep 2, 2019
+                        </small>
+                        <br/><small>
+                        <a href="https://www.curseforge.com/minecraft/mc-mods/resynth/files/2776633">download</a>
+                        </small>
+                    </div>
+                    
+                    <!-- Changes -->
+                    <br/>
+                    <b>Changes</b>
+                    <div style="padding-left: 20px; padding-top: 10px;">
+                        <i class="material-icons">error_outline</i>
+                        <b>Crystalline Plant Textures</b> - The plant textures
+                        for Crystalline plants was changed to a new design
+                        that doesn't mimic Vanilla Wheat. 
+                    </div>
+                    
+                    <!-- END -->
+                    <br/>
+                    <div style="width: 100%; height: 1px; border: 1px solid black;"></div>
+                </div>
+                
+                <!-- v1.3.7 -->
+                <a name="1.3.7"></a>
+                <div class="text-left re-version">
+                    <div class="text-center">
+                        <h3><b><u>Resynth 1.3.7 (1.12.2)</u></b></h3>
+                        <b>
+                            A small patch that fixes mod integration with
+                            Extreme Reactors/Big Reactors.
+                        </b>
+                        <br/><small style="color: purple">
+                            Date Published: Aug 6, 2019
+                        </small>
+                        <br/><small>
+                        <a href="https://www.curseforge.com/minecraft/mc-mods/resynth/files/2756150">download</a>
+                        </small>
+                    </div>
+                    
+                    <!-- Fixes -->
+                    <br/>
+                    <b>Fixes</b>
+                    <div style="padding-left: 20px; padding-top: 10px;">
+                        <i class="material-icons">check_circle_outline</i>
+                        <b>Fixed </b> 
                         <a href="https://github.com/Resynth-Minecraft-Mod/Resynth-Mod/issues/16">
-                            Issue:#16
-                        </a> - Yellorite Seeds not being registered on newer versions
-                        of Extreme Reactors (Thanks to <b>MajorBarnulf</b> for reporting this issue).
-                    </span>
+                            Issue#16
+                        </a> - Yellorite Seeds not being registered to the game
+                        when newer versions of Extreme Reactors is installed.
+                        This version is known to work with Extreme Reactors
+                        version: <code>1.12.2-0.4.5.66</code>. Thanks to
+                        <b>MajorBarnulf</b> for submitting the bug report.
+                    </div>
+                    
+                    <!-- END -->
+                    <br/>
+                    <div style="width: 100%; height: 1px; border: 1px solid black;"></div>
                 </div>
-                <br/>
-            
-                <h1><b>Version 1.3.6</b></h1>
-                <div class="text-left">
-                    <span><i class="pull-left material-icons ">label</i>
+                
+                <!-- v1.3.6 -->
+                <a name="1.3.6"></a>
+                <div class="text-left re-version">
+                    <div class="text-center">
+                        <h3><b><u>Resynth 1.3.6 (1.12.2)</u></b></h3>
+                        <b>
+                            A small patch that fixes crashes on servers running
+                            Resynth.
+                        </b>
+                        <br/><small style="color: purple">
+                            Date Published: Jun 7, 2019
+                        </small>
+                        <br/><small>
+                        <a href="https://www.curseforge.com/minecraft/mc-mods/resynth/files/2721389">download</a>
+                        </small>
+                    </div>
+                    
+                    <!-- Fixes -->
+                    <br/>
+                    <b>Fixes</b>
+                    <div style="padding-left: 20px; padding-top: 10px;">
+                        <i class="material-icons">check_circle_outline</i>
                         <b>Fixed: </b> 
                         <a href="https://github.com/Resynth-Minecraft-Mod/Resynth-Mod/issues/15">
-                            Issue:#15
-                        </a> - Resynth crashing the game when run as a dedicated
-                        server (Thanks to <b>TheMysticle</b> for reporting this issue).
-                    </span>
+                            Issue#15
+                        </a> - Minecraft servers running Resynth will crash when
+                        attempting to start. Thanks to <b>TheMysticle</b> for
+                        submitting the bug report.
+                    </div>
                     
+                    <!-- END -->
+                    <br/>
+                    <div style="width: 100%; height: 1px; border: 1px solid black;"></div>
                 </div>
-                <br/>
-            
-                <h1><b>Version 1.3.5</b></h1>
-                <div class="text-left">
-                    <span><i class="pull-left material-icons ">label</i>
+                
+                <!-- v1.3.5 -->
+                <a name="1.3.5"></a>
+                <div class="text-left re-version">
+                    <div class="text-center">
+                        <h3><b><u>Resynth 1.3.5 (1.12.2)</u></b></h3>
+                        <b>
+                            One Bug Fix, two Plants and Command walk into a bar...
+                        </b>
+                        <br/><small style="color: purple">
+                            Date Published: May 30, 2019
+                        </small>
+                        <br/><small>
+                        <a href="https://www.curseforge.com/minecraft/mc-mods/resynth/files/2717750">download</a>
+                        </small>
+                    </div>
+                    
+                    <!-- Additions -->
+                    <br/>
+                    <b>Additions</b>
+                    <div style="padding-left: 20px; padding-top: 10px;">
+                        <i class="material-icons">add_circle_outline</i>
+                        <b>Added The Resynth Command</b> - This has little value
+                        to players and is more for mod development.
+                    </div>
+                    <div style="padding-left: 20px; padding-top: 10px;">
+                        <i class="material-icons">add_circle_outline</i>
+                        <b>Added Dragons Breath plant</b> - Added a new plant
+                        that allows growing Dragon's Breath. Seeds always drop
+                        when killing The Ender Dragon.
+                    </div>
+                    <div style="padding-left: 20px; padding-top: 10px;">
+                        <i class="material-icons">add_circle_outline</i>
+                        <b>Added Draconium plant</b> - Added a new plant that
+                        allows growing Draconium from the Draconic Evolution mod.
+                    </div>
+                    
+                    <!-- Fixes -->
+                    <br/>
+                    <b>Fixes</b>
+                    <div style="padding-left: 20px; padding-top: 10px;">
+                        <i class="material-icons">check_circle_outline</i>
                         <b>Fixed: </b> 
                         <a href="https://github.com/Resynth-Minecraft-Mod/Resynth-Mod/issues/13">
-                            Issue:#13
-                        </a> - The Mineral Hoe sometimes causing the game to crash
-                        when used to till dirt.
-                        (Thanks to <b>aetherpirate</b> for reporting this issue).
-                        <br/>
-                    </span>
-                    <span><i class="pull-left material-icons ">label</i>
-                        <b>Added: </b> Resynth command.
-                        <br/>
-                    </span>
-                    <span><i class="pull-left material-icons ">label</i>
-                        <b>Added: </b> Dragon's Breath Plant.
-                        <br/>
-                    </span>
-                    <span><i class="pull-left material-icons ">label</i>
-                        <b>Added: </b> Draconium Plant (for Draconic Evolution).
-                        <br/>
-                    </span>
+                            Issue#13
+                        </a> - The Mineral Hoe will sometimes cause the game
+                        to crash when used to till dirt or grass. Thanks to
+                        <b>aetherpirate</b> for submitting the bug report.
+                    </div>
+                    
+                    <!-- END -->
+                    <br/>
+                    <div style="width: 100%; height: 1px; border: 1px solid black;"></div>
                 </div>
-                <br/>
-            
-                <h1><b>Version 1.3.4</b></h1>
-                <div class="text-left">
-                    <span><i class="pull-left material-icons ">label</i>
+                
+                <!-- v1.3.4 -->
+                <a name="1.3.4"></a>
+                <div class="text-left re-version">
+                    <div class="text-center">
+                        <h3><b><u>Resynth 1.3.4 (1.12.2)</u></b></h3>
+                        <b>
+                            A small, but critical patch that fixes the Mineral
+                            Hoes charging logic.
+                        </b>
+                        <br/><small style="color: purple">
+                            Date Published: Apr 5, 2019
+                        </small>
+                        <br/><small>
+                        <a href="https://www.curseforge.com/minecraft/mc-mods/resynth/files/2695831">download</a>
+                        </small>
+                    </div>
+                    
+                    <!-- Fixes -->
+                    <br/>
+                    <b>Fixes</b>
+                    <div style="padding-left: 20px; padding-top: 10px;">
+                        <i class="material-icons">check_circle_outline</i>
                         <b>Fixed: </b> 
                         <a href="https://github.com/Resynth-Minecraft-Mod/Resynth-Mod/issues/11">
-                            Issue:#11
-                        </a> - The Mineral Hoe not charging under certain conditions
-                        (Thanks to <b>Thethuthinnang</b> for reporting this issue).
-                    </span>
+                            Issue#11
+                        </a> - The Mineral Hoe would not charge under common but
+                        specific circumstances. See the issue for more details.
+                        Thanks to <b>Thethuthinnang</b> for submitting the bug report.
+                    </div>
+                    
+                    <!-- END -->
+                    <br/>
+                    <div style="width: 100%; height: 1px; border: 1px solid black;"></div>
                 </div>
-                <br/>
                 
-                <h1><b>Version 1.3.3</b></h1>
-                <h2>The final major update/version for Minecraft 1.12.2</h2>
-                <div class="text-left">
-                    <span><i class="pull-left material-icons ">label</i>
-                        <b>Added: </b> Additional information to seed and produce
-                        tooltips that display information specific to the plant
-                        type (e.g. seed drop chances and plant growth chances).
+                <!-- v1.3.3 -->
+                <a name="1.3.3"></a>
+                <div class="text-left re-version">
+                    <div class="text-center">
+                        <h3><b><u>Resynth 1.3.3 (1.12.2)</u></b></h3>
+                        <b>
+                            Some new plants and bug fixes.
+                        </b>
+                        <br/><small style="color: purple">
+                            Date Published: Feb 26, 2019
+                        </small>
+                        <br/><small>
+                        <a href="https://www.curseforge.com/minecraft/mc-mods/resynth/files/2680557">download</a>
+                        </small>
+                    </div>
+                    
+                    <!-- Additions -->
+                    <br/>
+                    <b>Additions</b>
+                    <div style="padding-left: 20px; padding-top: 10px;">
+                        <i class="material-icons">add_circle_outline</i>
+                        <b>Added additional information to seed and produce item
+                        tooltips</b> - that display information specific to the plant
+                        type. This includes: seed drop chances, plant growth
+                        chances and yield.
                         <br/>
-                    </span>
-                    <span><i class="pull-left material-icons ">label</i>
-                        <b>Added: </b> Support for The One Probe.
-                        <br/>
-                    </span>
-                    <span><i class="pull-left material-icons ">label</i>
-                        <b>Added: </b> Particle effects to plants.
-                        <br/>
-                    </span>
-                    <span><i class="pull-left material-icons ">label</i>
-                        <b>Added: </b> Clay plant.
-                        <br/>
-                    </span>
-                    <span><i class="pull-left material-icons ">label</i>
-                        <b>Added: </b> End Stone plant.
-                        <br/>
-                    </span>
-                    <span><i class="pull-left material-icons ">label</i>
-                        <b>Added: </b> Sand plant.
-                        <br/>
-                    </span>
-                    <span><i class="pull-left material-icons ">label</i>
-                        <b>Updated: </b> Mineral Soil texture (animated).
-                        <br/>
-                    </span>
-                    <span><i class="pull-left material-icons ">label</i>
-                        <b>Updated: </b> Mineral Stone texture (animated).
-                        <br/>
-                    </span>
-                    <span><i class="pull-left material-icons ">label</i>
+                    </div>
+                    <div style="padding-left: 20px; padding-top: 10px;">
+                        <i class="material-icons">add_circle_outline</i>
+                        <b>The One Probe</b> - Added support/integration with
+                        The One Probe mod. Mineral Soil will now display its
+                        Mineral Content with The One Probe.
+                    </div>
+                    <div style="padding-left: 20px; padding-top: 10px;">
+                        <i class="material-icons">add_circle_outline</i>
+                        <b>New Particle Effects</b> - Added new particle effects
+                        that randomly spawn and float around Resynth plants.
+                    </div>
+                    <div style="padding-left: 20px; padding-top: 10px;">
+                        <i class="material-icons">add_circle_outline</i>
+                        <b>New plants for Vanilla Minecraft</b> - Added some new
+                        Metallic plants for Vanilla Minecraft: Clay, End Stone,
+                        and Sand.
+                    </div>
+                    
+                    <!-- Changes -->
+                    <br/>
+                    <b>Changes</b>
+                    <div style="padding-left: 20px; padding-top: 10px;">
+                        <i class="material-icons">error_outline</i>
+                        <b>Updated the textures for Mineral Soil and Mineral Stone</b>
+                        - The textures for Mineral Soil and Mineral Stone have
+                        been updated. They're now better looking and animated.
+                    </div>
+                    
+                    <!-- Fixes -->
+                    <br/>
+                    <b>Fixes</b>
+                    <div style="padding-left: 20px; padding-top: 10px;">
+                        <i class="material-icons">check_circle_outline</i>
                         <b>Fixed: </b>
                         <a href="https://github.com/Resynth-Minecraft-Mod/Resynth-Mod/issues/8">
-                            Issue:#8
-                        </a> -  Resynth crashing when run on a server
-                        (Thanks to <b>Mozza7</b> for reporting this issue).
-                        <br/>
-                    </span>
-                    <span><i class="pull-left material-icons ">label</i>
-                        <b>Fixed: </b> Dialog popup opening when blowing up
-                        Organic Ores.
-                        <br/>
-                    </span>
-                </div>
-
-            <!--                        V1.3.2                          -->
-            <br/>
-            <h1><b>Version 1.3.2</b></h1>
-            <div class="text-left">
-                <span><i class="pull-left material-icons ">label</i>
-                    <b>Fixed: </b>
-                    <a href="https://github.com/Resynth-Minecraft-Mod/Resynth-Mod/issues/6">
-                        Issue:#6
-                    </a> - Resynth crashing when Hwyla/Waila is not
-                    installed (Thanks to <b>Dragnier</b> for reporting this issue).
+                            Issue#8
+                        </a> -  Resynth crashes when run on a server. Thanks to
+                        <b>Mozza7</b> for submitting the bug report.
+                    </div>
+                    <div style="padding-left: 20px; padding-top: 10px;">
+                        <i class="material-icons">check_circle_outline</i>
+                        <b>Fixed a Dialog Popup bug: </b> Dialogs would pop up
+                        whenever Organic Ore was blown up. This is now fixed.
+                    </div>
+                    
+                    <!-- END -->
                     <br/>
-                </span>
-            </div>
-
-            <!--                        V1.3.1                          -->
-            <br/>
-            <h1><b>Version 1.3.1</b></h1>
-            <h2>A lot of changes, fixes and improvements.</h2>
-
-            <div class="text-left">
-
-                <span><i class="pull-left material-icons ">label</i>
-                    <b>Added: </b>Mineral Hoe (to replace the old way
-                    of turning dirt into Mineral Soil).<br/>
-                </span>
-
-                <span><i class="pull-left material-icons ">label</i>
-                    <b>Added: </b>Yellorite Plant for Big
-                    Reactors/Extreme Reactors.<br/>
-                </span>
-
-                <span><i class="pull-left material-icons ">label</i>
-                    <b>Added: </b>Sound effects when seeds are dropped by a
-                    mob or an ore.<br/>
-                </span>
-
-                <span><i class="pull-left material-icons ">label</i>
-                    <b>Added: </b>Hwyla interaction.<br/>
-                </span>
-
-                <span><i class="pull-left material-icons ">label</i>
-                    <b>Changed: </b>The size of the Mineral Crystal texture.<br/>
-                </span>
-
-                <span><i class="pull-left material-icons ">label</i>
-                    <b>Changed: </b>All Straw items are now called shards.<br/>
-                </span>
-
-                <span><i class="pull-left material-icons ">label</i>
-                    <b>Changed: </b>The textures of Straw/Shard items.<br/>
-                </span>
-
-                <span><i class="pull-left material-icons ">label</i>
-                    <b>Changed: </b>Mineral Soil now drops Dirt and a Mineral Crystal
-                    when broken instead of the Mineral Soil block.<br/>
-                </span>
-
-                <span><i class="pull-left material-icons ">label</i>
-                    <b>Changed: </b>Mineral Rocks texture.<br/>
-                </span>
-
-                <span><i class="pull-left material-icons ">label</i>
-                    <b>Changed: </b>Mineral Rocks name to Mineral Rock.<br/>
-                </span>
-
-                <span><i class="pull-left material-icons ">label</i>
-                    <b>Changed: </b>Tooltips so they now provide more accurate
-                    information with less spelling/grammar errors.<br/>
-                </span>
-
-                <span><i class="pull-left material-icons ">label</i>
-                    <b>Changed: </b>All Organic Ore blocks now smelt into the
-                    original ore instead of the resource. For example,
-                    Organic Iron Ore now smelts into Iron Ore instead of
-                    Iron Ingots.<br/>
-                </span>
-
-                <span><i class="pull-left material-icons ">label</i>
-                    <b>Fixed: </b>Broken name for rabbit foot seeds.<br/>
-                </span>
-
-                <span><i class="pull-left material-icons ">label</i>
-                    <b>Fixed: </b>Broken name for rabbit foot bulb.<br/>
-                </span>
-
-                <span><i class="pull-left material-icons ">label</i>
-                    <b>Fixed: </b>Small bugs and spelling errors.<br/>
-                </span>
-
-                <span><i class="pull-left material-icons ">label</i>
-                    <b>Fixed: </b>The logs being flooded with block and
-                    item names.<br/>
-                </span>
-
-                <span><i class="pull-left material-icons ">label</i>
-                    <b>Removed: </b>The ability to turn dirt/grass into
-                    Mineral Soil with a Mineral Crystal.<br/>
-                </span>
-
-                <span><i class="pull-left material-icons ">label</i>
-                    <b>Removed: </b>The Mineral Soil crafting recipe.<br/>
-                </span>
-
-                <span><i class="pull-left material-icons ">label</i>
-                    <b>Updated: </b>Forge build version from
-                    <code>1.12.2-14.23.4.2705</code> to
-                    <code>1.12.2-14.23.5.2768</code>.<br/>
-                </span>
-
-                <span><i class="pull-left material-icons ">label</i>
-                    <b>Updated, fixed, refactored and cleaned: </b>The code base.
-                </span>
+                    <div style="width: 100%; height: 1px; border: 1px solid black;"></div>
+                </div>
+                
+                <!-- v1.3.2 -->
+                <a name="1.3.2"></a>
+                <div class="text-left re-version">
+                    <div class="text-center">
+                        <h3><b><u>Resynth 1.3.2 (1.12.2)</u></b></h3>
+                        <b>
+                            A small, but critical patch that fixes crashes on
+                            clients and servers that do NOT have Hwyla/Waila
+                            installed.
+                        </b>
+                        <br/><small style="color: purple">
+                            Date Published: Jan 20, 2019
+                        </small>
+                        <br/><small>
+                        <a href="https://www.curseforge.com/minecraft/mc-mods/resynth/files/2662599">download</a>
+                        </small>
+                    </div>
+                    
+                    <!-- Fixes -->
+                    <br/>
+                    <b>Fixes</b>
+                    <div style="padding-left: 20px; padding-top: 10px;">
+                        <i class="material-icons">check_circle_outline</i>
+                        <b>Fixed: </b>
+                        <a href="https://github.com/Resynth-Minecraft-Mod/Resynth-Mod/issues/6">
+                            Issue#6
+                        </a> - Resynth crashes the game when Hwyla/Waila is not
+                        installed. Thanks to <b>Dragnier</b> for reporting this issue.
+                    </div>
+                    
+                    <!-- END -->
+                    <br/>
+                    <div style="width: 100%; height: 1px; border: 1px solid black;"></div>
+                </div>
+                
+                <!-- v1.3.1 -->
+                <a name="1.3.1"></a>
+                <div class="text-left re-version">
+                    <div class="text-center">
+                        <h3><b><u>Resynth 1.3.1 (1.12.2)</u></b></h3>
+                        <b>
+                            A lot of changes, fixes and improvements.
+                        </b>
+                        <br/><small style="color: purple">
+                            Date Published: Jan 14, 2019
+                        </small>
+                        <br/><small>
+                        <a href="https://www.curseforge.com/minecraft/mc-mods/resynth/files/2660216">download</a>
+                        </small>
+                    </div>
+                    
+                    <!-- Additions -->
+                    <br/>
+                    <b>Additions</b>
+                    <div style="padding-left: 20px; padding-top: 10px;">
+                        <i class="material-icons">add_circle_outline</i>
+                        <b>Added the Mineral Hoe</b> - to replace the old way
+                        of turning dirt into Mineral Soil.
+                    </div>
+                    <div style="padding-left: 20px; padding-top: 10px;">
+                        <i class="material-icons">add_circle_outline</i>
+                        <b>Added Yellorite Plant</b> - for the Big
+                        Reactors/Extreme Reactors mod.
+                    </div>
+                    <div style="padding-left: 20px; padding-top: 10px;">
+                        <i class="material-icons">add_circle_outline</i>
+                        <b>Added Sound Effects</b> - Added sound effects that
+                        are played when seeds are spawned in the world by mining
+                        an, killing a mob, or blowing up an ore.
+                    </div>
+                    <div style="padding-left: 20px; padding-top: 10px;">
+                        <i class="material-icons">add_circle_outline</i>
+                        <b>Added support for Hwyla</b> - Added mod support/integration
+                        with the Hwyla/Waila mod.
+                    </div>
+                    
+                    <!-- Changes -->
+                    <br/>
+                    <b>Changes</b>
+                    <div style="padding-left: 20px; padding-top: 10px;">
+                        <i class="material-icons">error_outline</i>
+                        <b>Changed Mineral Crystal Texture</b>
+                        - The texture for Mineral Crystals have changed to make
+                        them look smaller.
+                    </div>
+                    <div style="padding-left: 20px; padding-top: 10px;">
+                        <i class="material-icons">error_outline</i>
+                        <b>Straw Items are now Shards</b>
+                        - All Straw produce items have been renamed to shard
+                        produce items and their textures have been changed to match.
+                    </div>
+                    <div style="padding-left: 20px; padding-top: 10px;">
+                        <i class="material-icons">error_outline</i>
+                        <b>Mineral Soil no longer drops itself</b>
+                        - When broken, Mineral Soil will drop dirt, a Mineral
+                        Crystal and the amount of Mineral Rocks added instead
+                        of the Mineral Soil block itself.
+                    </div>
+                    <div style="padding-left: 20px; padding-top: 10px;">
+                        <i class="material-icons">error_outline</i>
+                        <b>The textures of Mineral Rocks and Dense Mineral Rocks</b>
+                        - The textures of Mineral Rocks and Dense Mineral Rocks
+                        have been changed.
+                    </div>
+                    <div style="padding-left: 20px; padding-top: 10px;">
+                        <i class="material-icons">error_outline</i>
+                        <b>The textures of Mineral Rocks and Dense Mineral Rocks</b>
+                        - The textures of Mineral Rocks and Dense Mineral Rocks
+                        have been changed.
+                    </div>
+                    <div style="padding-left: 20px; padding-top: 10px;">
+                        <i class="material-icons">error_outline</i>
+                        <b>Changed: </b>All Organic Ore blocks now smelt into the
+                        original ore instead of the resource. For example,
+                        Organic Iron Ore now smelts into Iron Ore instead of
+                        Iron Ingots.
+                    </div>
+                    <div style="padding-left: 20px; padding-top: 10px;">
+                        <i class="material-icons">error_outline</i>
+                        <b>Removed: </b>The ability to turn dirt/grass into
+                        Mineral Soil with a Mineral Crystal.
+                    </div>
+                    <div style="padding-left: 20px; padding-top: 10px;">
+                        <i class="material-icons">error_outline</i>
+                        <b>Removed: </b>The Mineral Soil crafting recipe.
+                    </div>
+                    <div style="padding-left: 20px; padding-top: 10px;">
+                        <i class="material-icons">error_outline</i>
+                        <b>Updated: </b>Forge build version from
+                        <code>1.12.2-14.23.4.2705</code> to
+                        <code>1.12.2-14.23.5.2768</code>.
+                    </div>
+                    
+                    <!-- Fixes -->
+                    <br/>
+                    <b>Fixes</b>
+                    <div style="padding-left: 20px; padding-top: 10px;">
+                        <i class="material-icons">check_circle_outline</i>
+                        <b>Fixed Tooltips</b> - so they now provide more accurate
+                        information with less spelling/grammar errors.
+                    </div>
+                    <div style="padding-left: 20px; padding-top: 10px;">
+                        <i class="material-icons">check_circle_outline</i>
+                        <b>Fixed: </b>Broken name for rabbit foot seeds.
+                    </div>
+                    <div style="padding-left: 20px; padding-top: 10px;">
+                        <i class="material-icons">check_circle_outline</i>
+                        <b>Fixed: </b>Broken name for rabbit foot bulb.
+                    </div>
+                    <div style="padding-left: 20px; padding-top: 10px;">
+                        <i class="material-icons">check_circle_outline</i>
+                        <b>Fixed: </b>Small bugs and spelling errors.
+                    </div>
+                    <div style="padding-left: 20px; padding-top: 10px;">
+                        <i class="material-icons">check_circle_outline</i>
+                        <b>Fixed: </b>The logs being flooded with block and
+                        item names.
+                    </div>
+                    <div style="padding-left: 20px; padding-top: 10px;">
+                        <i class="material-icons">check_circle_outline</i>
+                        <b>Fixed: </b>The logs being flooded with block and
+                        item names.
+                    </div>
+                    
+                    <!-- END -->
+                    <br/>
+                    <div style="width: 100%; height: 1px; border: 1px solid black;"></div>
+                </div>
             </div>
         </div>
-        <!--                      V1.3.1 - END                              -->
-
+    </div>
+    
+    <div class="container text-left" style="margin-top: 65px; font-size: 20px;">
+        
         <div style="padding-top: 30px;">
             <h1><b>Version 1.2.3</b></h1>
             <div class="text-left">
@@ -681,7 +1024,7 @@ limitations under the License.
                     <b>Fixed: </b>Some minor issues (See commits for more details).
                 </span>
                 <br/>
-                <span><i class="pull-left material-icons ">label</i>
+                <i class="pull-left material-icons ">label</i>
                     <b>Changed: </b>Multiple Texture Resources:
                     <div style="padding-left: 50px">
                         <b>Metallic and Crystalline Seeds</b>
@@ -694,7 +1037,6 @@ limitations under the License.
                         <br/>
                         <b>Metallic Plant</b>
                     </div>
-                </span>
                 <br/>
             </div>
         </div>
@@ -738,7 +1080,7 @@ limitations under the License.
 
         <!--                             End                                -->
     </div>
-
+    
     <!--                                Footer                              -->
     <footer id="sticky-footer" class="py-4 bg-dark text-white-50" style="margin-top: 20px;">
         <div style="width: 50%; margin-left: 25%;">

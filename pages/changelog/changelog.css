@@ -41,3 +41,20 @@ limitations under the License.
 .padding-bottom-3 {
     padding-bottom: 3px;
 }
+
+.mc-version {
+    margin-top: 40px;
+}
+
+.re-version {
+    margin-top: 60px;
+    
+    background-color: #fAfAfA;
+    border: 0px solid black;
+    border-radius: 15px;
+    box-shadow: 0 3px 10px rgba(0,0,0,.23),
+        0 3px 10px rgba(0,0,0,.16);
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
