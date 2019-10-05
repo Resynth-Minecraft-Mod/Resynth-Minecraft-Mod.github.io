@@ -16,7 +16,7 @@ limitations under the License.
 -->
 <head lang="en">
     <!--                       Tab Title & Logo                             -->
-    <title>Concepts - Resynth Mod Wiki</title>
+    <title>Enhancers - Resynth Mod Wiki</title>
     <link rel="icon" href="../../images/icon.png" type="image/png">
 
     <!--Internal css and js.-->
@@ -24,11 +24,14 @@ limitations under the License.
 
     <!--                            SEO                                     -->
     <meta name="keywords" content="Resynth, Resynth Wiki, Wiki, Resynth Help,
-          Help, Resynth Mod, Growable Ores, Growable Mob Drops, Concepts,
-          Definitions, Explanations, 1.12.2, 1.13.2">
+          Help, Resynth Mod, Growable Ores, Growable Mob Drops, 1.12.2, 1.13.2,
+          1.14.4, Growable, Enhancer, Enhancers, Calvinite, Sylvanite,
+          Sylvanite Enhancer, Calvinite Enhancer, Calvinite Crystal, Sylvanite
+          Crystal">
 
-    <meta name="description" content="A list of definitions and descriptions
-          for resynth topics, blocks, items, mechanics and plants.">
+    <meta name="description" content="Enhancers are a way to increase the
+          Mineral Content of Mineral Soil beyond 50%. They should be placed
+          directly underneath the Mineral Soil block.">
 
     <!--                         Meta Tags                                  -->
     <meta charset="utf-8">
@@ -122,8 +125,8 @@ limitations under the License.
                             Getting Started
                         </div>
                     </a>
-                    <a href="#" class="page-link">
-                        <div class="page-nav-btn active-page">
+                    <a href="concepts.html" class="page-link">
+                        <div class="page-nav-btn">
                             Concepts
                         </div>
                     </a>
@@ -147,8 +150,8 @@ limitations under the License.
                             Integration with Other Mods
                         </div>
                     </a>
-                    <a href="enhancers.html" class="page-link">
-                        <div class="page-nav-btn">
+                    <a href="#" class="page-link">
+                        <div class="page-nav-btn active-page">
                             Enhancers
                         </div>
                     </a>
@@ -245,137 +248,114 @@ limitations under the License.
             </div>
             <!--                        WIKI PAGE                           -->
             <div id="wiki-page" class="col-lg-8">
+                
                 <div class="row">
                     <div class="col-md-8 text-left">
                         <div class="title">
-                            <b>Concepts</b>
+                            <b>Enhancers</b>
                         </div>
                         <!-- Opening Text -->
                         <div class="wiki-paragraph">
-                            Some concepts, mechanics and words may not be overly
-                            clear in Resynth. This Wiki page servers to define
-                            unclear concepts and give a clear description on various
-                            Resynth topics used throughout the mod and the Wiki.
-                            <br/><br/>
-                            If any term or topic in the Wiki is unclear and a page
-                            for the topic cannot be found, this is a good place to
-                            look.
+                            Enhancers are one of two blocks:
+                            <b>Calvinite Enhancer</b> or <b>Sylvanite Enhancer</b>.
+                            They are the only way increase the Mineral Content of
+                            Mineral Soil blocks beyond 50%.
+                            
+                            <br/><br/>The Enhancer blocks will give a straight
+                            Mineral Content percentage increase to the Mineral
+                            Soil it's placed under. No need to add more
+                            Mineral Rocks.
+                            
+                            <br/><br/>Mineral Soil with a Calvinite Enhancer
+                            is known as Tier 2 Mineral Soil, and Mineral Soil
+                            with a Sylvanite Enhancer is know as Tier 3 Mineral
+                            Soil.
                         </div>
                     </div>
 
                     <!--                        INFO BOX                        -->
-
                     <div id="info-box" class="col-md-4">
-                        <b id="info-box-title">Resynth - Concepts</b>
+                        <b id="info-box-title">Enhancers</b>
                         <div>
                             <img id="info-box-image" alt="info-box-image" 
-                                 src="../../images/wiki/textures/mineral-crystal.png">
+                                 src="../../images/wiki/textures/calvinite-enhancer.png">
                         </div>
-                        <i>Mineral Crystal texture.</i>
-                        <div class="row">
-                            <br/>
+                        <i>The block texture for the Calvinite Enhancer.</i>
+                        
+                        <div class="row info-box">
+                            
+                            <div class="row info-box-row">
+                                <div class="col-sm-6">
+                                    Display Name:
+                                </div>
+                                <div class="col-sm-6">
+                                    Enhancer
+                                </div>
+                            </div>
+                            
+                            <div class="row info-box-row">
+                                <div class="col-sm-6">
+                                    Stackable:
+                                </div>
+                                <div class="col-sm-6">
+                                    Yes(64)
+                                </div>
+                            </div>
+                            
+                            <div class="row info-box-row">
+                                <div class="col-sm-6">
+                                    Growable:
+                                </div>
+                                <div class="col-sm-6">
+                                    Calvinite: yes
+                                    <br/>Sylvanite: no
+                                </div>
+                            </div>
+                            
+                            <div class="row info-box-row">
+                                <div class="col-sm-6">
+                                    Added in:
+                                </div>
+                                <div class="col-sm-6">
+                                    3.1.0
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+
                 <!--                      WIKI CONTENT                      -->
-                <div id="plant-types" class="row text-left">
+                <div class="row text-left">
                     <div class="title">
-                        <b>Plant Types</b>
+                        <b>Placement</b>
                     </div>
 
                     <div class="wiki-paragraph">
-                        Resynth has 3 separate plants (or plant types) for
-                        growing the different resource types in Minecraft. Each
-                        plant type has its own seeds, produce and ways of
-                        obtaining seeds.
-                        <br/><br/>
-                        <a href="crystalline-plants.html"><b>Crystalline</b></a>
-                        plant types grow resources that are
-                        normally dropped by mining an ore (e.g. diamond and coal). This
-                        does <b>NOT</b> include Iron and Gold as the ore block
-                        is dropped rather than the resource. The plants look
-                        and act similar to Minecraft Wheat plants. The seeds
-                        are dropped randomly by mining the ores or leaving its
-                        produce (Shards) to despawn in water.
-                        <br/><br/>
-                        <a href="metallic-plants.html"><b>Metallic</b></a>
-                        plant types grow ore blocks that spawn
-                        in the world (e.g. gold and iron). The plants produce
-                        can be smelted back into the ore. The seeds are obtained
-                        randomly by blowing the ore blocks or the plants produce
-                        (organic ore) up with TNT. These plants act similar to
-                        Minecraft Melon plants.
-                        <br/><br/>
-                        <a href="biochemical-plants.html"><b>Biochemical</b></a>
-                        plant types grow mob drops. The seeds
-                        are obtained by the killing the mob that would normally
-                        drop the final resource. These plants have no <i>similar</i>
-                        Minecraft plant. When fully grown, they can be harvested
-                        by right clicking. When harvested, they return to a growth
-                        stage of 4 instead of 1.The produce can be thrown for a
-                        chance at getting more seeds in the 1.12.2 versions of
-                        Resynth. In version 1.13.2 and up, the produce must be
-                        smashed to get more seeds.
+                        The Enhancer block must be placed directly underneath
+                        a Mineral Soil block. The Mineral Soil block must also have
+                        a Mineral Concentration of 50% for the Enhancer to take
+                        effect.
+                        
+                        <br/><br/>Once placed, the Enhancer will give a straight
+                        Mineral Content increase of 10% (for a total of 60%)
+                        with Calvinite Enhancers, and a Mineral Content increase
+                        of 25% (for a total of 75%) with Sylvanite Enhancers.
+                        The increase percentage can be changed in the config.
+                        
+                        <br/><br/>The cracks in the Mineral Soil block will
+                        change colour to match the Enhancer block if done
+                        correctly.
                         
                         <br/><br/>
-                        <img src="../../images/wiki/pictures/plant-types.png"
-                             alt="The three different types of plants."
+                        <img src="../../images/wiki/pictures/enhancer-placement.png"
+                             alt="Shows how the enhancer should be placed."
                              class="wiki-image">
                         <br/>
-                        <i style="font-size:14px;">
-                            Biochemical, Crystalline and Metallic plant types.</i>
+                        <i style="font-size:14px;">Enhancer blocks underneath
+                            Mineral Soil.</i>
                     </div>
                 </div>
-                <br/>
-                <div class="row text-left">
-                    <div class="title">
-                        <b>Produce</b>
-                    </div>
 
-                    <div class="wiki-paragraph">
-                        Produce is the name given to the resources obtained
-                        from Resynth plants. Organic Ore is the produce type
-                        for Metallic plants, Shards are the produce type
-                        for Crystalline plants and Bulbs are the produce type
-                        of Biochemical plants. The produce of any plant can be
-                        smelted to get the resource (or final resource). For
-                        example: Diamond Shards can be smelted into Diamonds,
-                        Organic Iron Ore can be smelted into iron ore and
-                        Ink Bulbs can be smelted into ink sacs. Seeds are obtained
-                        from the produce differently depending on the produce
-                        type.
-                    </div>
-                </div>
-                <br/>
-                <div class="row text-left">
-                    <div class="title">
-                        <b>Source</b>
-                    </div>
-
-                    <div class="wiki-paragraph">
-                        The term source is given the mob or ore that drops
-                        seeds for a plant. The <i>source ore</i> is the ore
-                        that will drop the seeds needed to grow more of the ores.
-                        The <i>source mob</i> is the mob that drops seeds for
-                        a particular mob drop.
-                    </div>
-                </div>
-                <br/>
-                <div class="row text-left">
-                    <div class="title">
-                        <b>Resource</b>
-                    </div>
-
-                    <div class="wiki-paragraph">
-                        The word <b>resource</b> is usually used to refer
-                        to gems (diamonds and emeralds), although not all gems
-                        are resources. Anything dropped by an ore (that does not
-                        need smelting) is considered a resource. So following
-                        that logic, diamonds, coal, emeralds, glowstone and
-                        nether quartz are all resources but iron and gold is not.
-                    </div>
-                </div>
-                
                 <!--                    Content disclaimer                  -->
                 <div class="legal-footer">
                     This wiki is licensed under the 

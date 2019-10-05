@@ -147,6 +147,11 @@ limitations under the License.
                             Integration with Other Mods
                         </div>
                     </a>
+                    <a href="enhancers.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Enhancers
+                        </div>
+                    </a>
                     <!-- Items -->
                     <br/>
                     <br/>
@@ -248,22 +253,32 @@ limitations under the License.
                         </div>
                         <!-- Opening Text -->
                         <div class="wiki-paragraph">
-                            A big goal of Resynth is to be as configurable
-                            as possible. This means that most values used in
-                            the mod (such as drop chances, growth times, drop rates
-                            as well other various settings) can be changed 
-                            through Resynth config files.
+                            From the beginning, Resynth has made a point of being
+                            as configurable as possible. This mean that a large
+                            portion of Resynth can be changed, such as plant
+                            growth rates, seed drop chances, general difficulty,
+                            and whole lot more.
+                            
+                            <br/><br/>Due to the seriously large number of
+                            configuration settings, and with how much they have
+                            changed between versions, the configuration settings
+                            are not listed here. However, the configuration
+                            settings themselves are documented quite well,
+                            so you should have no trouble understanding 
+                            and using them.
                         </div>
                     </div>
 
                     <!--                        INFO BOX                        -->
                     <div id="info-box" class="col-md-4">
+                        <br/>
                         <b id="info-box-title">Configuring Resynth</b>
                         <div>
                             <img id="info-box-image" alt="info-box-image" 
                                  src="../../images/wiki/textures/dense-mineral-rock.png">
                         </div>
-                        <i>Dense Mineral Rock</i>
+                        <i>Dense Mineral Rock</i> - has nothing to do
+                        with configuring the mod...
                         <div class="row">
                             <br/>
                             <div class="dsktop">
@@ -277,17 +292,105 @@ limitations under the License.
                 <div class="row text-left">
                     <div class="title">
                         <b>
+                            Configuring Resynth in 1.13.2 and 1.14.4
+                        </b>
+                    </div>
+
+                    <div class="wiki-paragraph">
+                        This section will attempt to give a rundown how
+                        to configure the 1.13.2 and 1.14.4 versions of
+                        Resynth.
+                        
+                        <br/><br/>First off, these versions of Resynth
+                        do NOT have a configuration GUI, so all settings
+                        have to be edited manually in the config files.
+                        It is recommended you completely close Minecraft
+                        before editing any of the files or your changes could
+                        be overwritten. I'd also recommend closing the config
+                        files before running Minecraft if you're having any
+                        issues.
+                        
+                        <br/><br/>Resynth has 3 configuration files, located
+                        within a separate folder called <code>resynth</code>
+                        within the main <code>config</code> folder in the
+                        <code>.minecraft</code> directory.
+                        
+                        <br/><br/>All configuration files are in the <b>.toml</b>
+                        format, which allow you to change numbers, values, as
+                        well as true and false settings. The files can be
+                        edited with any normal text editor.<br/>
+                        
+                        <br/><br/>The first file, called <code>general.toml</code>,
+                        holds most of the standard configuration settings, such
+                        as ore generation, ore drop amounts, tooltip toggles,
+                        and everything else that applies to the mod as a whole.
+                        To really see what can be changed, you'll have to look
+                        at the file yourself. What this file DOES NOT do, is
+                        hold configuration settings for any plants. That is handled
+                        in the other 2 configuration files.
+                        
+                        <br/><br/>The second file, called <code>
+                        vanilla-plants.toml</code> holds all the configuration
+                        settings for Vanilla and Resynth plants. Configuration
+                        settings are different depending on the plant type,
+                        but in general, growth rates, seed drop chances, and
+                        sometimes yield can be changed. The third file, called
+                        <code>modded-plants.toml </code> is exactly the same as
+                        <code>vanilla-plants.toml </code> however it holds
+                        configuration settings for plants added for other
+                        supported mods.
+                    </div>
+                </div>
+                
+                <br/>
+                <div class="row text-left">
+                    <div class="title">
+                        <b>
+                            Configuring Resynth in 1.12.2
+                        </b>
+                    </div>
+
+                    <div class="wiki-paragraph">
+                        This section will attempt to give a rundown how
+                        to configure the 1.12.2 versions of Resynth.
+                        
+                        <br/><br/>The 1.12.2 versions of Resynth have an
+                        in-game configuration gui. It can be used to change
+                        all configuration settings in game. Most don't even
+                        need a world restart.
+                        
+                        <br/><br/>The 1.12.2 versions only have 1 configuration
+                        file, called <code>resynth.cfg</code> within the main
+                        <code>config</code> folder in the <code>.minecraft</code>
+                        directory. It holds all the configuration settings
+                        for the mod, including all settings for plants. 
+                    </div>
+                </div>
+                
+                <br/>
+                <div class="row text-left">
+                    <div class="title">
+                        <b>
                             Changes in 1.13.2/1.14.4
                         </b>
                     </div>
 
                     <div class="wiki-paragraph">
                         Configuration was one of the biggest systems changed
-                        in the 1.13.2 rewrite. Unfortunately, the in-game
-                        configuration gui was removed as a result of this, and
-                        config can only be changed through the config files.
-                        Plant settings have also moved to a separate config file
-                        as well, and config settings have been cleaned up a lot.
+                        in the 1.13.2/1.14.4 rewrites.
+                        
+                        <br/><br/>This has resulted in a large number of changes,
+                        some good, some bad. This isn't a comprehensive list, but
+                        here's a rundown of the changes. The configuration gui has
+                        been removed in 1.13.2 and 1.14.4 versions - the configuration
+                        files have to be edited manually now. In 1.13.2 and
+                        1.14.4 versions, resynth has 3 configuration files in
+                        a separate "resynth" folder within the config folder.
+                        In 1.12.2 versions, there is only one config file in
+                        the config folder. Most configuration settings were also
+                        renamed to be more descriptive and got better documentation.
+                        The format configuration files are written in has also
+                        changed.
                     </div>
                 </div>
                 
