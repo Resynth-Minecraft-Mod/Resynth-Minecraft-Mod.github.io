@@ -249,7 +249,7 @@ limitations under the License.
             </div>
             <!--                        WIKI PAGE                           -->
             <div id="wiki-page" class="col-lg-8">
-                
+
                 <div class="row">
                     <div class="col-md-8 text-left">
                         <div class="title">
@@ -258,19 +258,22 @@ limitations under the License.
                         <!-- Opening Text -->
                         <div class="wiki-paragraph">
                             Enhancers are one of two blocks:
-                            <b>Calvinite Enhancer</b> or <b>Sylvanite Enhancer</b>.
-                            They are the only way increase the Mineral Content of
-                            Mineral Soil blocks beyond 50%.
-                            
-                            <br/><br/>The Enhancer blocks will give a straight
-                            Mineral Content percentage increase to the Mineral
-                            Soil it's placed under. No need to add more
-                            Mineral Rocks.
-                            
-                            <br/><br/>Mineral Soil with a Calvinite Enhancer
-                            is known as Tier 2 Mineral Soil, and Mineral Soil
-                            with a Sylvanite Enhancer is know as Tier 3 Mineral
-                            Soil.
+                            <b>Calvinite Enhancer</b> and <b>Sylvanite Enhancer</b>,
+                            used to increase the tier of Mineral Soil to Tier 2 and
+                            Tier 3 respectively.
+
+                            <br /><br />Without Enhancers, a Mineral Soil block can only
+                            reach a Mineral Concentration of <code>50%</code>, with
+                            Enhancers, the Mineral Concentration can be
+                            boosted to <code>60%</code> with <b>Calvinite</b> and
+                            <code>75%</code> with <b>Sylvanite</b>.
+
+                            <br /><br />Editing config files allows a Mineral Content of
+                            <code>90%</code> and <code>100%</code> to be achieved through
+                            Enhancers - though this is <b>NOT</b> the default behaviour.
+
+                            <br /><br /><span style="color: red">Enhancer blocks are only available in
+                            <code>1.14.4</code> Resynth Versions and newer.</span>
                         </div>
                     </div>
 
@@ -278,13 +281,13 @@ limitations under the License.
                     <div id="info-box" class="col-md-4">
                         <b id="info-box-title">Enhancers</b>
                         <div>
-                            <img id="info-box-image" alt="info-box-image" 
+                            <img id="info-box-image" alt="info-box-image"
                                  src="../../images/wiki/textures/calvinite-enhancer.png">
                         </div>
                         <i>The block texture for the Calvinite Enhancer.</i>
-                        
+
                         <div class="row info-box">
-                            
+
                             <div class="row info-box-row">
                                 <div class="col-sm-6">
                                     Display Name:
@@ -293,7 +296,7 @@ limitations under the License.
                                     Enhancer
                                 </div>
                             </div>
-                            
+
                             <div class="row info-box-row">
                                 <div class="col-sm-6">
                                     Stackable:
@@ -302,23 +305,23 @@ limitations under the License.
                                     Yes(64)
                                 </div>
                             </div>
-                            
+
                             <div class="row info-box-row">
                                 <div class="col-sm-6">
                                     Growable:
                                 </div>
                                 <div class="col-sm-6">
                                     Calvinite: yes
-                                    <br/>Sylvanite: no
+                                    <br />Sylvanite: no
                                 </div>
                             </div>
-                            
+
                             <div class="row info-box-row">
                                 <div class="col-sm-6">
                                     Added in:
                                 </div>
                                 <div class="col-sm-6">
-                                    3.1.0
+                                    3.1.0 (1.14.4)
                                 </div>
                             </div>
                         </div>
@@ -328,44 +331,67 @@ limitations under the License.
                 <!--                      WIKI CONTENT                      -->
                 <div class="row text-left">
                     <div class="title">
+                        <b>Usage</b>
+                    </div>
+
+                    <div class="wiki-paragraph">
+                        Each Enhancer block gives a straight Mineral
+                        Content increase to the Mineral Soil block placed directly
+                        above it, of <code>10%</code> for Calvinite and <code>
+                        25%</code> for Sylvanite.
+
+                        <br/><br/>The buff will effect instantly once placed,
+                        without the need to add any extra Mineral Crystals,
+                        provided the Mineral Soil block they are placed under
+                        has a Mineral Concentration of <code>50%</code>.
+
+                        <br /><br />Only 1 Enhancer block can be placed per Mineral
+                        Soil block. Any more Enhancers placed will not take effect.
+                    </div>
+                </div>
+
+                <br/>
+
+                <div class="row text-left">
+                    <div class="title">
                         <b>Placement</b>
                     </div>
 
                     <div class="wiki-paragraph">
                         The Enhancer block must be placed directly underneath
-                        a Mineral Soil block. The Mineral Soil block must also have
-                        a Mineral Concentration of 50% for the Enhancer to take
-                        effect.
-                        
-                        <br/><br/>Once placed, the Enhancer will give a straight
+                        a Mineral Soil block, with a Mineral Concentration of
+                        50%, in order for the Enhancer to take effect.
+
+                        <br /><br />Once placed, the Enhancer will give a straight
                         Mineral Content increase of 10% (for a total of 60%)
                         with Calvinite Enhancers, and a Mineral Content increase
                         of 25% (for a total of 75%) with Sylvanite Enhancers.
-                        The increase percentage can be changed in the config.
-                        
-                        <br/><br/>The cracks in the Mineral Soil block will
+
+                        <br /><br />The cracks in the Mineral Soil block will
                         change colour to match the Enhancer block if done
                         correctly.
-                        
-                        <br/><br/>
+
+                        <br /><br />
                         <img src="../../images/wiki/pictures/enhancer-placement.png"
                              alt="Shows how the enhancer should be placed."
                              class="wiki-image">
-                        <br/>
-                        <i style="font-size:14px;">Enhancer blocks underneath
-                            Mineral Soil.</i>
+                        <br />
+                        <i style="font-size:14px;">
+                            Enhancer blocks underneath
+                            Mineral Soil.
+                        </i>
                     </div>
                 </div>
 
                 <!--                    Content disclaimer                  -->
                 <div class="legal-footer">
-                    This wiki is licensed under the 
+                    This wiki is licensed under the
                     <a href="https://www.apache.org/licenses/LICENSE-2.0">
                         Apache License, Version 2.0
                     </a>. Although its <b>content</b> may be used, copied, modified,
                     and/or distributed without restriction.
-                    <br/>
-                    Game content and materials are trademarks 
+                    <br />
+                    Game content and materials are trademarks
                     and copyrights of their respective publisher
                     and its licensors. All rights reserved.
                 </div>

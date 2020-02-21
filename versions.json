@@ -1,8 +1,10 @@
 {
   "homepage": "https://resynth-minecraft-mod.github.io/pages/changelog/changelog.html",
   "promos": {
+    "1.12.2-latest": "1.3.9",
     "1.13.2-latest": "2.0.0",
     "1.14.4-latest": "3.1.3",
-    "recommended": "3.1.3"
+    "1.15.2-latest": "4.0.0",
+    "recommended": "4.0.0"
   }
 }
