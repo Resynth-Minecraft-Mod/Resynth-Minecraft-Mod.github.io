@@ -25,7 +25,7 @@ limitations under the License.
     <!--                            SEO                                     -->
     <meta name="keywords" content="Resynth, Resynth Wiki, Wiki, Resynth Help,
           Help, Resynth Mod, Growable Ores, Growable Mob Drops, 1.12.2, 1.13.2,
-          1.14.4, Plants, Plant List">
+          1.14.4, 1.15.2, Plants, Plant List, List of plants">
 
     <meta name="description" content="The complete list of plants added by Resynth.">
 
@@ -36,21 +36,19 @@ limitations under the License.
     <!--                           STYLE                                    -->
     <!-- JQuery, Bootstrap and Icons-->
     <link rel="stylesheet"
-              href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-              crossorigin="anonymous">
-    
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous">
+
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    
+
     <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
     <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
     <!--                       Google Analytics                             -->
-
     <!-- Global site tag (gtag.js) - Google Analytics Site Tag-->
-    <script
-        async src="https://www.googletagmanager.com/gtag/js?id=UA-127648959-1">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127648959-1">
     </script>
 
     <!-- Google Analytics Script -->
@@ -62,13 +60,33 @@ limitations under the License.
         gtag('js', new Date());
         gtag('config', 'UA-127648959-1');
         // Set the user ID using signed-in user_id.
-        gtag('set', {'user_id': 'USER_ID'});
+        gtag('set', { 'user_id': 'USER_ID' });
     </script>
-    
+
     <!-- Cookie Pop up -->
-    <link rel="stylesheet" type="text/css" href="../../css/jquery-eu-cookie-law-popup.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/jquery-eu-cookie-law-popup.css" />
     <script src="../../js/jquery-eu-cookie-law-popup.js"></script>
 </head>
+
+<style>
+    .plant-box {
+        font-size: 12px;
+        border-radius: 7px;
+        border: 1px solid lightgrey;
+        box-shadow: 0 3px 10px rgba(0,0,0,.23),
+        0 3px 10px rgba(0,0,0,.16);
+
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .plant-icon {
+        -ms-interpolation-mode: nearest-neighbor;
+        image-rendering: crisp-edges;
+        image-rendering: pixelated;
+    }
+
+</style>
 
 <body class="eupopup eupopup-top">
     <!-- Navbar -->
@@ -85,7 +103,7 @@ limitations under the License.
 
         <span class="navbar-text">
             <a href="../../" class="navbar-link" style="text-decoration:none">Home</a>
-            <a href="https://www.curseforge.com/minecraft/mc-mods/resynth/files" class="navbar-link" style="text-decoration:none">Downloads</a>
+            <a href="../download.html" class="navbar-link" style="text-decoration:none">Downloads</a>
             <a href="" class="navbar-link-active" style="text-decoration:none">Wiki</a>
             <a href="https://www.curseforge.com/minecraft/mc-mods/resynth/" class="navbar-link" style="text-decoration:none">Project Page</a>
             <a href="../../pages/changelog/changelog.html" class="navbar-link" style="text-decoration:none">Changelog</a>
@@ -102,15 +120,15 @@ limitations under the License.
             <!--            Page Navigator / Table of content               -->
             <div id="table-of-content" class="col-lg-1">
                 <b style="font-size: 20px;">Table of content</b>
-                <br/>
+                <br />
                 <button id="toc-toggle" class="btn btn-primary">Hide table of content</button>
-                <br/><br/>
+                <br /><br />
                 <div id="toc-pages">
-                    <br/>
-                    <br/>
+                    <br />
+                    <br />
                     <b style="font-size: 18px;">Basics</b>
-                    <br/>
-                    <br/>
+                    <br />
+                    <br />
                     <!-- Pages -->
                     <a href="home.html" class="page-link">
                         <div class="page-nav-btn">
@@ -153,8 +171,8 @@ limitations under the License.
                         </div>
                     </a>
                     <!-- Items -->
-                    <br/>
-                    <br/>
+                    <br />
+                    <br />
                     <b style="font-size: 18px;">Items</b>
                     <a href="mineral-rock.html" class="page-link">
                         <div class="page-nav-btn">
@@ -192,8 +210,8 @@ limitations under the License.
                         </div>
                     </a>
                     <!-- Blocks -->
-                    <br/>
-                    <br/>
+                    <br />
+                    <br />
                     <b style="font-size: 18px;">Blocks</b>
                     <a href="mineral-soil.html" class="page-link">
                         <div class="page-nav-btn">
@@ -210,8 +228,8 @@ limitations under the License.
                             Organic Ore
                         </div>
                     </a>
-                    <br/>
-                    <br/>
+                    <br />
+                    <br />
                     <!-- Plants -->
                     <b style="font-size: 20px;">Plant Types</b>
                     <a href="crystalline-plants.html" class="page-link">
@@ -229,18 +247,18 @@ limitations under the License.
                             Biochemical Plants
                         </div>
                     </a>
-                    <br/>
+                    <br />
                     <b style="font-size: 18px;">Other Plants</b>
-                    <br/>
+                    <br />
                     <a href="mystical-seed-pod.html" class="page-link">
                         <div class="page-nav-btn">
-                              Mystical Seed Pod
+                            Mystical Seed Pod
                         </div>
                     </a>
                     <!-- Back to top button -->
-                    <br/>
+                    <br />
                     <a href="#" class="btn btn-primary" title="Back to top">↑</a>
-                    <br/>
+                    <br />
                 </div>
             </div>
             <!--                        WIKI PAGE                           -->
@@ -252,7 +270,10 @@ limitations under the License.
                         </div>
                         <!-- Opening Text -->
                         <div class="wiki-paragraph">
-                            The complete list of plants for every Resynth version.
+                            The complete list of supported plants added by
+                            Resynth.
+
+                            <br /><br />
                         </div>
                     </div>
 
@@ -261,42 +282,210 @@ limitations under the License.
                     <div id="info-box" class="col-md-4">
                         <b id="info-box-title">Resynth - Plants</b>
                         <div>
-                            <img id="info-box-image" alt="info-box-image" 
-                                 src="../../images/wiki/textures/crystalline-plant.png">
+                            <img id="info-box-image" alt="info-box-image"
+                                 src="../../images/wiki/textures/biochemical-plant.gif">
                         </div>
-                        <i>Diamond Plant Texture.</i>
+                        <i>The growth of a Biochemical Plant type: the Spiders Eye plant.</i>
                         <div class="row">
-                            <br/>
+                            <br />
                         </div>
                     </div>
                 </div>
+
                 <!--                      WIKI CONTENT                      -->
+
                 <div id="plant-types" class="row text-left">
                     <div class="title" style="width: 100%">
                     </div>
 
                     <!--                   Plant List                       -->
-                    <div class="wiki-paragraph">
-                        *Plants*
+                    <div class="wiki-paragraph" style="width: 100%;">
+                        <div class="text-center container" style="margin-left: 5%; width: 100%;">
+
+                            <!-- Row -->
+                            <div class="row" style="width: 100%;">
+                                <div class="col-sm-5">
+                                    <!-- Inner Row A -->
+                                    <div class="row">
+                                        <div class="col-md-5 plant-box">
+                                            <b style="font-size: 18px;">Plat</b>
+                                            <br />
+                                            <b style="color: royalblue; font-size: 14px; border-bottom: 1px dotted royalblue;"
+                                               toggle="tooltip" placement="top"
+                                               title="Thermal Foundation">
+                                                Modded
+                                            </b>
+
+                                            <br /><br />
+                                            <img src="../../images/wiki/plants/lead/plant_growing.png"
+                                                 width="48px" height="48px" class="plant-icon" />
+                                            <img src="../../images/wiki/produce/organic_ore/lead.png"
+                                                 width="48px" height="48px" class="plant-icon" />
+                                            <br /><br />
+
+                                            <p>
+                                                <b style="border-top: 1px solid lightgrey;">
+                                                    Type
+                                                </b>
+                                                <br />
+                                                <span style="color: blue">
+                                                    Metallic
+                                                </span>
+                                            </p>
+
+                                            <p>
+                                                <b style="border-top: 1px solid lightgrey;">
+                                                    MC Versions
+                                                </b>
+                                                <br />
+                                                <span style="color: deepskyblue">
+                                                    1.12
+                                                </span>
+                                                <span style="color: rebeccapurple">
+                                                    1.13
+                                                </span>
+                                                <span style="color: darksalmon">
+                                                    1.14
+                                                </span>
+                                                <span style="color: seagreen">
+                                                    1.15
+                                                </span>
+                                            </p>
+
+                                            <p>
+                                                <b style="border-top: 1px solid lightgrey;">
+                                                    Added in
+                                                </b>
+                                                <br />
+                                                1.3.1
+                                            </p>
+                                        </div>
+
+                                        <div class="col-sm-2"></div>
+
+                                        <div class="col-md-5 plant-box">
+                                            <b style="font-size: 18px;">Iron</b>
+                                            <br />
+                                            <b style="color:limegreen; font-size: 14px;">Vanilla</b>
+
+                                            <br /><br />
+                                            <img src="../../images/wiki/plants/iron/plant_growing.png"
+                                                 width="64px" height="64px" class="plant-icon" />
+                                            <br /><br />
+
+                                            <p>
+                                                <b style="border-top: 1px solid lightgrey;">
+                                                    Type
+                                                </b>
+                                                <br />
+                                                <span style="color: blue">
+                                                    Metallic
+                                                </span>
+                                            </p>
+
+                                            <p>
+                                                <b style="border-top: 1px solid lightgrey;">
+                                                    MC Versions
+                                                </b>
+                                                <br />
+                                                <span style="color: deepskyblue">
+                                                    1.12
+                                                </span>
+                                                <span style="color: rebeccapurple">
+                                                    1.13
+                                                </span>
+                                                <span style="color: darksalmon">
+                                                    1.14
+                                                </span>
+                                                <span style="color: seagreen">
+                                                    1.15
+                                                </span>
+                                            </p>
+
+                                            <p>
+                                                <b style="border-top: 1px solid lightgrey;">
+                                                    Added in
+                                                </b>
+                                                <br />
+                                                1.3.1
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- /Inner Row A -->
+                                </div>
+                                <div class="col-sm-1"></div>
+                                <div class="col-sm-5">
+                                    <!-- Inner Row B -->
+                                    <div class="row">
+                                        <div class="col-md-5 plant-box">
+                                            <b>Emerald</b>
+                                        </div>
+
+                                        <div class="col-sm-2"></div>
+
+                                        <div class="col-md-5 plant-box">
+                                            <b>Redstone</b>
+                                        </div>
+                                    </div>
+                                    <!-- /Inner Row B -->
+                                </div>
+                            </div>
+                            <!-- /Row -->
+                            <!-- Row -->
+                            <div class="row" style="width: 100%;">
+                                <div class="col-sm-5">
+                                    <!-- Inner Row A -->
+                                    <div class="row">
+                                        <div class="col-md-5 plant-box">
+                                            <b>A</b>
+                                        </div>
+
+                                        <div class="col-sm-2"></div>
+
+                                        <div class="col-md-5 plant-box">
+                                            <b>Gold</b>
+                                        </div>
+                                    </div>
+                                    <!-- /Inner Row A -->
+                                </div>
+                                <div class="col-sm-1"></div>
+                                <div class="col-sm-5">
+                                    <!-- Inner Row B -->
+                                    <div class="row">
+                                        <div class="col-md-5 plant-box">
+                                            <b>Platinum</b>
+                                        </div>
+
+                                        <div class="col-sm-2"></div>
+
+                                        <div class="col-md-5 plant-box">
+                                            <b>Silver</b>
+                                        </div>
+                                    </div>
+                                    <!-- /Inner Row B -->
+                                </div>
+                            </div>
+                            <!-- /Row -->
+
+                        </div>
                     </div>
                 </div>
-                
+
                 <!--                    Content disclaimer                  -->
                 <div class="legal-footer">
-                    This wiki is licensed under the 
+                    This wiki is licensed under the
                     <a href="https://www.apache.org/licenses/LICENSE-2.0">
                         Apache License, Version 2.0
                     </a>. Although its <b>content</b> may be used, copied, modified,
                     and/or distributed without restriction.
-                    <br/>
-                    Game content and materials are trademarks 
+                    <br />
+                    Game content and materials are trademarks
                     and copyrights of their respective publisher
                     and its licensors. All rights reserved.
                 </div>
             </div>
         </div>
     </div>
-
 
     <!--                                Footer                              -->
     <footer id="sticky-footer" class="py-4 bg-dark text-white-50" style="margin-top: 20px;">
@@ -308,21 +497,21 @@ limitations under the License.
             </a>
             All Resynth content is open source and hosted on github.
         </div>
-        
+
         <div style="width: 50%; margin-left: 25%;">
             THE RESYNTH MOD, WEBSITE AND ITS RESOURCES ARE PROVIDED
             AS IS WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND.
-            <br/>
+            <br />
             For more information, view
             <a class="btn btn-dark" href="https://www.apache.org/licenses/LICENSE-2.0#no-warranty">
                 Clause 7
             </a> of the Apache License, Version 2.0.
         </div>
-       
+
         <hr style="background-color: white">
-        
+
         <div class="container text-center">
-          <small>Copyright &copy; 2018-2020: Ki11er_wolf</small>
+            <small>Copyright &copy; 2018-2020: Ki11er_wolf</small>
         </div>
     </footer>
 
