@@ -1,10 +1,9 @@
 # The Resynth Minecraft Mod Official Website
-### Growable ores, mob drops, and resource for Minecraft
-
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/ef9dde2147974378bb44ac7376a53845)](https://www.codacy.com/app/LMelaia/Resynth-Minecraft-Mod.github.io?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Resynth-Minecraft-Mod/Resynth-Minecraft-Mod.github.io&amp;utm_campaign=Badge_Grade)
 ![](http://cf.way2muchnoise.eu/full_303846_downloads.svg)
 ![](http://cf.way2muchnoise.eu/versions/303846.svg)
+### Growable ores, mob drops, and resource for Minecraft
 
 <p align="center" style="text-align: center">
     <u><b>Resynth Official Website: Live Environment and Hosted Source Files Only!</b></u><br>
@@ -35,8 +34,7 @@ Resynths complete version history can be found on the [Changelog](https://resynt
 ## Developer / Development
 
 <h3><b><u>Active and Hosted Branch</u></b></h3>
-*This is the active branch for the Resynth Mod website and is hosted live on GitHub Pages at [https://resynth-minecraft-mod.github.io/](https://resynth-minecraft-mod.github.io/)*.
-Changes to this branch will be reflected on the live site!
+<b>This is the active branch for the Resynth Mod website and is hosted live at <a href="https://resynth-minecraft-mod.github.io">resynth-minecraft-mod.github.io</a> using GitHub Pages.</b> All Changes to this branch will be reflected on the live website!
 
 ### The Resynth Minecraft Mod Repository
 The repository for the Resynth Mod jar can be found in the [Resynth-Mod Repository](https://github.com/Resynth-Minecraft-Mod/Resynth-Mod) where it is actively developed and maintained.
