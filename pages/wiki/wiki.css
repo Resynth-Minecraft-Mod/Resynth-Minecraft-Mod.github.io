@@ -210,3 +210,16 @@ table th {
 .padding-bottom-3 {
     padding-bottom: 3px;
 }
+
+.version-block {
+    font-size: 16px;
+    color: white;
+    border-radius: 7px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.version-block:hover {
+    color: black;
+    background-color: goldenrod !important;
+}
