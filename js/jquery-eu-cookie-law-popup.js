@@ -32,8 +32,8 @@ $.fn.euCookieLawPopup = (function() {
 		popupPosition : 'bottom',
 		colorStyle : 'default',
 		compactStyle : false,
-		popupTitle : 'This website is using cookies',
-		popupText : 'We use cookies to ensure that we give you the best experience on our website. If you continue without changing your settings, we\'ll assume that you are happy to receive all cookies on this website.',
+		popupTitle : 'This website is using cookies & Google Analytics',
+		popupText : 'We use cookies to ensure that we give you the best experience on our website. We also use Google Analytics to monitor anonymous traffic. By continuing to use the site you consent the use of cookies and anonymous traffic collection.',
 		buttonContinueTitle : 'Continue',
 		buttonLearnmoreTitle : '',
 		buttonLearnmoreOpenInNewWindow : true,
@@ -254,8 +254,8 @@ $(document).ready( function() {
 	if ($(".eupopup").length > 0) {
 		$(document).euCookieLawPopup().init({
 			'info' : 'YOU_CAN_ADD_MORE_SETTINGS_HERE',
-			'popupTitle' : 'This website is using cookies. ',
-			'popupText' : 'This website uses Google Analytics and Google AdSense which both use cookies. If you continue using this website, we\'ll assume that you are happy to receive all cookies on this website.'
+			'popupTitle' : 'This website is using cookies & Google Analytics ',
+			'popupText' : 'We use cookies to ensure that we give you the best experience on our website. We also use Google Analytics to monitor anonymous traffic. By continuing to use the site you consent the use of cookies and anonymous traffic collection.'
 		});
 	}
 });
