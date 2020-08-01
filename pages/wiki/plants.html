@@ -14,6 +14,9 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 -->
+
+<!--suppress CheckImageSize -->
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head lang="en">
     <!--                       Tab Title & Logo                             -->
     <title>Plants - Resynth Mod Wiki</title>
@@ -25,7 +28,7 @@ limitations under the License.
     <!--                            SEO                                     -->
     <meta name="keywords" content="Resynth, Resynth Wiki, Wiki, Resynth Help,
           Help, Resynth Mod, Growable Ores, Growable Mob Drops, 1.12.2, 1.13.2,
-          1.14.4, 1.15.2, Plants, Plant List, List of plants">
+          1.14.4, 1.15.2, Plants, Plant List, List of plants, 1.16, 1.16.1">
 
     <meta name="description" content="The complete list of plants added by Resynth.">
 
@@ -82,15 +85,26 @@ limitations under the License.
 
     .plant-icon {
         -ms-interpolation-mode: nearest-neighbor;
-        image-rendering: crisp-edges;
-        image-rendering: pixelated;
+        image-rendering: pixelated !important;
     }
 
+    .supported-mod {
+        background-color: limegreen;
+        border-radius: 14px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 2px;
+        margin-right: 8px;
+    }
+
+    .supported-mod:hover{
+        background-color: darkcyan;
+    }
 </style>
 
-<body class="eupopup eupopup-top">
-    <!-- Navbar -->
-    <nav class="navbar navbar-dark bg-dark">
+<body class="eupopup eupopup-bottom">
+<!-- Navbar -->
+<nav class="navbar navbar-dark bg-dark">
         <span class="navbar-brand">
             <img src="../../images/logo.png" height="39" style="margin-top: 10px;" alt="" />
 
@@ -101,7 +115,7 @@ limitations under the License.
             </a>
         </span>
 
-        <span class="navbar-text">
+    <span class="navbar-text">
             <a href="../../" class="navbar-link" style="text-decoration:none">Home</a>
             <a href="../download.html" class="navbar-link" style="text-decoration:none">Downloads</a>
             <a href="" class="navbar-link-active" style="text-decoration:none">Wiki</a>
@@ -111,410 +125,2072 @@ limitations under the License.
             <a href="../../pages/credits/credits.html" class="navbar-link" style="text-decoration:none">Credits</a>
             <a href="https://github.com/Resynth-Minecraft-Mod" class="navbar-link" style="text-decoration:none">Source Code</a>
             <a href="https://www.apache.org/licenses/LICENSE-2.0" class="navbar-link" style="text-decoration:none">License</a>
-        </span>
-    </nav>
+    </span>
+</nav>
 
-    <!--                                  Page                              -->
-    <div id="page" class="container-fluid full-width has-inner text-center">
-        <div class="row">
-            <!--            Page Navigator / Table of content               -->
-            <div id="table-of-content" class="col-lg-1">
-                <b style="font-size: 20px;">Table of content</b>
+<!--                                  Page                              -->
+<div id="page" class="container-fluid full-width has-inner text-center">
+    <div class="row">
+        <!--            Page Navigator / Table of content               -->
+        <div id="table-of-content" class="col-lg-1">
+            <b style="font-size: 20px;">Table of content</b>
+            <br />
+            <button id="toc-toggle" class="btn btn-primary">Hide table of content</button>
+            <br /><br />
+            <div id="toc-pages">
                 <br />
-                <button id="toc-toggle" class="btn btn-primary">Hide table of content</button>
-                <br /><br />
-                <div id="toc-pages">
-                    <br />
-                    <br />
-                    <b style="font-size: 18px;">Basics</b>
-                    <br />
-                    <br />
-                    <!-- Pages -->
-                    <a href="home.html" class="page-link">
-                        <div class="page-nav-btn">
-                            Home
-                        </div>
-                    </a>
-                    <a href="getting-started.html" class="page-link">
-                        <div class="page-nav-btn">
-                            Getting Started
-                        </div>
-                    </a>
-                    <a href="#" class="page-link">
-                        <div class="page-nav-btn active-page">
-                            Plants
-                        </div>
-                    </a>
-                    <a href="getting-seeds.html" class="page-link">
-                        <div class="page-nav-btn">
-                            Getting Seeds and Resources
-                        </div>
-                    </a>
-                    <a href="crafting-recipes.html" class="page-link">
-                        <div class="page-nav-btn">
-                            Crafting Recipes
-                        </div>
-                    </a>
-                    <a href="configuring.html" class="page-link">
-                        <div class="page-nav-btn">
-                            Configuring the Mod
-                        </div>
-                    </a>
-                    <a href="integration.html" class="page-link">
-                        <div class="page-nav-btn">
-                            Integration with Other Mods
-                        </div>
-                    </a>
-                    <a href="enhancers.html" class="page-link">
-                        <div class="page-nav-btn">
-                            Enhancers
-                        </div>
-                    </a>
-                    <!-- Items -->
-                    <br />
-                    <br />
-                    <b style="font-size: 18px;">Items</b>
-                    <a href="mineral-rock.html" class="page-link">
-                        <div class="page-nav-btn">
-                            Mineral Rock
-                        </div>
-                    </a>
-                    <a href="dense-mineral-rock.html" class="page-link">
-                        <div class="page-nav-btn">
-                            Dense Mineral Rock
-                        </div>
-                    </a>
-                    <a href="mineral-crystal.html" class="page-link">
-                        <div class="page-nav-btn">
-                            Mineral Crystal
-                        </div>
-                    </a>
-                    <a href="mineral-hoe.html" class="page-link">
-                        <div class="page-nav-btn">
-                            Mineral Hoe
-                        </div>
-                    </a>
-                    <a href="seeds.html" class="page-link">
-                        <div class="page-nav-btn">
-                            Seeds
-                        </div>
-                    </a>
-                    <a href="shards.html" class="page-link">
-                        <div class="page-nav-btn">
-                            Shards
-                        </div>
-                    </a>
-                    <a href="bulbs.html" class="page-link">
-                        <div class="page-nav-btn">
-                            Bulbs
-                        </div>
-                    </a>
-                    <!-- Blocks -->
-                    <br />
-                    <br />
-                    <b style="font-size: 18px;">Blocks</b>
-                    <a href="mineral-soil.html" class="page-link">
-                        <div class="page-nav-btn">
-                            Mineral Soil
-                        </div>
-                    </a>
-                    <a href="mineral-stone.html" class="page-link">
-                        <div class="page-nav-btn">
-                            Mineral Stone
-                        </div>
-                    </a>
-                    <a href="organic-ore.html" class="page-link">
-                        <div class="page-nav-btn">
-                            Organic Ore
-                        </div>
-                    </a>
-                    <br />
-                    <br />
-                    <!-- Plants -->
-                    <b style="font-size: 20px;">Plant Types</b>
-                    <a href="crystalline-plants.html" class="page-link">
-                        <div class="page-nav-btn">
-                            Crystalline Plants
-                        </div>
-                    </a>
-                    <a href="metallic-plants.html" class="page-link">
-                        <div class="page-nav-btn">
-                            Metallic Plants
-                        </div>
-                    </a>
-                    <a href="biochemical-plants.html" class="page-link">
-                        <div class="page-nav-btn">
-                            Biochemical Plants
-                        </div>
-                    </a>
-                    <br />
-                    <b style="font-size: 18px;">Other Plants</b>
-                    <br />
-                    <a href="mystical-seed-pod.html" class="page-link">
-                        <div class="page-nav-btn">
-                            Mystical Seed Pod
-                        </div>
-                    </a>
-                    <!-- Back to top button -->
-                    <br />
-                    <a href="#" class="btn btn-primary" title="Back to top">↑</a>
-                    <br />
+                <br />
+                <b style="font-size: 18px;">Basics</b>
+                <br />
+                <br />
+                <!-- Pages -->
+                <a href="home.html" class="page-link">
+                    <div class="page-nav-btn">
+                        Home
+                    </div>
+                </a>
+                <a href="getting-started.html" class="page-link">
+                    <div class="page-nav-btn">
+                        Getting Started
+                    </div>
+                </a>
+                <a href="#" class="page-link">
+                    <div class="page-nav-btn active-page">
+                        Plants
+                    </div>
+                </a>
+                <a href="getting-seeds.html" class="page-link">
+                    <div class="page-nav-btn">
+                        Getting Seeds and Resources
+                    </div>
+                </a>
+                <a href="crafting-recipes.html" class="page-link">
+                    <div class="page-nav-btn">
+                        Crafting Recipes
+                    </div>
+                </a>
+                <a href="configuring.html" class="page-link">
+                    <div class="page-nav-btn">
+                        Configuring the Mod
+                    </div>
+                </a>
+                <a href="plant-requests.html" class="page-link">
+                    <div class="page-nav-btn">
+                        Plant Requests
+                    </div>
+                </a>
+                <a href="enhancers.html" class="page-link">
+                    <div class="page-nav-btn">
+                        Enhancers
+                    </div>
+                </a>
+                <!-- Items -->
+                <br />
+                <br />
+                <b style="font-size: 18px;">Items</b>
+                <a href="mineral-rock.html" class="page-link">
+                    <div class="page-nav-btn">
+                        Mineral Rock
+                    </div>
+                </a>
+                <a href="dense-mineral-rock.html" class="page-link">
+                    <div class="page-nav-btn">
+                        Dense Mineral Rock
+                    </div>
+                </a>
+                <a href="mineral-crystal.html" class="page-link">
+                    <div class="page-nav-btn">
+                        Mineral Crystal
+                    </div>
+                </a>
+                <a href="mineral-hoe.html" class="page-link">
+                    <div class="page-nav-btn">
+                        Mineral Hoe
+                    </div>
+                </a>
+                <a href="seeds.html" class="page-link">
+                    <div class="page-nav-btn">
+                        Seeds
+                    </div>
+                </a>
+                <a href="shards.html" class="page-link">
+                    <div class="page-nav-btn">
+                        Shards
+                    </div>
+                </a>
+                <a href="bulbs.html" class="page-link">
+                    <div class="page-nav-btn">
+                        Bulbs
+                    </div>
+                </a>
+                <!-- Blocks -->
+                <br />
+                <br />
+                <b style="font-size: 18px;">Blocks</b>
+                <a href="mineral-soil.html" class="page-link">
+                    <div class="page-nav-btn">
+                        Mineral Soil
+                    </div>
+                </a>
+                <a href="mineral-stone.html" class="page-link">
+                    <div class="page-nav-btn">
+                        Mineral Stone
+                    </div>
+                </a>
+                <a href="organic-ore.html" class="page-link">
+                    <div class="page-nav-btn">
+                        Organic Ore
+                    </div>
+                </a>
+                <br />
+                <br />
+                <!-- Plants -->
+                <b style="font-size: 20px;">Plant Types</b>
+                <a href="crystalline-plants.html" class="page-link">
+                    <div class="page-nav-btn">
+                        Crystalline Plants
+                    </div>
+                </a>
+                <a href="metallic-plants.html" class="page-link">
+                    <div class="page-nav-btn">
+                        Metallic Plants
+                    </div>
+                </a>
+                <a href="biochemical-plants.html" class="page-link">
+                    <div class="page-nav-btn">
+                        Biochemical Plants
+                    </div>
+                </a>
+                <br />
+                <b style="font-size: 18px;">Other Plants</b>
+                <br />
+                <a href="mystical-seed-pod.html" class="page-link">
+                    <div class="page-nav-btn">
+                        Mystical Seed Pod
+                    </div>
+                </a>
+                <!-- Back to top button -->
+                <br />
+                <a href="#" class="btn btn-primary" title="Back to top">↑</a>
+                <br />
+            </div>
+        </div>
+        <!--                        WIKI PAGE                           -->
+        <div id="wiki-page" class="col-lg-8">
+            <div class="row">
+                <div class="col-md-8 text-left">
+                    <div class="title">
+                        <b>Plants</b>
+                    </div>
+                    <!-- Opening Text -->
+                    <div class="wiki-paragraph">
+                        This page lists all the resources that Resynth can grow, as well as the mod the resource
+                        is from, and the type of plant that grows the resource. This page only lists resources
+                        that can be grown in the latest version of Resynth. Any resources in older versions that
+                        can no longer be grown are not listed here.
+
+                        <br><br>
+                        <b>Don't see the mod, ore, crop, or resource you want to grow?</b> New plants are constantly
+                        being added to Resynth, and more and more mods are being supported - most often from requests
+                        by players of the mod. Additionally, you can submit a plant request stating the ores/resources
+                        you want to be able to grow. <a href="plant-requests.html">View the guide</a> on submitting
+                        plant requests.
+
+                        <br><br><b><u>Growable ores and resources from other mods.</u></b><br>
+                        The latest version of Resynth adds plants for ores and resources from the following mods
+                        in addition to the standard crops for Vanilla Minecraft resources:
+                        <span class="supported-mod">Basic Nether Ores</span>
+                        <span class="supported-mod">Botania</span>
+                        <span class="supported-mod">Blue Power</span>
+                        <span class="supported-mod">Mekanism</span>
+                        <span class="supported-mod">More Ores in ONE</span>
+                        <span class="supported-mod">Mystical Agriculture</span>
+                        <span class="supported-mod">Just Another Ruby Mod</span>
+                        <span class="supported-mod">Simple Ores</span>
+                        <span class="supported-mod">The Midnight</span>
+
+                        <br><br>
+                    </div>
+                </div>
+
+                <!--                        INFO BOX                        -->
+
+                <div id="info-box" class="col-md-4">
+                    <b id="info-box-title">Resynth - Plants</b>
+                    <div>
+                        <img id="info-box-image" alt="info-box-image"
+                             src="../../images/wiki/plant_types.gif">
+                    </div>
+                    <i>The three different types of Resynth crops, represented by Emerald, Copper, and Leather plants.</i>
+                    <div class="row">
+                        <br />
+
+                    </div>
                 </div>
             </div>
-            <!--                        WIKI PAGE                           -->
-            <div id="wiki-page" class="col-lg-8">
-                <div class="row">
-                    <div class="col-md-8 text-left">
-                        <div class="title">
-                            <b>Plants</b>
-                        </div>
-                        <!-- Opening Text -->
-                        <div class="wiki-paragraph">
-                            The complete list of supported plants added by
-                            Resynth.
 
-                            <br /><br />
-                        </div>
-                    </div>
+            <!--                      WIKI CONTENT                      -->
 
-                    <!--                        INFO BOX                        -->
-
-                    <div id="info-box" class="col-md-4">
-                        <b id="info-box-title">Resynth - Plants</b>
-                        <div>
-                            <img id="info-box-image" alt="info-box-image"
-                                 src="../../images/wiki/textures/biochemical-plant.gif">
-                        </div>
-                        <i>The growth of a Biochemical Plant type: the Spiders Eye plant.</i>
-                        <div class="row">
-                            <br />
-                        </div>
-                    </div>
+            <div id="plant-types" class="row text-left">
+                <div class="title" style="width: 100%">
                 </div>
 
-                <!--                      WIKI CONTENT                      -->
+                <!--                   Plant List                       -->
+                <div class="wiki-paragraph" style="width: 100%;">
+                    <div class="text-center container" style="margin-left: 5%; width: 100%;">
 
-                <div id="plant-types" class="row text-left">
-                    <div class="title" style="width: 100%">
-                    </div>
+                        <!--                Row                 -->
+                        <div class="row" style="width: 100%;">
+                            <div class="col-sm-5">
+                                <div class="row">
 
-                    <!--                   Plant List                       -->
-                    <div class="wiki-paragraph" style="width: 100%;">
-                        <div class="text-center container" style="margin-left: 5%; width: 100%;">
-
-                            <!-- Row -->
-                            <div class="row" style="width: 100%;">
-                                <div class="col-sm-5">
-                                    <!-- Inner Row A -->
-                                    <div class="row">
-                                        <div class="col-md-5 plant-box">
-                                            <b style="font-size: 18px;">Plat</b>
+                                    <!--        A       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Adamantium</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Metallic Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/adamantium/plant_growing.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
                                             <br />
-                                            <b style="color: royalblue; font-size: 14px; border-bottom: 1px dotted royalblue;"
-                                               toggle="tooltip" placement="top"
-                                               title="Thermal Foundation">
-                                                Modded
-                                            </b>
+                                            <span style="color: orange">Simple Ores</span>
+                                        </p>
+                                    </div>
 
-                                            <br /><br />
-                                            <img src="../../images/wiki/plants/lead/plant_growing.png"
-                                                 width="48px" height="48px" class="plant-icon" />
-                                            <img src="../../images/wiki/produce/organic_ore/lead.png"
-                                                 width="48px" height="48px" class="plant-icon" />
-                                            <br /><br />
+                                    <div class="col-sm-2"></div>
 
-                                            <p>
-                                                <b style="border-top: 1px solid lightgrey;">
-                                                    Type
-                                                </b>
-                                                <br />
-                                                <span style="color: blue">
-                                                    Metallic
-                                                </span>
-                                            </p>
-
-                                            <p>
-                                                <b style="border-top: 1px solid lightgrey;">
-                                                    MC Versions
-                                                </b>
-                                                <br />
-                                                <span style="color: deepskyblue">
-                                                    1.12
-                                                </span>
-                                                <span style="color: rebeccapurple">
-                                                    1.13
-                                                </span>
-                                                <span style="color: darksalmon">
-                                                    1.14
-                                                </span>
-                                                <span style="color: seagreen">
-                                                    1.15
-                                                </span>
-                                            </p>
-
-                                            <p>
-                                                <b style="border-top: 1px solid lightgrey;">
-                                                    Added in
-                                                </b>
-                                                <br />
-                                                1.3.1
-                                            </p>
-                                        </div>
-
-                                        <div class="col-sm-2"></div>
-
-                                        <div class="col-md-5 plant-box">
-                                            <b style="font-size: 18px;">Iron</b>
+                                    <!--        B       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Aluminium</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Metallic Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/aluminium/plant_growing.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
                                             <br />
-                                            <b style="color:limegreen; font-size: 14px;">Vanilla</b>
-
-                                            <br /><br />
-                                            <img src="../../images/wiki/plants/iron/plant_growing.png"
-                                                 width="64px" height="64px" class="plant-icon" />
-                                            <br /><br />
-
-                                            <p>
-                                                <b style="border-top: 1px solid lightgrey;">
-                                                    Type
-                                                </b>
-                                                <br />
-                                                <span style="color: blue">
-                                                    Metallic
-                                                </span>
-                                            </p>
-
-                                            <p>
-                                                <b style="border-top: 1px solid lightgrey;">
-                                                    MC Versions
-                                                </b>
-                                                <br />
-                                                <span style="color: deepskyblue">
-                                                    1.12
-                                                </span>
-                                                <span style="color: rebeccapurple">
-                                                    1.13
-                                                </span>
-                                                <span style="color: darksalmon">
-                                                    1.14
-                                                </span>
-                                                <span style="color: seagreen">
-                                                    1.15
-                                                </span>
-                                            </p>
-
-                                            <p>
-                                                <b style="border-top: 1px solid lightgrey;">
-                                                    Added in
-                                                </b>
-                                                <br />
-                                                1.3.1
-                                            </p>
-                                        </div>
+                                            <span style="color: orange">Basic Nether Ores</span>
+                                        </p>
                                     </div>
-                                    <!-- /Inner Row A -->
-                                </div>
-                                <div class="col-sm-1"></div>
-                                <div class="col-sm-5">
-                                    <!-- Inner Row B -->
-                                    <div class="row">
-                                        <div class="col-md-5 plant-box">
-                                            <b>Emerald</b>
-                                        </div>
 
-                                        <div class="col-sm-2"></div>
-
-                                        <div class="col-md-5 plant-box">
-                                            <b>Redstone</b>
-                                        </div>
-                                    </div>
-                                    <!-- /Inner Row B -->
                                 </div>
                             </div>
-                            <!-- /Row -->
-                            <!-- Row -->
-                            <div class="row" style="width: 100%;">
-                                <div class="col-sm-5">
-                                    <!-- Inner Row A -->
-                                    <div class="row">
-                                        <div class="col-md-5 plant-box">
-                                            <b>A</b>
-                                        </div>
+                            <div class="col-sm-1"></div><div class="col-sm-5">
+                            <div class="row">
 
-                                        <div class="col-sm-2"></div>
-
-                                        <div class="col-md-5 plant-box">
-                                            <b>Gold</b>
-                                        </div>
-                                    </div>
-                                    <!-- /Inner Row A -->
+                                <!--        C       -->
+                                <div class="col-md-5 plant-box">
+                                    <b style="font-size: 18px;">Amethyst</b>
+                                    <br />
+                                    <b style="font-size: 14px; color: blue">Crystalline Type</b>
+                                    <br /><br />
+                                    <img src="../../images/wiki/plants/amethyst/plant_7.png"
+                                         width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                    <br /><br />
+                                    <p>
+                                        <b style="border-top: 1px solid lightgrey;">For:</b>
+                                        <br />
+                                        <span style="color: orange">More Ores in ONE <br> Blue Power</span>
+                                    </p>
                                 </div>
-                                <div class="col-sm-1"></div>
-                                <div class="col-sm-5">
-                                    <!-- Inner Row B -->
-                                    <div class="row">
-                                        <div class="col-md-5 plant-box">
-                                            <b>Platinum</b>
-                                        </div>
 
-                                        <div class="col-sm-2"></div>
+                                <div class="col-sm-2"></div>
 
-                                        <div class="col-md-5 plant-box">
-                                            <b>Silver</b>
-                                        </div>
-                                    </div>
-                                    <!-- /Inner Row B -->
+                                <!--        D       -->
+                                <div class="col-md-5 plant-box">
+                                    <b style="font-size: 18px;">Andesite</b>
+                                    <br />
+                                    <b style="font-size: 14px; color: blue">Metallic Type</b>
+                                    <br /><br />
+                                    <img src="../../images/wiki/plants/andesite/plant_growing.png"
+                                         width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                    <br /><br />
+                                    <p>
+                                        <b style="border-top: 1px solid lightgrey;">For:</b>
+                                        <br />
+                                        <span style="color: orange">Minecraft</span>
+                                    </p>
                                 </div>
                             </div>
-                            <!-- /Row -->
-
                         </div>
+                        </div>
+
+                        <!--                Row                 -->
+                        <div class="row" style="width: 100%;">
+                            <div class="col-sm-5">
+                                <div class="row">
+
+                                    <!--        A       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Blaze Rod</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Biochemical Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/blaze_rod/plant_7.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">Minecraft</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="col-sm-2"></div>
+
+                                    <!--        B       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Bone</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Biochemical Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/bone/plant_7.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">Minecraft</span>
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-sm-1"></div>
+                            <div class="col-sm-5">
+                                <div class="row">
+
+                                    <!--        C       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Calvinite</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Crystalline Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/calvinite_crystal/plant_7.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">Resynth</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="col-sm-2"></div>
+
+                                    <!--        D       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Clay</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Metallic Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/clay/plant_growing.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">Minecraft</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--                Row                 -->
+                        <div class="row" style="width: 100%;">
+                            <div class="col-sm-5">
+                                <div class="row">
+
+                                    <!--        A       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Coal</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Crystalline Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/coal/plant_7.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">Minecraft</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="col-sm-2"></div>
+
+                                    <!--        B       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Cobblestone</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Biochemical Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/cobblestone/plant_growing.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">Minecraft</span>
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-sm-1"></div>
+                            <div class="col-sm-5">
+                                <div class="row">
+
+                                    <!--        C       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Copper</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Metallic Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/copper/plant_growing.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">
+                                                Simple Ores<br>Blue Power<br>Basic Nether Ores<br>Mekanism</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="col-sm-2"></div>
+
+                                    <!--        D       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Diamond</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Crystalline Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/diamond/plant_7.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">Minecraft<br>Basic Nether Ores</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--                Row                 -->
+                        <div class="row" style="width: 100%;">
+                            <div class="col-sm-5">
+                                <div class="row">
+
+                                    <!--        A       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Diorite</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Metallic Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/diorite/plant_growing.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">Minecraft</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="col-sm-2"></div>
+
+                                    <!--        B       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Dirt</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Metallic Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/dirt/plant_growing.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">Minecraft</span>
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-sm-1"></div>
+                            <div class="col-sm-5">
+                                <div class="row">
+
+                                    <!--        C       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Dragons Breath</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Crystalline Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/dragons_breath/plant_7.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">Minecraft</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="col-sm-2"></div>
+
+                                    <!--        D       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Emerald</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Crystalline Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/emerald/plant_7.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">Minecraft<br>Basic Nether Ores</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--                Row                 -->
+                        <div class="row" style="width: 100%;">
+                            <div class="col-sm-5">
+                                <div class="row">
+
+                                    <!--        A       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">End Stone</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Metallic Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/end_stone/plant_growing.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">Minecraft</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="col-sm-2"></div>
+
+                                    <!--        B       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Ender Pearl</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Biochemical Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/ender_pearl/plant_7.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">Minecraft</span>
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-sm-1"></div>
+                            <div class="col-sm-5">
+                                <div class="row">
+
+                                    <!--        C       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Experience(XP)</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Biochemical Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/experience_bottle/plant_7.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">Minecraft</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="col-sm-2"></div>
+
+                                    <!--        D       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Feather</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Biochemical Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/feather/plant_7.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">Minecraft</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--                Row                 -->
+                        <div class="row" style="width: 100%;">
+                            <div class="col-sm-5">
+                                <div class="row">
+
+                                    <!--        A       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Ghast Tear</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Biochemical Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/ghast_tear/plant_7.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">Minecraft</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="col-sm-2"></div>
+
+                                    <!--        B       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Glowstone</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Crystalline Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/glowstone/plant_7.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">Minecraft</span>
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-sm-1"></div>
+                            <div class="col-sm-5">
+                                <div class="row">
+
+                                    <!--        C       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Gold</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Metallic Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/gold/plant_growing.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">Minecraft<br>Basic Nether Ores</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="col-sm-2"></div>
+
+                                    <!--        D       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Granite</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Metallic Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/granite/plant_growing.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">Minecraft</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--                Row                 -->
+                        <div class="row" style="width: 100%;">
+                            <div class="col-sm-5">
+                                <div class="row">
+
+                                    <!--        A       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Gunpowder</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Biochemical Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/gunpowder/plant_7.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">Minecraft</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="col-sm-2"></div>
+
+                                    <!--        B       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Ink Sac</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Biochemical Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/ink_sac/plant_7.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">Minecraft</span>
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-sm-1"></div>
+                            <div class="col-sm-5">
+                                <div class="row">
+
+                                    <!--        C       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Iron</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Metallic Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/iron/plant_growing.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">Minecraft<br>Basic Nether Ores</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="col-sm-2"></div>
+
+                                    <!--        D       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Lapis Lazuli</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Crystalline Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/lapis_lazuli/plant_7.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">Minecraft<br>Basic Nether Ores</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--                Row                 -->
+                        <div class="row" style="width: 100%;">
+                            <div class="col-sm-5">
+                                <div class="row">
+
+                                    <!--        A       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Lead</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Metallic Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/lead/plant_growing.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">Basic Nether Ores</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="col-sm-2"></div>
+
+                                    <!--        B       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Leather</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Biochemical Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/leather/plant_7.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">Minecraft</span>
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-sm-1"></div>
+                            <div class="col-sm-5">
+                                <div class="row">
+
+                                    <!--        C       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Malachite</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Crystalline Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/malachite/plant_7.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">Blue Power</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="col-sm-2"></div>
+
+                                    <!--        D       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Mineral Rock</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Crystalline Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/mineral_rock/plant_7.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">Resynth</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--                Row                 -->
+                        <div class="row" style="width: 100%;">
+                            <div class="col-sm-5">
+                                <div class="row">
+
+                                    <!--        A       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Mythril</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Metallic Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/mythril/plant_growing.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">Simple Ores</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="col-sm-2"></div>
+
+                                    <!--        B       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Nautilus Shell</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Biochemical Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/nautilus_shell/plant_7.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">Minecraft</span>
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-sm-1"></div>
+                            <div class="col-sm-5">
+                                <div class="row">
+
+                                    <!--        C       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Nether Star</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Biochemical Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/nether_star/plant_7.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">Minecraft</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="col-sm-2"></div>
+
+                                    <!--        D       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Nickel</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Metallic Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/nickel/plant_growing.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">Basic Nether Ores</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--                Row                 -->
+                        <div class="row" style="width: 100%;">
+                            <div class="col-sm-5">
+                                <div class="row">
+
+                                    <!--        A       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Onyx</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Crystalline Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/onyx/plant_7.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">Simple Ores</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="col-sm-2"></div>
+
+                                    <!--        B       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Opal</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Crystalline Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/opal/plant_7.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">Just Another Ruby Mod</span>
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-sm-1"></div>
+                            <div class="col-sm-5">
+                                <div class="row">
+
+                                    <!--        C       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Prismarine Crystal</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Biochemical Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/prismarine_crystal/plant_7.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">Minecraft</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="col-sm-2"></div>
+
+                                    <!--        D       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Prismarine Shard</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Biochemical Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/prismarine_shard/plant_7.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">Minecraft</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--                Row                 -->
+                        <div class="row" style="width: 100%;">
+                            <div class="col-sm-5">
+                                <div class="row">
+
+                                    <!--        A       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Quartz</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Crystalline Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/quartz/plant_7.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">Minecraft</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="col-sm-2"></div>
+
+                                    <!--        B       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Rabbit Foot</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Biochemical Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/rabbit_foot/plant_7.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">Minecraft</span>
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-sm-1"></div>
+                            <div class="col-sm-5">
+                                <div class="row">
+
+                                    <!--        C       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Redstone</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Crystalline Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/redstone/plant_7.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">Minecraft<br>Basic Nether Ores</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="col-sm-2"></div>
+
+                                    <!--        D       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Rotten Flesh</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Biochemical Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/rotten_flesh/plant_7.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">Minecraft</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--                Row                 -->
+                        <div class="row" style="width: 100%;">
+                            <div class="col-sm-5">
+                                <div class="row">
+
+                                    <!--        A       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Ruby</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Crystalline Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/ruby/plant_7.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">
+                                                Blue Power<br>More Ores in ONE<br>Just Another Ruby Mod
+                                            </span>
+                                        </p>
+                                    </div>
+
+                                    <div class="col-sm-2"></div>
+
+                                    <!--        B       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Sand</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Metallic Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/sand/plant_growing.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">Minecraft</span>
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-sm-1"></div>
+                            <div class="col-sm-5">
+                                <div class="row">
+
+                                    <!--        C       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Sapphire</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Crystalline Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/sapphire/plant_7.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">Blue Power<br>More Ores in ONE</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="col-sm-2"></div>
+
+                                    <!--        D       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Shulker Shell</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Biochemical Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/shulker_shell/plant_7.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">Minecraft</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--                Row                 -->
+                        <div class="row" style="width: 100%;">
+                            <div class="col-sm-5">
+                                <div class="row">
+
+                                    <!--        A       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Silver</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Metallic Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/silver/plant_growing.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">Blue Power<br>Basic Nether Ores</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="col-sm-2"></div>
+
+                                    <!--        B       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Slime Ball</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Biochemical Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/slime_ball/plant_7.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">Minecraft</span>
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-sm-1"></div>
+                            <div class="col-sm-5">
+                                <div class="row">
+
+                                    <!--        C       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Spider Eye</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Biochemical Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/spider_eye/plant_7.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">Minecraft</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="col-sm-2"></div>
+
+                                    <!--        D       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Sponge</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Metallic Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/sponge/plant_growing.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">Minecraft</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--                Row                 -->
+                        <div class="row" style="width: 100%;">
+                            <div class="col-sm-5">
+                                <div class="row">
+
+                                    <!--        A       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Stone</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Metallic Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/stone/plant_growing.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">Minecraft</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="col-sm-2"></div>
+
+                                    <!--        B       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">String</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Biochemical Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/string/plant_7.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">Minecraft</span>
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-sm-1"></div>
+                            <div class="col-sm-5">
+                                <div class="row">
+
+                                    <!--        C       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Teslatite</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Crystalline Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/teslatite/plant_7.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">Blue Power</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="col-sm-2"></div>
+
+                                    <!--        D       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Tin</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Metallic Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/tin/plant_growing.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">Mekanism<br>Simple Ores<br>Basic Nether Ores</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--                Row                 -->
+                        <div class="row" style="width: 100%;">
+                            <div class="col-sm-5">
+                                <div class="row">
+
+                                    <!--        A       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Topaz</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Crystalline Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/topaz/plant_7.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">More Ores in ONE</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="col-sm-2"></div>
+
+                                    <!--        B       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Tungsten</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Metallic Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/tungsten/plant_growing.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">Blue Power</span>
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-sm-1"></div>
+                            <div class="col-sm-5">
+                                <div class="row">
+
+                                    <!--        C       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Uranium</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Metallic Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/uranium/plant_growing.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">Basic Nether Ores</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="col-sm-2"></div>
+
+                                    <!--        D       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Zinc</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Metallic Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/zinc/plant_growing.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">Blue Power</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--                Row                 -->
+                        <div class="row" style="width: 100%;">
+                            <div class="col-sm-5">
+                                <div class="row">
+
+                                    <!--        A       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Archaic Shard</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Crystalline Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/archaic/plant_7.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">The Midnight</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="col-sm-2"></div>
+
+                                    <!--        B       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Mystical Black Petal</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Crystalline Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/black_petal/plant_7.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">Botania</span>
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-sm-1"></div>
+                            <div class="col-sm-5">
+                                <div class="row">
+
+                                    <!--        C       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Mystical Blue Petal</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Crystalline Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/blue_petal/plant_7.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">Botania</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="col-sm-2"></div>
+
+                                    <!--        D       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Mystical Brown Petal</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Crystalline Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/brown_petal/plant_7.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">Botania</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--                Row                 -->
+                        <div class="row" style="width: 100%;">
+                            <div class="col-sm-5">
+                                <div class="row">
+
+                                    <!--        A       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Cookie</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Crystalline Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/cookie/plant_7.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">Minecraft</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="col-sm-2"></div>
+
+                                    <!--        B       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Mystical Cyan Petal</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Crystalline Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/cyan_petal/plant_7.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">Botania</span>
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-sm-1"></div>
+                            <div class="col-sm-5">
+                                <div class="row">
+
+                                    <!--        C       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Dark Pearl</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Crystalline Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/dark_pearl/plant_7.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">The Midnight</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="col-sm-2"></div>
+
+                                    <!--        D       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Ebonite</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Crystalline Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/ebonite/plant_7.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">The Midnight</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--                Row                 -->
+                        <div class="row" style="width: 100%;">
+                            <div class="col-sm-5">
+                                <div class="row">
+
+                                    <!--        A       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Mystical Gray Petal</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Crystalline Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/gray_petal/plant_7.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">Botania</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="col-sm-2"></div>
+
+                                    <!--        B       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Mystical Green Petal</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Crystalline Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/green_petal/plant_7.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">Botania</span>
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-sm-1"></div>
+                            <div class="col-sm-5">
+                                <div class="row">
+
+                                    <!--        C       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Mystical Light Blue Petal</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Crystalline Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/light_blue_petal/plant_7.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">Botania</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="col-sm-2"></div>
+
+                                    <!--        D       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Mystical Light Gray Petal</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Crystalline Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/light_gray_petal/plant_7.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">Botania</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--                Row                 -->
+                        <div class="row" style="width: 100%;">
+                            <div class="col-sm-5">
+                                <div class="row">
+
+                                    <!--        A       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Mystical Lime Petal</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Crystalline Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/lime_petal/plant_7.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">Botania</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="col-sm-2"></div>
+
+                                    <!--        B       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Mystical Magenta Petal</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Crystalline Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/magenta_petal/plant_7.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">Botania</span>
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-sm-1"></div>
+                            <div class="col-sm-5">
+                                <div class="row">
+
+                                    <!--        C       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Nagrilite</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Metallic Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/nagrilite/plant_growing.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">The Midnight</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="col-sm-2"></div>
+
+                                    <!--        D       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Mystical Orange Petal</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Crystalline Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/orange_petal/plant_7.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">Botania</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--                Row                 -->
+                        <div class="row" style="width: 100%;">
+                            <div class="col-sm-5">
+                                <div class="row">
+
+                                    <!--        A       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Mystical Pink Petal</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Crystalline Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/pink_petal/plant_7.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">Botania</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="col-sm-2"></div>
+
+                                    <!--        B       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Mystical Purple Petal</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Crystalline Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/purple_petal/plant_7.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">Botania</span>
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-sm-1"></div>
+                            <div class="col-sm-5">
+                                <div class="row">
+
+                                    <!--        C       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Mystical Red Petal</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Crystalline Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/red_petal/plant_7.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">Botania</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="col-sm-2"></div>
+
+                                    <!--        D       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Tenebrum</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Metallic Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/tenebrum/plant_growing.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">The Midnight</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--                Row                 -->
+                        <div class="row" style="width: 100%;">
+                            <div class="col-sm-5">
+                                <div class="row">
+
+                                    <!--        A       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Mystical White Petal</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Crystalline Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/white_petal/plant_7.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">Botania</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="col-sm-2"></div>
+
+                                    <!--        B       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Mystical Yellow Petal</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Crystalline Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/yellow_petal/plant_7.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">Botania</span>
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-sm-1"></div>
+                            <div class="col-sm-5">
+                                <div class="row">
+
+                                    <!--        C       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Netherrack</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Metallic Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/netherrack/plant_growing.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">Minecraft</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="col-sm-2"></div>
+
+                                    <!--        D       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Osmium</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Metallic Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/osmium/plant_growing.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">Mekanism</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--                Row                 -->
+                        <div class="row" style="width: 100%;">
+                            <div class="col-sm-5">
+                                <div class="row">
+
+                                    <!--        A       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Prosperity</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Crystalline Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/prosperity/plant_7.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">Mystical Agriculture</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="col-sm-2"></div>
+
+                                    <!--        B       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Soulium</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Crystalline Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/soulium/plant_7.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">Mystical Agriculture</span>
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-sm-1"></div>
+                            <div class="col-sm-5">
+                                <div class="row">
+
+                                    <!--        C       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Inferium</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Crystalline Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/inferium/plant_7.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">Mystical Agriculture</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="col-sm-2"></div>
+
+                                    <!--        D       -->
+                                    <div class="col-md-5 plant-box">
+                                        <b style="font-size: 18px;">Gravel</b>
+                                        <br />
+                                        <b style="font-size: 14px; color: blue">Metallic Type</b>
+                                        <br /><br />
+                                        <img src="../../images/wiki/plants/gravel/plant_growing.png"
+                                             width="48px" height="48px" class="plant-icon" alt="Plant Texture."/>
+                                        <br /><br />
+                                        <p>
+                                            <b style="border-top: 1px solid lightgrey;">For:</b>
+                                            <br />
+                                            <span style="color: orange">Minecraft</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
+            </div>
 
-                <!--                    Content disclaimer                  -->
-                <div class="legal-footer">
-                    This wiki is licensed under the
-                    <a href="https://www.apache.org/licenses/LICENSE-2.0">
-                        Apache License, Version 2.0
-                    </a>. Although its <b>content</b> may be used, copied, modified,
-                    and/or distributed without restriction.
-                    <br />
-                    Game content and materials are trademarks
-                    and copyrights of their respective publisher
-                    and its licensors. All rights reserved.
-                </div>
+            <!--                    Content disclaimer                  -->
+            <div class="legal-footer">
+                This wiki is licensed under the
+                <a href="https://www.apache.org/licenses/LICENSE-2.0">
+                    Apache License, Version 2.0
+                </a>. Although its <b>content</b> may be used, copied, modified,
+                and/or distributed without restriction.
             </div>
         </div>
     </div>
+</div>
 
-    <!--                                Footer                              -->
-    <footer id="sticky-footer" class="py-4 bg-dark text-white-50" style="margin-top: 20px;">
-        <div style="width: 50%; margin-left: 25%;">
-            The Resynth Minecraft Mod, The Resynth Website, and all related content
-            is licensed under the
-            <a class="btn btn-dark" href="https://www.apache.org/licenses/LICENSE-2.0">
-                Apache License, Version 2.0.
-            </a>
-            All Resynth content is open source and hosted on github.
-        </div>
+<!--                                Footer                              -->
+<footer id="sticky-footer" class="py-4 bg-dark text-white-50" style="margin-top: 20px;">
+    <div style="width: 50%; margin-left: 25%;">
+        The Resynth Minecraft Mod, The Resynth Website, and all related content
+        is licensed under the
+        <a class="btn btn-dark" href="https://www.apache.org/licenses/LICENSE-2.0">
+            Apache License, Version 2.0.
+        </a>
+        All Resynth content is open source and hosted on github.
+    </div>
 
-        <div style="width: 50%; margin-left: 25%;">
-            THE RESYNTH MOD, WEBSITE AND ITS RESOURCES ARE PROVIDED
-            AS IS WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND.
-            <br />
-            For more information, view
-            <a class="btn btn-dark" href="https://www.apache.org/licenses/LICENSE-2.0#no-warranty">
-                Clause 7
-            </a> of the Apache License, Version 2.0.
-        </div>
+    <div style="width: 50%; margin-left: 25%;">
+        <br>
+        THE RESYNTH MOD, WEBSITE AND ITS RESOURCES ARE PROVIDED
+        AS IS WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND.
+        <br />
+        For more information, view
+        <a class="btn btn-dark" href="https://www.apache.org/licenses/LICENSE-2.0#no-warranty">
+            Clause 7
+        </a> of the Apache License, Version 2.0.
+    </div>
 
-        <hr style="background-color: white">
+    <hr style="background-color: white">
 
-        <div class="container text-center">
-            <small>Copyright &copy; 2018-2020: Ki11er_wolf</small>
-        </div>
-    </footer>
+    <div class="container text-center">
+        <small>Copyright &copy; 2018-2020: Ki11er_wolf</small>
+    </div>
+</footer>
 
-    <!--                          Table of content script                   -->
-    <script src="wiki.js"></script>
+<!--                          Table of content script                   -->
+<script src="wiki.js"></script>
 </body>
+</html>

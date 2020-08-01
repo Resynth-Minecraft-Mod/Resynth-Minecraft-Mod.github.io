@@ -66,7 +66,7 @@ body, html { overflow-x:hidden; }
 }
 
 .image-mobile {
-    width: 300px;
+    width: 95%;
 }
 
 .block {
@@ -120,10 +120,15 @@ iframe {
 }
 
 .version-block {
-    background-color: cornflowerblue;
-    border-radius: 7px;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-bottom: 2px;
+    color: white;
+    background-color: darkblue;
+    border-radius: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
     margin-right: 8px;
+}
+
+.version-block:hover {
+    color: black;
+    background-color: deepskyblue;
 }

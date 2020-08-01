@@ -15,38 +15,35 @@
  */
 
 /*
- * Removes the curse forge project iframe on smaller
- * screens and makes sure sizes are correct on mobile as well 
+ * Makes sure element sizes are correct on different screen sizes.
  */
 
-$(window).resize(function () {
+function setElementSizes(){
     if ($(window).width() < 800) {
-        $("#introduction").removeClass("it");
-        $("#introduction").addClass("it-mobile");
-        $("#img-0").addClass("image-mobile");
-        $("#img-1").addClass("image-mobile");
-        $("#img-2").addClass("image-mobile");
+        // noinspection JSJQueryEfficiency
+        $("#introduction").removeClass("it")
+        // noinspection JSJQueryEfficiency
+        $("#introduction").addClass("it-mobile")
+        $("#img-0").addClass("image-mobile")
+        $("#img-1").addClass("image-mobile")
+        $("#img-2").addClass("image-mobile")
     } else {
-        $("#introduction").removeClass("it-mobile");
-        $("#introduction").addClass("it");
-        $("#img-0").removeClass("image-mobile");
-        $("#img-1").removeClass("image-mobile");
-        $("#img-2").removeClass("image-mobile");
+        // noinspection JSJQueryEfficiency
+        $("#introduction").removeClass("it-mobile")
+        // noinspection JSJQueryEfficiency
+        $("#introduction").addClass("it")
+        $("#img-0").removeClass("image-mobile")
+        $("#img-1").removeClass("image-mobile")
+        $("#img-2").removeClass("image-mobile")
     }
+}
+
+/* Trigger Events */
+
+$(window).resize(function () {
+    setElementSizes()
 });
 
 $(document).ready(function () {
-    if ($(window).width() < 800) {
-        $("#introduction").removeClass("it");
-        $("#introduction").addClass("it-mobile");
-        $("#img-0").addClass("image-mobile");
-        $("#img-1").addClass("image-mobile");
-        $("#img-2").addClass("image-mobile");
-    } else {
-        $("#introduction").removeClass("it-mobile");
-        $("#introduction").addClass("it");
-        $("#img-0").removeClass("image-mobile");
-        $("#img-1").removeClass("image-mobile");
-        $("#img-2").removeClass("image-mobile");
-    }
+    setElementSizes()
 });

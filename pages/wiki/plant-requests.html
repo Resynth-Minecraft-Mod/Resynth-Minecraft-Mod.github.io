@@ -1,0 +1,481 @@
+﻿<!DOCTYPE html>
+<!--
+Copyright 2020 Ki11er_wolf.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head lang="en">
+    <!--                       Tab Title & Logo                             -->
+    <title>Plant Requests - Resynth Mod Wiki</title>
+    <link rel="icon" href="../../images/icon.png" type="image/png">
+
+    <!--Internal css and js.-->
+    <link rel="stylesheet" type="text/css" href="wiki.css">
+
+    <!--                            SEO                                     -->
+    <meta name="keywords" content="Plant Request, Plant Requests, Request a plant, Crop Request, New Plant, New Crop,
+    Growable, Ores, Mob Drops, Resources, Growable Ores, 1.12.2, 1.13.2, 1.14.4, 1.15.2, 1.16.1">
+
+    <meta name="description" content="A detailed and informative guide on how to submit a request for new crops that
+    grow a specific ores, mob drop, or resource. ">
+
+    <!--                         Meta Tags                                  -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--                           STYLE                                    -->
+    <!-- JQuery, Bootstrap and Icons-->
+    <link rel="stylesheet"
+              href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+              crossorigin="anonymous">
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!--                       Google Analytics                             -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics Site Tag-->
+    <script
+        async src="https://www.googletagmanager.com/gtag/js?id=UA-127648959-1">
+    </script>
+
+    <!-- Google Analytics Script -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-127648959-1');
+        // Set the user ID using signed-in user_id.
+        gtag('set', {'user_id': 'USER_ID'});
+    </script>
+    
+    <!-- Cookie Pop up -->
+    <link rel="stylesheet" type="text/css" href="../../css/jquery-eu-cookie-law-popup.css"/>
+    <script src="../../js/jquery-eu-cookie-law-popup.js"></script>
+</head>
+
+<body class="eupopup eupopup-bottom">
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark bg-dark">
+        <span class="navbar-brand">
+            <img src="../../images/logo.png" height="39" style="margin-top: 10px;" alt="" />
+
+            <a title="Go to downloads" style="background: none; border:none;"
+               href="https://www.curseforge.com/minecraft/mc-mods/resynth/files">
+                <img style="height: 25px;" src="http://cf.way2muchnoise.eu/full_303846_downloads.svg"
+                     alt="download-image">
+            </a>
+        </span>
+
+        <span class="navbar-text">
+            <a href="../../" class="navbar-link" style="text-decoration:none">Home</a>
+            <a href="../download.html" class="navbar-link" style="text-decoration:none">Downloads</a>
+            <a href="" class="navbar-link-active" style="text-decoration:none">Wiki</a>
+            <a href="https://www.curseforge.com/minecraft/mc-mods/resynth/" class="navbar-link" style="text-decoration:none">Project Page</a>
+            <a href="../../pages/changelog/changelog.html" class="navbar-link" style="text-decoration:none">Changelog</a>
+            <a href="../../pages/faq/faq.html" class="navbar-link" style="text-decoration:none">FAQ</a>
+            <a href="../../pages/credits/credits.html" class="navbar-link" style="text-decoration:none">Credits</a>
+            <a href="https://github.com/Resynth-Minecraft-Mod" class="navbar-link" style="text-decoration:none">Source Code</a>
+            <a href="https://www.apache.org/licenses/LICENSE-2.0" class="navbar-link" style="text-decoration:none">License</a>
+        </span>
+    </nav>
+
+    <!--                                  Page                              -->
+    <div id="page" class="container-fluid full-width has-inner text-center">
+        <div class="row">
+            <!--            Page Navigator / Table of content               -->
+            <div id="table-of-content" class="col-lg-1">
+                <b style="font-size: 20px;">Table of content</b>
+                <br/>
+                <button id="toc-toggle" class="btn btn-primary">Hide table of content</button>
+                <br/><br/>
+                <div id="toc-pages">
+                    <br/>
+                    <br/>
+                    <b style="font-size: 18px;">Basics</b>
+                    <br/>
+                    <br/>
+                    <!-- Pages -->
+                    <a href="home.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Home
+                        </div>
+                    </a>
+                    <a href="getting-started.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Getting Started
+                        </div>
+                    </a>
+                    <a href="plants.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Plants
+                        </div>
+                    </a>
+                    <a href="getting-seeds.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Getting Seeds and Resources
+                        </div>
+                    </a>
+                    <a href="crafting-recipes.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Crafting Recipes
+                        </div>
+                    </a>
+                    <a href="configuring.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Configuring the Mod
+                        </div>
+                    </a>
+                    <a href="#" class="page-link">
+                        <div class="page-nav-btn active-page">
+                            Plant Requests
+                        </div>
+                    </a>
+                    <a href="enhancers.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Enhancers
+                        </div>
+                    </a>
+                    <!-- Items -->
+                    <br/>
+                    <br/>
+                    <b style="font-size: 18px;">Items</b>
+                    <a href="mineral-rock.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Mineral Rock
+                        </div>
+                    </a>
+                    <a href="dense-mineral-rock.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Dense Mineral Rock
+                        </div>
+                    </a>
+                    <a href="mineral-crystal.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Mineral Crystal
+                        </div>
+                    </a>
+                    <a href="mineral-hoe.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Mineral Hoe
+                        </div>
+                    </a>
+                    <a href="seeds.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Seeds
+                        </div>
+                    </a>
+                    <a href="shards.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Shards
+                        </div>
+                    </a>
+                    <a href="bulbs.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Bulbs
+                        </div>
+                    </a>
+                    <!-- Blocks -->
+                    <br/>
+                    <br/>
+                    <b style="font-size: 18px;">Blocks</b>
+                    <a href="mineral-soil.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Mineral Soil
+                        </div>
+                    </a>
+                    <a href="mineral-stone.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Mineral Stone
+                        </div>
+                    </a>
+                    <a href="organic-ore.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Organic Ore
+                        </div>
+                    </a>
+                    <br/>
+                    <br/>
+                    <!-- Plants -->
+                    <b style="font-size: 20px;">Plant Types</b>
+                    <a href="crystalline-plants.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Crystalline Plants
+                        </div>
+                    </a>
+                    <a href="metallic-plants.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Metallic Plants
+                        </div>
+                    </a>
+                    <a href="biochemical-plants.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Biochemical Plants
+                        </div>
+                    </a>
+                    <br/>
+                    <b style="font-size: 18px;">Other Plants</b>
+                    <br/>
+                    <a href="mystical-seed-pod.html" class="page-link">
+                        <div class="page-nav-btn">
+                            Mystical Seed Pod
+                        </div>
+                    </a>
+                    <!-- Back to top button -->
+                    <br/>
+                    <a href="#" class="btn btn-primary" title="Back to top">↑</a>
+                    <br/>
+                </div>
+            </div>
+            <!--                        WIKI PAGE                           -->
+            <div id="wiki-page" class="col-lg-8">
+                
+                <div class="row">
+                    <div class="col-md-8 text-left">
+                        <div class="title">
+                            <b>Plant Requests</b>
+                        </div>
+                        <!-- Opening Text -->
+                        <div class="wiki-paragraph">
+                            <p>
+                                Plant requests are a way to allow anyone to submit a request for new plants to be added
+                                to Resynth that allow growing an ore, mob drop, or resource, either from vanilla
+                                Minecraft or another mod. When submitting plant requests, there are some requirements
+                                that must be followed.
+                            </p>
+
+                            <p>
+                                Plant requests are submitted on GitHub, where they are either accepted or rejected. The
+                                completion status of an accepted plant request will be shown on the plant request as
+                                well. Requests (or otherwise asking for a plant to be added) posted anywhere other than
+                                the specified section on GitHub will be rejected or ignored.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!--                        INFO BOX                        -->
+                    <div id="info-box" class="col-md-4">
+                        <b id="info-box-title">Plant Requests</b>
+                        <div>
+                            <img id="info-box-image" alt="info-box-image" 
+                                 src="../../images/wiki/textures/ruby-seeds.png">
+                        </div>
+                        <i>
+                            Seeds for the Ruby Crop that grows Ruby gems added by other mods.
+                        </i>
+                        <div class="row info-box">
+
+                            <div class="row info-box-row">
+                                <div class="col-sm-6">
+                                    Link to Plant Requests:
+                                </div>
+                                <div class="col-sm-6">
+                                    <a href="https://github.com/Resynth-Minecraft-Mod/Resynth-Mod/issues">
+                                        Resynth on GitHub
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--                      WIKI CONTENT                      -->
+                <div class="row text-left">
+                    <div class="title">
+                        <b>Requirements</b>
+                    </div>
+
+                    <div class="wiki-paragraph">
+                        <p>
+                            In order to make fulfilling plant requests as quick and easy as possible, some information
+                            needs to be provided upfront, such as ore/resource names, mod names and more. In addition
+                            to this, plant support for most older Resynth versions has been discontinued and as such
+                            plants will no longer be added to them. Some rare mods and resources will also not be
+                            accepted in plant requests.
+                        </p>
+
+                        <p>
+                            The following requirements list the information that must be present, what Resynth/Minecraft
+                            versions are accepted and not accepted, as well as and any additional rules, requirements,
+                            and exceptions:
+                        </p>
+
+                        <ul>
+                            <li>
+                                <b>Currently, the only Resynth versions receiving new crops are those for the latest
+                                version of Minecraft</b> - currently <code>1.16.1</code>. Most plant requests for older
+                                versions will be rejected (except in rare cases).
+                            </li>
+                            <li>
+                                Multiple different ore and resource growing crops can be requested in one plant request.
+                            </li>
+                            <li>
+                                Provide the full name of the resource. If multiple, include the name of every resource
+                                you want a crop for.
+                            </li>
+                            <li>
+                                Specify the Minecraft version the plant request is for.
+                            </li>
+                            <li>
+                                For each plant request, specify the type of resource. E.g. ore, mob drop, or item
+                                resource.
+                            </li>
+                            <li>
+                                For crops growing ores and resources from other mods: include the full name of
+                                the mod, as well as a link to the mod (preferably on CurseForge). If possible, also
+                                include the mods unique id (modid).
+                            </li>
+                            <li>
+                                For crops growing ores and resources from other mods: include the latest version of
+                                Minecraft the mod supports.
+                            </li>
+                            <li>
+                                Only one mod per plant request.
+                            </li>
+                            <li>
+                                Finally, include any additional information you consider to be important.
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <br/>
+
+                <div class="row text-left">
+                    <div class="title">
+                        <b>Writing and Submitting the Plant Request</b>
+                    </div>
+
+                    <div class="wiki-paragraph">
+                        <p>
+                            All plant requests must be submitted
+                            <a href="https://github.com/Resynth-Minecraft-Mod/Resynth-Mod/issues">here on GitHub</a>.
+                            You will need an account on GitHub in order to post the request. All plant requests need
+                            a title and a body.
+                        </p>
+
+                        <p>
+                            Within the title, you should specify that the post is a plant request and include the
+                            resource(s) you want the crop(s) to grow. If the resources are from another mod, include
+                            the full mod name in the title within brackets. When requesting multiple (more than 3)
+                            crops in a single plant request, simply replace the resource names with the
+                            word <b>"Multiple"</b>. The body should contain all the other information required when
+                            submitting a plant request. There is no strict format the body needs to be written in.
+                        </p>
+
+                        <p>
+                            <b><u>Here are some examples showing standard plant requests:</u></b>
+                        </p>
+
+                        <p>
+                            <u>Example Title 1:</u> <span style="padding: 7px; padding-right: 80px; border-radius: 7px;
+                            background-color: #e1e1e1;">Plant Request: Mossy Cobblestone</span><br>
+                        </p>
+
+                        <p>
+                            <u>Example Title 2:</u> <span style="padding: 7px; padding-right: 80px; border-radius: 7px;
+                            background-color: #e1e1e1;">Plant Request: Copper (Thermal Foundation)</span><br>
+                        </p>
+
+                        <p>
+                            <u>Example Title 3:</u> <span style="padding: 7px; padding-right: 80px; border-radius: 7px;
+                            background-color: #e1e1e1;">Plant Request: Multiple</span><br>
+                        </p>
+
+                        <br>
+
+                        <p>
+                            <u>Example Body 1:</u>
+                        </p>
+                        <div style="padding: 7px; padding-right: 80px; border-radius: 7px; background-color:
+                            #e1e1e1;">
+                            Requested crops for: Mossy Cobblestone<br>
+                            Minecraft Version: 1.16.1<br>
+                            Type: Block (Metallic)<br>
+
+                            <br>Thanks!
+                        </div><br>
+
+                        <p>
+                            <u>Example Body 2:</u>
+                        </p>
+                        <div style="padding: 7px; padding-right: 80px; border-radius: 7px; background-color:
+                                #e1e1e1;">
+                            Requested crops for: Copper (metallic, ore), Tin (metallic, ore), and Aluminium<br>
+                            Mod: Tinkers' Construct<br>
+                            Link to mod: < put link here ><br>
+                            Mods Minecraft Version: 1.16.1<br>
+                            Minecraft Version: 1.16.1<br>
+
+                            <br>If needed: some thoughts, comments, concerns, ect...<br>
+
+                            <br>Thanks!
+                        </div><br>
+                    </div>
+                </div>
+
+                <!--                    Content disclaimer                  -->
+                <div class="legal-footer">
+                    This wiki is licensed under the 
+                    <a href="https://www.apache.org/licenses/LICENSE-2.0">
+                        Apache License, Version 2.0
+                    </a>. Although its <b>content</b> may be used, copied, modified,
+                    and/or distributed without restriction.
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--                                Footer                              -->
+    <footer id="sticky-footer" class="py-4 bg-dark text-white-50" style="margin-top: 20px;">
+        <div style="width: 50%; margin-left: 25%;">
+            The Resynth Minecraft Mod, The Resynth Website, and all related content
+            is licensed under the
+            <a class="btn btn-dark" href="https://www.apache.org/licenses/LICENSE-2.0">
+                Apache License, Version 2.0.
+            </a>
+            All Resynth content is open source and hosted on github.
+        </div>
+        
+        <div style="width: 50%; margin-left: 25%;">
+            <br>
+            THE RESYNTH MOD, WEBSITE AND ITS RESOURCES ARE PROVIDED
+            AS IS WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND.
+            <br/>
+            For more information, view
+            <a class="btn btn-dark" href="https://www.apache.org/licenses/LICENSE-2.0#no-warranty">
+                Clause 7
+            </a> of the Apache License, Version 2.0.
+        </div>
+       
+        <hr style="background-color: white">
+        
+        <div class="container text-center">
+          <small>Copyright &copy; 2018-2020: Ki11er_wolf</small>
+        </div>
+    </footer>
+
+    <!--                          Table of content script                   -->
+    <script src="wiki.js"></script>
+</body>
+</html>

@@ -14,27 +14,27 @@
         <lastmod>2020-04-01T18:00:00+01:00</lastmod>
         <priority>1.00</priority>
     </url>
-    <!-- Misc Pages -->
+    <!-- Not Home -->
     <url>
         <loc>
             https://resynth-minecraft-mod.github.io/pages/changelog/changelog.html
         </loc>
         <lastmod>2020-04-01T18:00:00+01:00</lastmod>
-        <priority>0.80</priority>
+        <priority>0.70</priority>
     </url>
     <url>
         <loc>
             https://resynth-minecraft-mod.github.io/pages/faq/faq.html
         </loc>
         <lastmod>2020-04-01T18:00:00+01:00</lastmod>
-        <priority>0.80</priority>
+        <priority>0.60</priority>
     </url>
     <url>
         <loc>
             https://resynth-minecraft-mod.github.io/pages/credits/credits.html
         </loc>
         <lastmod>2020-04-01T18:00:00+01:00</lastmod>
-        <priority>0.80</priority>
+        <priority>0.60</priority>
     </url>
     <!-- Wiki Home -->
     <url>
@@ -61,7 +61,7 @@
     </url>
     <url>
         <loc>
-            https://resynth-minecraft-mod.github.io/pages/wiki/concepts.html
+            https://resynth-minecraft-mod.github.io/pages/wiki/enhancers.html
         </loc>
         <lastmod>2020-04-01T18:00:00+01:00</lastmod>
         <priority>0.80</priority>
@@ -110,7 +110,7 @@
     </url>
     <url>
         <loc>
-            https://resynth-minecraft-mod.github.io/pages/wiki/integration.html
+            https://resynth-minecraft-mod.github.io/pages/wiki/plant-requests.html
         </loc>
         <lastmod>2020-04-01T18:00:00+01:00</lastmod>
         <priority>0.80</priority>
@@ -170,6 +170,13 @@
         </loc>
         <lastmod>2020-04-01T18:00:00+01:00</lastmod>
         <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>
+            https://resynth-minecraft-mod.github.io/pages/wiki/plants.html
+        </loc>
+        <lastmod>2020-04-01T18:00:00+01:00</lastmod>
+        <priority>0.90</priority>
     </url>
     <url>
         <loc>

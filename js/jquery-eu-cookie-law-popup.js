@@ -28,8 +28,8 @@ $.fn.euCookieLawPopup = (function() {
 	///////////////////////////////////////////////////////////////////////////////////////////////
 	// PARAMETERS (MODIFY THIS PART) //////////////////////////////////////////////////////////////
 	_self.params = {
-		cookiePolicyUrl : '/pages/cookie-policy.html',
-		popupPosition : 'top',
+		cookiePolicyUrl : 'https://www.apache.org/licenses/LICENSE-2.0',
+		popupPosition : 'bottom',
 		colorStyle : 'default',
 		compactStyle : false,
 		popupTitle : 'This website is using cookies',
