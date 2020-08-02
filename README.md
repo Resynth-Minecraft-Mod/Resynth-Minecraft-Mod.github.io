@@ -10,11 +10,11 @@
 
 ---
 
-<h3 align="center"><b> Growable Ores, Mob Drops, and Resource for Modded & Vanilla Minecraft! <b></h3>
+<h3 align="center"><b> Growable Ores, Mob Drops, and Resource for Modded & Vanilla Minecraft! </b></h3>
 
 <p align="center">
-    <i>Site Navigation:</i><br>
-    | <a href="https://resynth-minecraft-mod.github.io">[Home Page]</a> |
+    <i>Site Navigation:</i><br> |
+    <a href="https://resynth-minecraft-mod.github.io">[Home Page]</a> |
     <a href="https://resynth-minecraft-mod.github.io/pages/wiki/home.html">[Wiki Home]</a> |
     <a href="https://www.curseforge.com/minecraft/mc-mods/resynth/">[Resynth on CurseForge]</a> |
     <a href="https://resynth-minecraft-mod.github.io/pages/wiki/plants.html">[Plant List]</a> |
