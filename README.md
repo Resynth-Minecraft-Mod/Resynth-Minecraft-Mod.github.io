@@ -3,18 +3,22 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/ef9dde2147974378bb44ac7376a53845)](https://www.codacy.com/app/LMelaia/Resynth-Minecraft-Mod.github.io?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Resynth-Minecraft-Mod/Resynth-Minecraft-Mod.github.io&amp;utm_campaign=Badge_Grade)
 ![](http://cf.way2muchnoise.eu/full_303846_downloads.svg)
 ![](http://cf.way2muchnoise.eu/versions/303846.svg)
-### Growable ores, mob drops, and resource for Minecraft
 
-<p align="center" style="text-align: center">
-    <u><b>Resynth Official Website: Live Environment and Hosted Source Files Only!</b></u><br>
-    <small>
-        <b>Top Pages:</b>
-        <a href="https://resynth-minecraft-mod.github.io">[Home Page]</a> |
-        <a href="https://www.curseforge.com/minecraft/mc-mods/resynth/">[Resynth on CurseForge]</a> |
-        <a href="https://resynth-minecraft-mod.github.io/pages/wiki/home.html">[Wiki]</a> |
-        <a href="https://resynth-minecraft-mod.github.io/pages/download.html">[Downloads]</a> |
-        <a href="https://github.com/Resynth-Minecraft-Mod/Resynth-Mod">[Resynth Mod Repo]</a>
-    </small>
+<h3 align="center"><b> Growable Ores, Mob Drops, and Resource for Modded & Vanilla Minecraft! <b></h3>
+
+<p align="center">
+    <b>[NB: Dev Environment] <br> <i>This repository is THE DEVELOPMENT ENVIRONMENT for the LIVE RESYNTH WEBSITE!</i></b>
+</p>
+
+<p align="center">
+    Linking to the top most relavent Resynth webpages:<br>
+    | <a href="https://resynth-minecraft-mod.github.io">[Home Page]</a> |
+    <a href="https://resynth-minecraft-mod.github.io/pages/wiki/home.html">[Wiki Home]</a> |
+    <a href="https://www.curseforge.com/minecraft/mc-mods/resynth/">[Resynth on CurseForge]</a> |
+    <a href="https://resynth-minecraft-mod.github.io/pages/wiki/plants.html">[Plant List]</a> |
+    <a href="https://github.com/Resynth-Minecraft-Mod/Resynth-Mod/issues">[Bug Tracker]</a> |
+    <a href="https://resynth-minecraft-mod.github.io/pages/wiki/getting-started.html">[Beginners Guide]</a> |
+    <a href="https://resynth-minecraft-mod.github.io/pages/faq/faq.html">[FAQ]</a> |
 </p>
 
 ![](https://resynth-minecraft-mod.github.io/images/resynth.png)
@@ -33,7 +37,7 @@ Resynths complete version history can be found on the [Changelog](https://resynt
 
 ## Developer / Development
 
-<h3><b><u>Active and Hosted Branch</u></b></h3>
+### Live Branch of files hosted to the static
 <b>This is the active branch for the Resynth Mod website and is hosted live at <a href="https://resynth-minecraft-mod.github.io">resynth-minecraft-mod.github.io</a> using GitHub Pages.</b> All Changes to this branch will be reflected on the live website!
 
 ### The Resynth Minecraft Mod Repository
