@@ -4,14 +4,16 @@
 ![](http://cf.way2muchnoise.eu/full_303846_downloads.svg)
 ![](http://cf.way2muchnoise.eu/versions/303846.svg)
 
+<p align="center">
+    <b>[NB: Dev Environment]</b> <br> This repository is THE DEVELOPMENT ENVIRONMENT for the LIVE RESYNTH WEBSITE!</b>
+</p>
+
+---
+
 <h3 align="center"><b> Growable Ores, Mob Drops, and Resource for Modded & Vanilla Minecraft! <b></h3>
 
 <p align="center">
-    <b>[NB: Dev Environment] <br> <i>This repository is THE DEVELOPMENT ENVIRONMENT for the LIVE RESYNTH WEBSITE!</i></b>
-</p>
-
-<p align="center">
-    Linking to the top most relavent Resynth webpages:<br>
+    <i>Site Navigation:</i><br>
     | <a href="https://resynth-minecraft-mod.github.io">[Home Page]</a> |
     <a href="https://resynth-minecraft-mod.github.io/pages/wiki/home.html">[Wiki Home]</a> |
     <a href="https://www.curseforge.com/minecraft/mc-mods/resynth/">[Resynth on CurseForge]</a> |
