@@ -29,7 +29,8 @@ limitations under the License.
 
     <meta name="keywords" content="Changelog, Change Log, Changes, Resynth,
           Resynth Minecraft Mod, Growable Ores, Growable Mob Drops, Growable
-          Resources, 1.12.2, 1.13.2, 1.14.4, 1.15.2, Updates, Versions, 1.16, 1.16.1">
+          Resources, 1.12.2, 1.13.2, 1.14.4, 1.15.2, Updates, Versions, 1.16, 1.16.1,
+          Minecraft 1.16, Minecraft 1.16.1, Ore Crops Mod, Ore Crops, Ore Plants">
 
     <!--Meta Tags-->
     <meta charset="utf-8">
@@ -93,7 +94,8 @@ limitations under the License.
             <a href="../../pages/faq/faq.html" class="navbar-link" style="text-decoration:none">FAQ</a>
             <a href="../../pages/credits/credits.html" class="navbar-link" style="text-decoration:none">Credits</a>
             <a href="https://github.com/Resynth-Minecraft-Mod" class="navbar-link" style="text-decoration:none">Source Code</a>
-            <a href="https://www.apache.org/licenses/LICENSE-2.0" class="navbar-link" style="text-decoration:none">License</a>
+            <a href="https://www.paypal.com/cgi-bin/webscr?hosted_button_id=H4KMMEX2T693W&item_name=Resynth+-+Growable+Ores+%26+Resources+(from+curseforge.com)&cmd=_s-xclick"
+               class="navbar-link" style="text-decoration:none">Donate</a>
         </span>
     </nav>
 
@@ -114,6 +116,102 @@ limitations under the License.
         
         <!-- Minecraft Versions -->
         <div>
+            <!-- 1.16.1 -->
+            <div class="mc-version text-center">
+                <h3><b><u>Minecraft 1.16.1</u></b></h3>
+                <h4>
+                    <b>
+                        All the changelogs for the different Resynth versions that support Minecraft 1.16.1
+                    </b>
+                </h4>
+
+                <!-- v5.0.0 -->
+                <a name="5.0.0"></a>
+                <div class="text-left re-version">
+                    <div class="text-center">
+
+                        <h3><b><u>Resynth 5.0.0 (1.16.1)</u></b></h3>
+                        <span style="background-color: darkcyan; border-radius: 12px; padding-left: 10px;
+                        padding-right: 10px; padding-bottom: 2px; margin-right: 8px; color: white">
+                            Needs Forge <u>32.0.108</u> or newer
+                        </span>
+
+                        <p style="padding-top: 5px;">
+                            <small style="color: purple;">
+                                Date Published: September 11, 2020
+                                <span style="margin-left: 4px; margin-right: 4px"></span>
+                            </small>
+                        </p>
+
+                        <p>
+                            <b>
+                                Ported Resynth to <code>1.16.1</code> from <code>1.15.2 version 4.2.0</code>.
+                                <br/>Added and improved a couple features as well.
+                            </b>
+
+                            <br><a style="" href="https://www.curseforge.com/minecraft/mc-mods/resynth/files">
+                            [Download]
+                        </a>
+                        </p>
+
+                    </div>
+
+                    <!-- Additions -->
+                    <br />
+                    <b>Additions</b>
+                    <div style="padding-left: 20px; padding-top: 10px;">
+                        <i class="material-icons">add_circle_outline</i>
+                        <b>Added new plant:</b>
+                        <ul>
+                            <li>
+                                <u>Minecraft</u>
+                                <ul>
+                                    <li>Netherite Scrap</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div style="padding-left: 20px; padding-top: 10px;">
+                        <i class="material-icons">add_circle_outline</i>
+                        <b>Added Light Level Penalty</b> - Added a growth penalty to plants based upon light
+                        near the plant. Plants will now grow slightly slower the less light they have. Can be
+                        disabled with configuration file.
+                    </div>
+
+                    <!-- Changes -->
+                    <br />
+                    <b>Changes</b>
+                    <div style="padding-left: 20px; padding-top: 10px;">
+                        <i class="material-icons">error_outline</i>
+                        <b>Hopper Auto Harvesting</b> - Improved the auto harvest feature for Metallic plants when
+                        ejecting produce into a hopper. Metallic plants will no longer place Metallic Ore when a
+                        hopper is underneath the plant.
+                    </div>
+                    <div style="padding-left: 20px; padding-top: 10px;">
+                        <i class="material-icons">error_outline</i>
+                        <b>Made plant set configuration settings opt-in</b> - In order to change settings for
+                        specific plant sets in the configuration files, it must first be enabled in the configuration
+                        file on a per plant basis. This allows newer versions of Resynth to change settings
+                        without old configuration files causing problems.
+                    </div>
+                    <div style="padding-left: 20px; padding-top: 10px;">
+                        <i class="material-icons">error_outline</i>
+                        <b>Disabled plant stats tooltip in multiplayer</b> - Tooltips on plant items that display
+                        stats for the plant have been disabled in multiplayer worlds. This is because tooltips can
+                        not check multiplayer world configuration settings, and the tooltip would previously give
+                        the wrong values for servers/multiplayer.
+                    </div>
+                    <div style="padding-left: 20px; padding-top: 10px;">
+                        <i class="material-icons">error_outline</i>
+                        <b>Very Minor Improvements</b>
+                    </div>
+
+                    <!-- END -->
+                    <br />
+                    <div style="width: 100%; height: 1px; border: 1px solid black;"></div>
+                </div>
+            </div>
+
             <!-- 1.15.2 -->
             <div class="mc-version text-center">
                 <h3><b><u>Minecraft 1.15.2</u></b></h3>
@@ -143,11 +241,11 @@ limitations under the License.
 
                         <p>
                             <b>
-                                An small improvement over here, a little touch up over there and whole lot of new
+                                A small improvement over here, a little touch up over there and whole lot of new
                                 plants, mostly for Botania and The Midnight Mod.
                             </b>
 
-                            <br><a style="" href="https://www.curseforge.com/minecraft/mc-mods/resynth/files">
+                            <br><a style="" href="https://www.curseforge.com/minecraft/mc-mods/resynth/files/3020981">
                                 [Download]
                             </a>
                         </p>
