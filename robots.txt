@@ -1,7 +1,6 @@
 User-agent: *
 Disallow: 
 Disallow: /mod/versions.json
-Disallow: /pages/download.html
 Disallow: versions.json
 
 Sitemap: https://resynth-minecraft-mod.github.io/sitemap.xml

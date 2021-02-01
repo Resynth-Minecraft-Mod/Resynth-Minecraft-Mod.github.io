@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE html>
 <!--
-Copyright 2018-2020 Ki11er_wolf.
+Copyright 2018-2021 Ki11er_wolf.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -123,16 +123,205 @@ limitations under the License.
                 <h4>
                     <b>
                         All the changelogs for the different Resynth versions that support Minecraft
-                        <br/>1.16.1, 1.16.2, and 1.16.3.
+                        <br/>1.16.1, 1.16.2, 1.16.3, and 1.16.4.
                     </b>
                 </h4>
+
+                <!-- v6.0.0 -->
+                <a name="6.0.0"></a>
+                <div class="text-left re-version">
+                    <div class="text-center">
+
+                        <h3><b><u>Resynth 6.0.0 (1.16.4)</u></b></h3>
+                        <span style="background-color: darkcyan; border-radius: 12px; padding-left: 10px;
+                        padding-right: 10px; padding-bottom: 2px; margin-right: 8px; color: white">
+                            MinecraftForge <u>35.1.37</u>+
+                        </span>
+
+                        <p>
+                            <small>
+                                <span style="color: rebeccapurple;">Date Published:</span>
+                                <span style="color: rebeccapurple;"><u>February 1, 2021</u></span>
+
+                                <span>  --  </span>
+
+                                <span style="color: steelblue;">MD5 Checksum:</span>
+                                <span style="color: steelblue;"><u>3DF807D89A393D98FA24D6DE48AF68B8</u></span>
+
+                                <span style="margin-left: 4px; margin-right: 4px"></span>
+                            </small>
+                        </p>
+
+                        <p>
+                            <b>
+                                Brings a lot of fixes and improvements to many of Resynth's core features,
+                                for a more stable and feature-rich experience. This includes the reintroduction
+                                of world-generation for ores and flowers, many new plants for some popular mods,
+                                and many various other improvements. Finally, most known issues and bugs have
+                                been fixed as well.
+                            </b>
+
+                            <br><a style="" href="https://www.curseforge.com/minecraft/mc-mods/resynth/files">
+                            [Download]
+                        </a>
+                        </p>
+
+                        <!-- Additions -->
+                        <br />
+                        <b>Additions</b>
+                        <div class="text-left" style="padding-left: 20px; padding-top: 10px;">
+                            <i class="material-icons">add_circle_outline</i>
+                            <b>World-Generation is back</b> - Underground ore generation is back along with natural flower
+                            generation, and it's better now.
+                        </div>
+                        <div class="text-left" style="padding-left: 20px; padding-top: 10px;">
+                            <i class="material-icons">add_circle_outline</i>
+                            <b>The One Probe integration</b> - Resynth now supports The One Probe as well as Hwyla.
+                        </div>
+                        <div class="text-left" style="padding-left: 20px; padding-top: 10px;">
+                            <i class="material-icons">add_circle_outline</i>
+                            <b>Configurable produce output</b> - The amount of resources and experience obtained
+                            when smelting plant produce can now be changed in the configuration files.
+                        </div>
+                        <div class="text-left" style="padding-left: 20px; padding-top: 10px;">
+                            <i class="material-icons">add_circle_outline</i>
+                            <b>New plants for popular mods</b> - Lots of new plants have been added for some very
+                            popular mods, meaning the following resources can now be grown:
+                            <br/><br/>
+                            <ul>
+                                <li>Ancient Debris (replaces the Netherite Scrap Plant) </li>
+                                <li>
+                                    Applied Energistics 2:
+                                    <ul>
+                                        <li>Certuz Quartz</li>
+                                        <li>Charged Certuz Quartz</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Thermal Foundation:
+                                    <ul>
+                                        <li>Apatite</li>
+                                        <li>Cinnabar</li>
+                                        <li>Ruby</li>
+                                        <li>Sapphire</li>
+                                        <li>Sulfur</li>
+                                        <li>Copper</li>
+                                        <li>Lead</li>
+                                        <li>Nickel</li>
+                                        <li>Silver</li>
+                                        <li>Tin</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Immersive Engineering:
+                                    <ul>
+                                        <li>Aluminium</li>
+                                        <li>Copper</li>
+                                        <li>Lead</li>
+                                        <li>Nickel</li>
+                                        <li>Silver</li>
+                                        <li>Uranium</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Changes -->
+                        <br />
+                        <b>Changes</b>
+                        <div style="padding-left: 20px; padding-top: 10px;" class="text-left">
+                            <i class="material-icons">error_outline</i>
+                            <b>Ambient-light based plant growth</b> - Plant growth is now a lot more sensitive
+                            to ambient-lighting. Low light now negativly impacts plant growth heavily, however,
+                            very bright light can now also seriously speed up plant growth.
+                        </div>
+                        <div style="padding-left: 20px; padding-top: 10px;" class="text-left">
+                            <i class="material-icons">error_outline</i>
+                            <b>Plant-Seeds & Plant-Produce Tooltips</b> - The tooltips for Plant items, such as
+                            Seeds and Produce, has been redesigned to be much better. The "PlantSet Stats" part
+                            of the tooltips now work on dedicated servers as well.
+                        </div>
+                        <div style="padding-left: 20px; padding-top: 10px;" class="text-left">
+                            <i class="material-icons">error_outline</i>
+                            <b>Plant & PlantSet Recipes</b> - All recipes related to Plants and their items are
+                            now handled in code. This means recipes can be more easily changed. This should also
+                            seriously help fix the spamming of logs.
+                        </div>
+                        <div style="padding-left: 20px; padding-top: 10px;" class="text-left">
+                            <i class="material-icons">error_outline</i>
+                            <b>Dedicated Server Improvements</b> - Dedicated servers and the clients that connect
+                            to them can now use PlantSet Item Tooltips, as well as see and hear audio/visual effects.
+                        </div>
+                        <div style="padding-left: 20px; padding-top: 10px;" class="text-left">
+                            <i class="material-icons">error_outline</i>
+                            <b>Better English localizations</b> - A lot of the English based translations have been
+                            changed, improved, added, and just made better. This means better descriptive tooltips.
+                        </div>
+                        <div style="padding-left: 20px; padding-top: 10px;" class="text-left">
+                            <i class="material-icons">error_outline</i>
+                            <b>Better Logging</b> - Console Logging has been cleaned up, so now the logs will
+                            have less spam, will include more important information, and is treated with more
+                            care in general.
+                        </div>
+                        <div style="padding-left: 20px; padding-top: 10px;" class="text-left">
+                            <i class="material-icons">error_outline</i>
+                            <b>Too many tiny changes</b> - So much of Resynth's internal structure has changed
+                            since the last release, resulting in dozens of very minor changes. All the changes can
+                            be found in the<a href="https://github.com/Resynth-Minecraft-Mod/Resynth-Mod/commits/1.16.4?">
+                            list of code commits</a>.
+                        </div>
+
+                        <!-- Removals -->
+                        <br />
+                        <b>Removals</b>
+                        <div style="padding-left: 20px; padding-top: 10px;" class="text-left">
+                            <i class="material-icons">remove_circle_outline</i>
+                            <b>Old and broken PlantSets</b> - All the recent changes have made a small amount
+                            of PlantSets no longer relevant, and they had to be removed. The following PlantSets
+                            are no longer apart of the mod:
+                            <ul>
+                                <li>Netherite Scrap (Replaced by Ancient Debris)</li>
+                                <li>Nether-Gold (from the mod: Basic Nether Ores)</li>
+                            </ul>
+                        </div>
+
+                        <!-- Fixes -->
+                        <br />
+                        <b>Fixes</b>
+                        <div style="padding-left: 20px; padding-top: 10px;" class="text-left">
+                            <i class="material-icons">check_circle_outline</i>
+                            <b>Fixed Datapack Errors</b>
+                            (<a href="https://github.com/Resynth-Minecraft-Mod/Resynth-Mod/issues/36">
+                            Issue#36
+                        </a>) - Fixed problems where various resources were not correctly registered
+                            to the game, which could cause weird and potentially dangerous behaviour.
+                        </div>
+                        <div style="padding-left: 20px; padding-top: 10px;" class="text-left">
+                            <i class="material-icons">check_circle_outline</i>
+                            <b>Fixed Console Errors</b>
+                            (<a href="https://github.com/Resynth-Minecraft-Mod/Resynth-Mod/issues/30">
+                            Issue#30
+                        </a>) - Fixed a lot of (many minor) errors that would show up in the console,
+                            as well as reduced error spamming by a large margin.
+                        </div>
+                        <div style="padding-left: 20px; padding-top: 10px;" class="text-left">
+                            <i class="material-icons">check_circle_outline</i>
+                            <b>Fixed crashes when loading/creating worlds</b> - Fixed a couple rare
+                            errors and crashes that would show up when creating or loading a world.
+                        </div>
+                        <div style="padding-left: 20px; padding-top: 10px;" class="text-left">
+                            <i class="material-icons">check_circle_outline</i>
+                            <b>Lots of tiny bugs</b> - Fixed a lot of other very minor bugs.
+                        </div>
+                    </div>
+                </div>
 
                 <!-- v5.2.1 -->
                 <a name="5.2.1"></a>
                 <div class="text-left re-version">
                     <div class="text-center">
 
-                        <h3><b><u>Resynth 5.2.1 (1.16.3)</u></b></h3>
+                        <h3><b><u>Resynth 5.2.1 (1.16.3 / 1.16.4)</u></b></h3>
                         <span style="background-color: rebeccapurple; border-radius: 12px; padding-left: 10px;
                         padding-right: 10px; padding-bottom: 2px; margin-right: 8px; color: white">
                             No World/Ore Generation.
@@ -155,7 +344,7 @@ limitations under the License.
                                 fixed. Also fixed tooltips not displaying correctly.
                             </b>
 
-                            <br><a style="" href="https://www.curseforge.com/minecraft/mc-mods/resynth/files">
+                            <br><a style="" href="https://www.curseforge.com/minecraft/mc-mods/resynth/files/3065965">
                             [Download]
                         </a>
                         </p>
@@ -2014,7 +2203,7 @@ limitations under the License.
         <hr style="background-color: white">
         
         <div class="container text-center">
-          <small>Copyright &copy; 2018-2020: Ki11er_wolf</small>
+          <small>Copyright &copy; 2018-2021: Ki11er_wolf</small>
         </div>
     </footer>
 </body>
