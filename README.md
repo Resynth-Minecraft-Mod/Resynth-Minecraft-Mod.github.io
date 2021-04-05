@@ -4,13 +4,9 @@
 ![](http://cf.way2muchnoise.eu/full_303846_downloads.svg)
 ![](http://cf.way2muchnoise.eu/versions/303846.svg)
 
-<p align="center">
-    <b>[NB: Dev Environment]</b> <br> This repository is THE DEVELOPMENT ENVIRONMENT for the LIVE RESYNTH WEBSITE!</b>
-</p>
-
 ---
 
-<h3 align="center"><b> Growable Ores, Mob Drops, and Resource for Modded & Vanilla Minecraft! </b></h3>
+<h3 align="center"><b>Adds customizable ore and resource growing crops for Minecraft and other modded resources!</b></h3>
 
 <p align="center">
     <i>Site Navigation:</i><br> |
@@ -48,9 +44,9 @@ The repository for the Resynth Mod jar can be found in the [Resynth-Mod Reposito
 ### Developed in
 The Official Resynth Mod Website is written in and developed using [JetBrains Software](https://www.jetbrains.com/?from=Resynth-Minecraft-Mod&Website) licensed for open source development and released as open source software.
 
-### Legal
+### Legal Information
 
-**Copyright © 2018-2020: Ki11er_wolf**
+**Copyright © 2018-2021: Ki11er_wolf**
 
 The Resynth Minecraft Mod, The Resynth Website, and all related content is licensed under the [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0). All Resynth content is open source.
 
