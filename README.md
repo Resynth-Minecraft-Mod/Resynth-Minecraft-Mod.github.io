@@ -44,9 +44,9 @@ The repository for the Resynth Mod jar can be found in the [Resynth-Mod Reposito
 ### Developed in
 The Official Resynth Mod Website is written in and developed using [JetBrains Software](https://www.jetbrains.com/?from=Resynth-Minecraft-Mod&Website) licensed for open source development and released as open source software.
 
-### Legal Information
+### Copyright & Disclaimer
 
-**Copyright © 2018-2021: Ki11er_wolf**
+**Copyright © 2018-2022: Ki11er_wolf**
 
 The Resynth Minecraft Mod, The Resynth Website, and all related content is licensed under the [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0). All Resynth content is open source.
 
