@@ -1,23 +1,29 @@
-# The Resynth Minecraft Mod Official Website
+# Resynth - Official Website
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/ef9dde2147974378bb44ac7376a53845)](https://www.codacy.com/app/LMelaia/Resynth-Minecraft-Mod.github.io?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Resynth-Minecraft-Mod/Resynth-Minecraft-Mod.github.io&amp;utm_campaign=Badge_Grade)
 ![](http://cf.way2muchnoise.eu/full_303846_downloads.svg)
 ![](http://cf.way2muchnoise.eu/versions/303846.svg)
+<!--[![Codacy Badge](https://api.codacy.com/project/badge/Grade/ef9dde2147974378bb44ac7376a53845)](https://www.codacy.com/app/LMelaia/Resynth-Minecraft-Mod.github.io?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Resynth-Minecraft-Mod/Resynth-Minecraft-Mod.github.io&amp;utm_campaign=Badge_Grade)-->
 
 ---
 
-<h3 align="center"><b>Adds customizable ore and resource growing crops for Minecraft and other modded resources!</b></h3>
-
-<p align="center">
-    <i>Site Navigation:</i><br> |
-    <a href="https://resynth-minecraft-mod.github.io">[Home Page]</a> |
-    <a href="https://resynth-minecraft-mod.github.io/pages/wiki/home.html">[Wiki Home]</a> |
-    <a href="https://www.curseforge.com/minecraft/mc-mods/resynth/">[Resynth on CurseForge]</a> |
-    <a href="https://resynth-minecraft-mod.github.io/pages/wiki/plants.html">[Plant List]</a> |
-    <a href="https://github.com/Resynth-Minecraft-Mod/Resynth-Mod/issues">[Bug Tracker]</a> |
-    <a href="https://resynth-minecraft-mod.github.io/pages/wiki/getting-started.html">[Beginners Guide]</a> |
-    <a href="https://resynth-minecraft-mod.github.io/pages/faq/faq.html">[FAQ]</a> |
-</p>
+<div style="text-align: center">
+    <h2>Repository for the Official Resynth Website and Wiki</h2>
+    <h3>
+        Adds customizable ore and resource growing crops for Minecraft
+        and other modded resources!
+    </h3>
+    <p>
+        <i>Site Navigation:</i><br> |
+        <a href="https://resynth-minecraft-mod.github.io">[Home Page]</a> |
+        <a href="https://resynth-minecraft-mod.github.io">[Mod Repository]</a> |
+        <a href="https://resynth-minecraft-mod.github.io/pages/wiki/home.html">[Wiki Home]</a> |
+        <a href="https://www.curseforge.com/minecraft/mc-mods/resynth/">[CurseForge Page]</a> |
+        <a href="https://resynth-minecraft-mod.github.io/pages/wiki/plants.html">[Plant List]</a> |
+        <a href="https://github.com/Resynth-Minecraft-Mod/Resynth-Mod/issues">[Bug Tracker]</a> |
+        <a href="https://resynth-minecraft-mod.github.io/pages/wiki/getting-started.html">[Beginners Guide]</a> |
+        <a href="https://resynth-minecraft-mod.github.io/pages/faq/faq.html">[FAQ]</a> |
+    </p>
+</div>
 
 ![](https://resynth-minecraft-mod.github.io/images/resynth.png)
 
@@ -31,7 +37,7 @@ A detailed and expansive guide on getting started with Resynth can be found here
 
 The complete list of plant crops added by Resynth can be found on the Wiki's [Plants](https://resynth-minecraft-mod.github.io/pages/wiki/plants.html) page.
 
-Resynths complete version history can be found on the [Changelog](https://resynth-minecraft-mod.github.io/pages/changelog/changelog.html)
+Resynth's complete version history can be found on the [Changelog](https://resynth-minecraft-mod.github.io/pages/changelog/changelog.html)
 
 ## Developer / Development
 
